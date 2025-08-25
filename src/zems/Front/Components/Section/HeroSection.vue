@@ -18,7 +18,7 @@
 
 <style scoped>
 .hero {
-  background: url('https://www.webpoka.com/front/images/background/3.png') center / cover no-repeat;
+  background: url('https://www.webpoka.com/front/images/background/3.png') bottom / cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
