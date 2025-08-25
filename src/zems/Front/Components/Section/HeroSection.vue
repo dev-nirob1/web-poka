@@ -5,7 +5,7 @@
         <div class="content">
           <h1>A Software <br> Development Agency</h1>
           <p>We work with International brands and Countries Watch Video</p>
-          <button>Watch Video</button>
+          <button class="btn btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i></button>
         </div>
         <div class="image">
           <img src="https://www.webpoka.com/front/images/resource/2.png" alt="image" />
