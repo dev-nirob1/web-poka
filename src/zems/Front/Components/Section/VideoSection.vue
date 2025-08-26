@@ -11,7 +11,7 @@
   width: 100%;
   height: 85vh;
   margin: 0 auto;
-  background:url('https://www.webpoka.com/front/images/background/pattern-6.png') center / cover no-repeat, linear-gradient(to right, #EA33A6, #6538D6) ;
+  background: url('https://www.webpoka.com/front/images/background/pattern-6.png') center / cover no-repeat, linear-gradient(to right, #EA33A6, #6538D6);
   display: flex;
   align-items: center;
   justify-content: center;
