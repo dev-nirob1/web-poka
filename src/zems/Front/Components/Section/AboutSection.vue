@@ -26,6 +26,9 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
 </template>
 
 <style scoped>
+.about {
+  padding: 3.75rem 0;
+}
 .about .image {
   width: 100%;
   height: auto;
