@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
 </script>
@@ -20,25 +20,84 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
           </ul>
           <button class="btn">Free Consultation</button>
         </div>
+
+        <div class="cards">
+          <div v-for="f in 3" :key="f" class="why-card">
+            <div class="card-content">
+              <div class="icon">
+                <i class="fa-solid fa-dollar"></i>
+              </div>
+              <div>
+                <h5>Offerdable Price</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur, sed do eiusmod incididunt aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+
+.why-card:nth-child(2){
+  margin-left: 5rem;
+}
+.why-card {
+  background: var(--white-color);
+  position: relative;
+  padding: 2.5rem 2.5rem 0;
+  border-radius: 1rem;
+  max-width: 430px;
+  width: 100%;
+}
+.why-card:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+.why-card .card-content {
+  position: relative;
+  padding-left: 88px;
+  padding-bottom: 35px;
+}
+
+.why-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.why-card .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4em;
+  padding-top: 1.5rem;
+  border-radius: 50px 50px 0 0;
+  background: #ED1C24;
+  text-align: center;
+  color: var(--white-color);
+}
+
+
 .why-choose {
   padding: 3.75rem 0;
 }
-.why-choose .highlight{
+
+.why-choose .highlight {
   color: #FF00F6;
   margin: 1rem 0;
 }
-.why-choose ul{
+
+.why-choose ul {
   margin: 1rem 0;
 }
-.why-choose ul li{
+
+.why-choose ul li {
   margin: .5rem 0;
 }
+
 .why-choose .btn {
   border: none;
   color: var(--white-color);
