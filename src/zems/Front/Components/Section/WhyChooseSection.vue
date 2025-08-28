@@ -40,10 +40,10 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 </template>
 
 <style scoped>
-
-.why-card:nth-child(2){
+.why-card:nth-child(2) {
   margin-left: 5rem;
 }
+
 .why-card {
   background: var(--white-color);
   position: relative;
@@ -52,7 +52,8 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   max-width: 430px;
   width: 100%;
 }
-.why-card:not(:last-child){
+
+.why-card:not(:last-child) {
   margin-bottom: 2rem;
 }
 
