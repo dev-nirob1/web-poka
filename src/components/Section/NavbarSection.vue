@@ -9,9 +9,19 @@ const toggleMenu = () => {
 };
 
 onMounted(() => {
-  const navbar = document.querySelector('.nav-links')
+    const navbar = document.querySelector('.navbar');
+  const navLinks = document.querySelector('.nav-links')
+
+ window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolling');
+    } else {
+      navbar.classList.remove('scrolling');
+    }
+  });
+
   // console.log(navbar.childNodes);
-  navbar.childNodes.forEach(element => {
+  navLinks.childNodes.forEach(element => {
     element.addEventListener('click', () => {
       isMenuOpen.value = false
     })
@@ -59,8 +69,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.navbar {
+ .navbar.scrolling {
+  background: black;
   padding: 0.75rem 0;
+}
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,8 +87,9 @@ onMounted(() => {
 }
 
 .logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -119,6 +133,9 @@ onMounted(() => {
 }
 
 @media (min-width: 992px) {
+  .navbar {
+  padding-top: 2.5rem;
+}
   .navbar ul {
     position: inherit;
     width: 100%;
