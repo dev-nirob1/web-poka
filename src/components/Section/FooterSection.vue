@@ -1,57 +1,90 @@
+<script setup>
+import { RouterLink } from 'vue-router';
+import BaseParagraph from '../Elements/BaseParagraph.vue';
+import ListItem from '../Elements/ListItem.vue';
+import BaseImage from '../Elements/BaseImage.vue';
+import SubTitle from '../Elements/SubTitle.vue';
+
+</script>
+
 <template>
   <!-- ======== Footer section ======== -->
   <footer class="footer">
-    <div class="container medium-2 large-4 gap-2 py-2">
+    <div class="container medium-2 large-4 gap-2 py-3">
       <!-- Footer logo and social media links -->
-      <div>
-        <a href="#" class="logo">
-          <img src="https://www.webpoka.com/front/images/logo-2.png" alt="logo">
-        </a>
+      <div class="contact-info">
+        <RouterLink to="" class="logo">
+          <BaseImage image="https://www.webpoka.com/front/images/logo-2.png" alt="logo" />
+        </RouterLink>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore aliqua.</p>
-        <div>
-          <p><span style="color: pink">Location: </span>Rock St 12, Newyork City, USA</p>
-          <p><span style="color: pink">Email: </span>info@example.com</p>
-          <p><span style="color: pink">Phone: </span>+000-0000-000</p>
-        </div>
-
+        <BaseParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et
+          dolore aliqua.</BaseParagraph>
+        <ul>
+          <ListItem><span>Location: </span>Rock St 12, Newyork City, USA</ListItem>
+          <ListItem><span>Email: </span>info@example.com</ListItem>
+          <ListItem><span>Phone: </span>+000-0000-000</ListItem>
+        </ul>
       </div>
 
       <!-- Quick navigation links -->
       <div>
-        <h5 class="title">Quick Links</h5>
+        <SubTitle>Links</SubTitle>
         <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/properties">All Properties</a></li>
-          <li><a href="/agents">Agents</a></li>
-          <li><a href="/cities">Explore Cities</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <ListItem>
+            <RouterLink to="">Contact Us</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Submit a Ticket</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Visit Knowledge Base</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Support System</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Refund Policy</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Professional Services</RouterLink>
+          </ListItem>
         </ul>
       </div>
 
       <!-- Buying/Selling Information -->
       <div>
-        <h5 class="title">Helpful Info</h5>
+        <SubTitle>Support</SubTitle>
         <ul class="footer-links">
-          <li><a href="/how-it-works">How It Works</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/terms">Terms of Service</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <ListItem>
+            <RouterLink to="">Home</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Services</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">About Us</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Testimonials</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">News</RouterLink>
+          </ListItem>
+          <ListItem>
+            <RouterLink to="">Contact</RouterLink>
+          </ListItem>
         </ul>
       </div>
 
       <!-- Newsletter subscription form -->
-      <div>
-        <h5 class="title">Stay Updated</h5>
-        <p>Subscribe to get the latest property listings and market tips.</p>
-        <form class="subscribe-form">
-          <input type="email" placeholder="Your email address" required />
-          <button class="btn" type="submit">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
+      <div class="gallery-img">
+        <SubTitle>Gallery</SubTitle>
+        <div class="medium-2 large-3 gap-1">
+          <BaseImage v-for="i in 6" :key="i"
+            image="https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-1.jpg" alt="gallery image" />
+        </div>
+
       </div>
     </div>
 
@@ -59,11 +92,11 @@
     <div class="footer-bottom">
       <div class="container flex">
         <p>2025 © All rights reserved by Webpoka</p>
-        <div class="flex gap-1">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <div class="social-icon">
+          <RouterLink to=""><i class="fab fa-facebook-f"></i></RouterLink>
+          <RouterLink to=""><i class="fab fa-twitter"></i></RouterLink>
+          <RouterLink to=""><i class="fab fa-instagram"></i></RouterLink>
+          <RouterLink to=""><i class="fab fa-pinterest-p"></i></RouterLink>
         </div>
       </div>
     </div>
@@ -73,14 +106,10 @@
 
 <style scoped>
 .footer {
-  padding-top: 3rem;
-  background: url('https://www.webpoka.com/front/images/background/5.jpg') center top / cover no-repeat;
-}
-
-.footer h5 {
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 0.75rem;
+  color: var(--light-color);
+  padding-top: 3rem;
+  background: url('https://www.webpoka.com/front/images/background/5.jpg') center / cover no-repeat;
 }
 
 /* Logo Styles */
@@ -89,38 +118,29 @@
   width: auto;
 }
 
-/* Social links with hover effects */
-.footer .social-links a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.25rem;
-  height: 36px;
-  width: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border-radius: .5rem 0 .5rem 0;
+.footer .sub-title {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
 }
 
-.footer .footer-links a:hover {
-  color: var(--secondary-color);
-}
-
-.footer .social-links a:hover i {
-  transform: scale(1.2);
-  transition: all 0.3s ease;
-}
-
-.footer h5::after {
+.footer .sub-title::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 4rem;
-  height: 3px;
+  width: 2rem;
+  height: 1px;
   background-color: var(--secondary-color);
+}
+.footer .contact-info {
+  font-size: 1rem;
+}
+.footer .contact-info ul {
+  gap: .5rem;
+}
+.footer .contact-info span {
+  color: var(--highlight-color);
 }
 
 .footer ul {
@@ -133,8 +153,6 @@
 }
 
 .footer ul a {
-  text-decoration: none;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -143,50 +161,33 @@
 .footer ul a::before {
   content: ">";
   font-family: monospace;
-  color: var(--secondary-color);
   transition: all 0.3s ease;
-}
-
-/* Newsletter form */
-.footer .subscribe-form {
-  display: flex;
-}
-
-.footer .subscribe-form input {
-  flex: 1;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  outline: none;
-  border-radius: 1rem 0 0 0;
-  font-size: 0.95rem;
-  background-color: var(--white-color);
-}
-
-.footer .subscribe-form .btn {
-  padding: 1rem 2rem;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: none;
-  border-radius: 0 0 1rem 0;
 }
 
 /* Footer copyright bar*/
 .footer .footer-bottom {
   padding: .5rem;
-}
-
-.footer .footer-bottom a {
-  text-decoration: none;
-}
-
-.footer .footer-bottom a:hover {
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 .footer .footer-bottom .flex {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-bottom .social-icon {
+  display: flex;
+  gap: .5rem;
+}
+
+.footer-bottom a {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white-color);
 }
 
 @media (min-width: 768px) {

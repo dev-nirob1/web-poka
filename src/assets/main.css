@@ -18,7 +18,7 @@ html {
   --highlight-color: #e83e8c;
   --white-color: #ffffff;
   --dark-color: #343a40;
-  --light-color: #f8f9fa;
+  --light-color: #6c757d;
 
   /* ---------------typography------------ */
   /* headings  */
@@ -80,6 +80,7 @@ h6 {
 /* ------------------utility classes starts here-------------- */
 /* anchor color inherit  */
 a {
+  text-decoration: none;
   color: inherit;
 }
 
