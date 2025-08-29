@@ -1,14 +1,22 @@
+<script setup>
+import BaseButton from '@/components/Elements/BaseButton.vue';
+import BaseImage from '@/components/Elements/BaseImage.vue';
+import BaseParagraph from '@/components/Elements/BaseParagraph.vue';
+import HeroTitle from '@/components/Elements/HeroTitle.vue';
+
+</script>
+
 <template>
   <div class="hero">
     <div class="container">
       <div class="medium-2 gap-1 align-center">
         <div class="content">
-          <h1>A Software <br> Development Agency</h1>
-          <p>We work with International brands and Countries Watch Video</p>
-          <button class="btn btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i></button>
+          <HeroTitle>A Software <br> Development Agency</HeroTitle>
+          <BaseParagraph>We work with International brands and Countries</BaseParagraph>
+          <BaseButton class="btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i></BaseButton>
         </div>
         <div class="image">
-          <img src="https://www.webpoka.com/front/images/resource/2.png" alt="image" />
+          <BaseImage image="https://www.webpoka.com/front/images/resource/2.png" alt="image" />
         </div>
       </div>
     </div>
@@ -23,8 +31,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 150px 0 210px 0;
+  padding: 210px 0;
   color: var(--white-color);
+}
+.hero p {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .hero .image {
