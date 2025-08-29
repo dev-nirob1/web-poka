@@ -10,6 +10,7 @@ import SubTitle from '../Elements/SubTitle.vue';
 <template>
   <!-- ======== Footer section ======== -->
   <footer class="footer">
+    <div class="footer-bg"></div>
     <div class="container medium-2 large-4 gap-2 py-3">
       <!-- Footer logo and social media links -->
       <div class="contact-info">
@@ -109,7 +110,16 @@ import SubTitle from '../Elements/SubTitle.vue';
   position: relative;
   color: var(--light-color);
   padding-top: 3rem;
-  background: url('https://www.webpoka.com/front/images/background/5.jpg') center / cover no-repeat;
+}
+
+.footer-bg {
+  background: url('https://www.webpoka.com/front/images/background/5.jpg') right bottom no-repeat;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* Logo Styles */
@@ -133,12 +143,15 @@ import SubTitle from '../Elements/SubTitle.vue';
   height: 1px;
   background-color: var(--secondary-color);
 }
+
 .footer .contact-info {
   font-size: 1rem;
 }
+
 .footer .contact-info ul {
   gap: .5rem;
 }
+
 .footer .contact-info span {
   color: var(--highlight-color);
 }
@@ -162,6 +175,11 @@ import SubTitle from '../Elements/SubTitle.vue';
   content: ">";
   font-family: monospace;
   transition: all 0.3s ease;
+}
+
+.footer .gallery-img img {
+  max-width: 120px;
+  width: 100%;
 }
 
 /* Footer copyright bar*/
