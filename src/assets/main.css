@@ -12,13 +12,13 @@ html {
   --body-font: "Cabin", sans-serif;
   --heading-font: "Quicksand", serif;
 
-  --indigo: #6610f2;
-  --blue: #007bff;
-  --pink: #e83e8c;
-  --white-color: #fff;
-  --dark-gray: #343a40;
-  --light-gray: #343a40;
-  --dark: #343a40;
+  --primary-color: #007bff;
+  --secondary-color: #6610f2;
+  --accent-color: #6f42c1;
+  --highlight-color: #e83e8c;
+  --white-color: #ffffff;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
 
   /* ---------------typography------------ */
   /* headings  */
@@ -185,7 +185,7 @@ ul {
 
 @media (min-width: 992px) {
   :root {
-    --heading-1: 2.5rem;
+    --heading-1: 3rem;
     --heading-2: 2.25rem;
     --heading-3: 2rem;
     --heading-4: 1.75rem;
@@ -194,7 +194,6 @@ ul {
 
 @media (min-width: 1200px) {
   :root {
-    --heading-1: 2.75rem;
     --heading-2: 2.5rem;
     --heading-3: 2.25rem;
   }

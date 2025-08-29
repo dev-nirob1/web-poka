@@ -103,12 +103,15 @@ onMounted(() => {
   left: -100%;
   width: 80%;
   margin: 0;
-  background: var(--secondary-color);
+  background: var(--dark);
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
   gap: 1.5rem;
   transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
+
 }
 .navbar ul.active {
   top: 5rem;
