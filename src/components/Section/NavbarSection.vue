@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import { onMounted, ref } from 'vue';
+import ListItem from '../Elements/ListItem.vue';
+import BaseButton from '../Elements/BaseButton.vue';
+import BaseImage from '../Elements/BaseImage.vue';
 
 const isMenuOpen = ref(false)
 
@@ -32,13 +35,9 @@ onMounted(() => {
 <template>
   <header class="navbar">
     <nav class="flex justify-between align-center container">
-      <!-- Mobile Menu Toggle Button -->
-      <BaseButton class="hamburger" @click="toggleMenu">
-        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2xl"></i>
-      </BaseButton>
       <!-- Logo -->
       <RouterLink to="/" class="logo">
-        <img class="width-full" src="https://www.webpoka.com/front/images/logo.png" alt="logo" />
+        <BaseImage class="width-full" image="https://www.webpoka.com/front/images/logo.png" alt="logo" />
       </RouterLink>
 
       <!-- Navigation Links -->
@@ -64,13 +63,18 @@ onMounted(() => {
           </ListItem>
         </ul>
       </div>
+
+          <!-- Mobile Menu Toggle Button -->
+      <BaseButton class="hamburger" @click="toggleMenu">
+        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2xl"></i>
+      </BaseButton>
     </nav>
   </header>
 </template>
 
 <style scoped>
  .navbar.scrolling {
-  background: black;
+  background: var(--dark-color);
   padding: 0.75rem 0;
 }
 .navbar {
@@ -130,6 +134,8 @@ onMounted(() => {
 }
 /* Mobile menu toggle */
 .hamburger {
+  height: 3rem;
+  width: 3rem;
   color: var(--white-color);
   border: none;
   cursor: pointer;
