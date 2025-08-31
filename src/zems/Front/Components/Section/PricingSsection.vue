@@ -18,6 +18,7 @@ import PricingCard from '../Widget/PricingCard.vue';
 <style>
 .pricing {
   padding: 3.75rem 0;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') left no-repeat;
 }
 
 </style>

@@ -119,6 +119,7 @@ import SubTitle from '../Elements/SubTitle.vue';
   left: 0;
   right: 0;
   bottom: 0;
+  margin-bottom: -100px;
   z-index: -1;
 }
 

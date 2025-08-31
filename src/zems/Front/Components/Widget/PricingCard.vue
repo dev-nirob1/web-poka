@@ -24,6 +24,7 @@
   text-align: center;
   padding: 3rem 1rem;
   background: var(--white-color);
+  box-shadow: var(--box-shadow);
 }
 
 .pricing-card li {
