@@ -81,7 +81,7 @@ import SubTitle from '../Elements/SubTitle.vue';
       <!-- Newsletter subscription form -->
       <div class="gallery-img">
         <SubTitle>Gallery</SubTitle>
-        <div class="medium-2 large-3 gap-1">
+        <div class="all-2 large-3 gap-1">
           <BaseImage v-for="i in 6" :key="i"
             image="https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-1.jpg" alt="gallery image" />
         </div>

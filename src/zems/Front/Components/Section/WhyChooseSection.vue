@@ -40,12 +40,17 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 </template>
 
 <style scoped>
+.why-choose {
+  padding: 3.75rem 0;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right center no-repeat;
+}
 .why-card:nth-child(2) {
   margin-left: 5rem;
 }
 
 .why-card {
   background: var(--white-color);
+  box-shadow: var(--box-shadow);
   position: relative;
   padding: 2.5rem 2.5rem 0;
   border-radius: 1rem;
@@ -76,7 +81,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   width: 4em;
   padding-top: 1.5rem;
   border-radius: 50px 50px 0 0;
-  background: #ED1C24;
+  background: var(--alternative-color);
   text-align: center;
   color: var(--white-color);
 }
