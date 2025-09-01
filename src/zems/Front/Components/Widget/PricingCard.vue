@@ -26,10 +26,9 @@
   background: var(--white-color);
   box-shadow: var(--box-shadow);
   overflow: hidden;
-  transition: color 0.4s ease-in-out; /* smooth text color change */
+  transition: color 0.4s ease-in-out;
 }
 
-/* Overlay background */
 .pricing-card::before {
   content: '';
   position: absolute;
@@ -37,11 +36,11 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
-  z-index: 0; /* keep behind content */
+  z-index: 0;
 }
 
 /* Hover overlay */
@@ -49,23 +48,14 @@
   left: 0;
   opacity: 1;
 }
+.pricing-card:hover {
+  color: var(--white-color);
+}
 
-/* Make sure all inner content is above overlay */
 .pricing-card > * {
   position: relative;
   z-index: 1;
 }
-
-/* Change text and button color on hover */
-.pricing-card:hover,
-.pricing-card:hover h5,
-.pricing-card:hover ul li,
-.pricing-card:hover .price,
-.pricing-card:hover sup {
-  color: var(--white-color);
-}
-
-/* Button hover adjustment */
 .pricing-card .btn {
   padding: 1rem 2.5rem;
   background: orange;
@@ -73,13 +63,13 @@
   border: none;
   border-radius: 1.5rem;
   position: relative;
-  z-index: 1; /* ensure above overlay */
+  z-index: 1;
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 .pricing-card:hover .btn {
-  background: #fff; /* optional: invert button bg on hover */
-  color: var(--primary-color); /* optional: match overlay color */
+  background: #fff;
+  color: orange;
 }
 
 </style>

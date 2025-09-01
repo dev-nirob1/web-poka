@@ -10,7 +10,7 @@ import PricingCard from '../Widget/PricingCard.vue';
       <SectionTitle class="mb-1 text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
 
       <div class="medium-2 large-3 gap-2">
-       <PricingCard v-for="pricing in 3" :key="pricing"/>
+        <PricingCard v-for="pricing in 3" :key="pricing" />
       </div>
     </div>
   </section>
@@ -18,7 +18,18 @@ import PricingCard from '../Widget/PricingCard.vue';
 <style>
 .pricing {
   padding: 3.75rem 0;
-  background: url('https://webpoka.com/front/images/background/pattern-8.png') left no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
+.pricing::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  height: 1290px;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') left no-repeat;
+  z-index: -1;
+}
 </style>
