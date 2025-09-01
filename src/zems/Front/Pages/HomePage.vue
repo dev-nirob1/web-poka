@@ -13,8 +13,8 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
 <template>
   <HeroSection />
   <ServicesSection/>
-  <ProcesSection/>
   <WhyChooseSection/>
+  <ProcesSection/>
   <VideoSection/>
   <PricingSsection/>
   <AboutSection/>

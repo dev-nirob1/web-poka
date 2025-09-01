@@ -31,7 +31,7 @@ import ServiceCard from '../Widget/ServiceCard.vue';
   position: absolute;
  background: url('https://webpoka.com/front/images/background/pattern-4.png') left top no-repeat;
  top: 0;
- bottom: -400px;
+ bottom: -200px;
  left: 0;
  right: 0;
  z-index: -1;

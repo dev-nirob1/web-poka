@@ -42,7 +42,20 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 <style scoped>
 .why-choose {
   padding: 3.75rem 0;
-  background: url('https://webpoka.com/front/images/background/pattern-5.png') right center no-repeat;
+  /* background: url('https://webpoka.com/front/images/background/pattern-5.png') right center no-repeat; */
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose::after{
+  content: '';
+  position: absolute;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right no-repeat;
+  top: -100px;
+  bottom: -100px;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 .why-card:nth-child(2) {
   margin-left: 5rem;
