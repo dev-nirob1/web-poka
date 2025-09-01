@@ -68,7 +68,7 @@
 }
 
 .pricing-card:hover .btn {
-  background: #fff;
+  background: var(--white-color);
   color: orange;
 }
 

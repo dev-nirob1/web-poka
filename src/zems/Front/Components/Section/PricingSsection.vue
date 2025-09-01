@@ -21,15 +21,14 @@ import PricingCard from '../Widget/PricingCard.vue';
   position: relative;
   z-index: 1;
 }
-
-.pricing::after {
+.pricing::after{
   content: '';
   position: absolute;
   left: 0;
-  right: 0;
   top: -150px;
-  height: 1290px;
-  background: url('https://webpoka.com/front/images/background/pattern-8.png') left no-repeat;
+  bottom: -150px;
+  right: 0;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') center /cover no-repeat;
   z-index: -1;
 }
 </style>

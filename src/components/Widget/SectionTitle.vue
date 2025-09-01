@@ -11,15 +11,15 @@ defineProps({
 
 <template>
   <div class="section-title">
-      <h5>{{ subTitle }}</h5>
-      <span> </span>
+    <h5>{{ subTitle }}</h5>
+    <span> </span>
 
     <h3>{{ title }}</h3>
   </div>
 </template>
 <style>
 .section-title h5 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .section-title span {
@@ -29,7 +29,7 @@ defineProps({
   height: 5px;
   width: 10px;
   margin-left: 1rem;
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 .section-title span::after {
@@ -39,7 +39,7 @@ defineProps({
   left: -1rem;
   height: 2px;
   width: 10px;
-  background: #ff9600;
+  background: var(--alternative-color);
 }
 
 .section-title span::before {
@@ -49,6 +49,6 @@ defineProps({
   left: 1rem;
   height: 2px;
   width: 10px;
-  background: #ff9600;
+  background: var(--alternative-color);
 }
 </style>
