@@ -10,7 +10,6 @@ import SubTitle from '../Elements/SubTitle.vue';
 <template>
   <!-- ======== Footer section ======== -->
   <footer class="footer">
-    <div class="footer-bg"></div>
     <div class="container medium-2 large-4 gap-2 py-3">
       <!-- Footer logo and social media links -->
       <div class="contact-info">
@@ -18,13 +17,12 @@ import SubTitle from '../Elements/SubTitle.vue';
           <BaseImage image="https://www.webpoka.com/front/images/logo-2.png" alt="logo" />
         </RouterLink>
 
-        <BaseParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et
-          dolore aliqua.</BaseParagraph>
+        <BaseParagraph> A software company from Bangladesh providing modern and reliable digital solutions.
+        </BaseParagraph>
         <ul>
-          <ListItem><span>Location: </span>Rock St 12, Newyork City, USA</ListItem>
-          <ListItem><span>Email: </span>info@example.com</ListItem>
-          <ListItem><span>Phone: </span>+000-0000-000</ListItem>
+          <ListItem><span>Location: </span>Dhaka, Bangladesh</ListItem>
+          <ListItem><span>Email: </span>info@webpoka.com</ListItem>
+          <ListItem><span>Phone: </span>+880-1234-567890</ListItem>
         </ul>
       </div>
 
@@ -92,7 +90,7 @@ import SubTitle from '../Elements/SubTitle.vue';
     <!-- Footer bottom copyright -->
     <div class="footer-bottom">
       <div class="container flex">
-        <p>2025 © All rights reserved by Webpoka</p>
+        <BaseParagraph>{{ new Date().getFullYear() }} &copy; All rights reserved by Webpoka, Bangladesh</BaseParagraph>
         <div class="social-icon">
           <RouterLink to=""><i class="fab fa-facebook-f"></i></RouterLink>
           <RouterLink to=""><i class="fab fa-twitter"></i></RouterLink>
@@ -112,10 +110,11 @@ import SubTitle from '../Elements/SubTitle.vue';
   padding-top: 3rem;
 }
 
-.footer-bg {
-  background: url('https://www.webpoka.com/front/images/background/5.jpg') right bottom no-repeat;
+.footer::after {
+  content: '';
+  background: url('https://www.webpoka.com/front/images/background/5.jpg') right no-repeat;
   position: absolute;
-  top: -200px;
+  top: -400px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -123,8 +122,8 @@ import SubTitle from '../Elements/SubTitle.vue';
 }
 
 /* Logo Styles */
-.footer .logo {
-  height: 60px;
+.footer .logo img{
+  height: 70px;
   width: auto;
 }
 
@@ -132,6 +131,7 @@ import SubTitle from '../Elements/SubTitle.vue';
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.75rem;
+  color: var(--dark-color)
 }
 
 .footer .sub-title::after {
@@ -141,7 +141,7 @@ import SubTitle from '../Elements/SubTitle.vue';
   bottom: 0;
   width: 2rem;
   height: 1px;
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
 }
 
 .footer .contact-info {
