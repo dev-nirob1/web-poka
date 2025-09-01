@@ -15,5 +15,6 @@
   padding: 2rem;
   border-radius: 1rem;
   background: var(--white-color);
+  box-shadow: var(--box-shadow);
 }
 </style>
