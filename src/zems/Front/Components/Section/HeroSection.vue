@@ -7,9 +7,9 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
 </script>
 
 <template>
-  <div class="hero">
+  <div class="hero relative flex-center">
     <div class="container">
-      <div class="medium-2 gap-1 align-center">
+      <div class="medium-2 gap-5  medium-gap-2 align-center">
         <div class="content">
           <HeroTitle>A Software <br> Development Agency</HeroTitle>
           <BaseParagraph>We work with International brands and Countries</BaseParagraph>
@@ -26,17 +26,20 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
 
 <style scoped>
 .hero {
-  background: url('https://www.webpoka.com/front/images/background/3.png') bottom / cover no-repeat;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 210px 0;
+  padding: 210px 0 150px 0;;
   color: var(--white-color);
 }
-.hero p {
-  font-size: 1.1rem;
-  font-weight: 600;
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  right: 0;
+  background: url('https://www.webpoka.com/front/images/background/3.png') bottom / cover no-repeat;
+  z-index: -1;
 }
 
 .hero .image {
@@ -48,5 +51,19 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero::before {
+    bottom: -120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero p {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
 }
 </style>

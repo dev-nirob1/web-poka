@@ -12,11 +12,11 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
 
 <template>
   <HeroSection />
-  <ServicesSection/>
+  <!-- <ServicesSection/>
   <WhyChooseSection/>
   <VideoSection/>
   <ProcesSection/>
   <PricingSsection/>
   <AboutSection/>
-  <BlogSection/>
+  <BlogSection/> -->
 </template>
