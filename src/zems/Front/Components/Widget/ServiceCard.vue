@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  background: var(--secondary-color);
+  background: var(--accent-color);
   z-index: -1;
   opacity: 0;
   transition: all .5s ease-in-out;
