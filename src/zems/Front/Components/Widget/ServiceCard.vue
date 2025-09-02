@@ -29,7 +29,7 @@
   top: 50%;
   left: 0;
   background: var(--secondary-color);
-  z-index: 0;
+  z-index: -1;
   opacity: 0;
   transition: all .5s ease-in-out;
 }
@@ -43,9 +43,9 @@
   position: absolute;
   bottom: -110%;
   right: -110%;
-  z-index: 0;
+  z-index: -1;
   /* opacity: ; */
-  transition: all 1s ease-in-out;
+  transition: all .7s ease-in-out;
 
 }
 
