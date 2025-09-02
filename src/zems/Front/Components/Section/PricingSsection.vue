@@ -19,7 +19,6 @@ import PricingCard from '../Widget/PricingCard.vue';
 .pricing {
   padding: 3.75rem 0;
   position: relative;
-  z-index: 1;
 }
 .pricing::after{
   content: '';
@@ -28,7 +27,7 @@ import PricingCard from '../Widget/PricingCard.vue';
   top: -150px;
   bottom: -150px;
   right: 0;
-  background: url('https://webpoka.com/front/images/background/pattern-8.png') center /cover no-repeat;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
   z-index: -1;
 }
 </style>
