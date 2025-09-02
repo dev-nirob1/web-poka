@@ -10,6 +10,7 @@
       non.</p>
   </div>
 </template>
+
 <style>
 .services-card {
   padding: 2rem;
@@ -46,7 +47,6 @@
   z-index: -1;
   /* opacity: ; */
   transition: all .7s ease-in-out;
-
 }
 
 .services-card:hover::after {

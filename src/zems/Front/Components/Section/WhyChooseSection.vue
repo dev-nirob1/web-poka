@@ -46,6 +46,21 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   position: relative;
 }
 
+.why-choose ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: .25rem;
+  font-weight: 600;
+  color: var(--light-color);
+  font-size: 1rem;
+}
+.why-choose ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
 .why-choose::after {
   content: '';
   position: absolute;
