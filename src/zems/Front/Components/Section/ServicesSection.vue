@@ -33,13 +33,14 @@ const services = ref([
 </script>
 
 <template>
-  <section class="services">
+  <section class="services relative">
     <div class="container">
-      <div class="medium-3 relative">
+      <div class="large-3 gap-2 relative">
         <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
-        <div class="medium-span-2 medium-2 gap-2 align-center">
+
+        <div class="large-span-2 medium-2 gap-2 align-center">
           <div class="cards" v-for="(service, i) in services" :key="i">
-            <ServiceCard :service="service"/>
+            <ServiceCard :service="service" />
           </div>
         </div>
       </div>
@@ -47,11 +48,6 @@ const services = ref([
   </section>
 </template>
 <style>
-.services {
-  position: relative;
-  margin: 9rem 0 3rem 0;
-}
-
 .services::after {
   content: '';
   position: absolute;
@@ -63,18 +59,30 @@ const services = ref([
   z-index: -1;
 }
 
-.cards:first-child {
-  position: absolute;
-  left: 0;
-  max-width: 350px;
-  margin-top: 8rem;
+@media (min-width: 992px) {
+  .services {
+    margin: 9rem 0 3rem 0;
+  }
+
+  .cards:first-child {
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    margin-top: 8rem;
+  }
+
+  .cards:nth-child(3) {
+    margin-bottom: -5rem;
+  }
+
+  .cards:nth-child(5) {
+    margin-bottom: -7rem;
+  }
 }
 
-.cards:nth-child(3) {
-  margin-bottom: -5rem;
-}
-
-.cards:nth-child(5) {
-  margin-bottom: -5rem;
+@media(min-width: 1200px) {
+  .cards:first-child {
+    max-width: 360px;
+  }
 }
 </style>
