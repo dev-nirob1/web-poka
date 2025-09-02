@@ -7,7 +7,7 @@ import PricingCard from '../Widget/PricingCard.vue';
 <template>
   <section class="pricing">
     <div class="container">
-      <SectionTitle class="mb-1 text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
+      <SectionTitle class="mb-2 text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
 
       <div class="medium-2 large-3 gap-2">
         <PricingCard v-for="pricing in 3" :key="pricing" />
@@ -15,12 +15,14 @@ import PricingCard from '../Widget/PricingCard.vue';
     </div>
   </section>
 </template>
+
 <style>
 .pricing {
   padding: 3.75rem 0;
   position: relative;
 }
-.pricing::after{
+
+.pricing::after {
   content: '';
   position: absolute;
   left: 0;

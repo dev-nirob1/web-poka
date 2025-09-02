@@ -1,22 +1,28 @@
 <template>
   <div class="pricing-card">
-    <h5>Starter Plan</h5>
-    <img src="https://webpoka.com/front/images/resource/price-icon-1.png" alt="icon">
-    <div class="price flex align-center justify-center">
-      <sup>$</sup>
-      <h1>99.9</h1>
-      <sup>/mon</sup>
+    <SubTitle>Starter Plan</SubTitle>
+    <div class="icon">
+      <BaseImage image="https://webpoka.com/front/images/resource/price-icon-1.png" alt="icon" />
+    </div>
+
+    <div class="price flex-center">
+      <sup><i class="fa-solid fa-dollar fa-2x"></i></sup>
+      <HeroTitle>99.9</HeroTitle>
+      <SubTitle>/mon</SubTitle>
     </div>
 
     <ul>
-      <li>Increase traffic 130%</li>
-      <li>Backlink analysis</li>
-      <li>24/7 support</li>
-      <li>10 Free Optimization</li>
-      <li>Organic traffic 215%</li>
+      <ListItem>Increase traffic 130%</ListItem>
+      <ListItem>Backlink analysis</ListItem>
+      <ListItem>24/7 support</ListItem>
+      <ListItem>10 Free Optimization</ListItem>
+      <ListItem>Organic traffic 215%</ListItem>
     </ul>
-    <button class="btn">Buy Now</button>
+
+    <BaseButton>Buy Now</BaseButton>
+    
   </div>
+
 </template>
 <style>
 .pricing-card {
@@ -27,6 +33,49 @@
   box-shadow: var(--box-shadow);
   overflow: hidden;
   transition: color 0.4s ease-in-out;
+}
+
+.pricing-card .icon {
+  height: 120px;
+  width: auto;
+}
+
+.pricing-card .icon img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.pricing-card ul {
+  margin: 1.5rem 0;
+}
+
+.pricing-card ul li {
+  margin: .5rem 0;
+}
+
+.pricing-card>* {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-card .btn {
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  box-shadow: var(--box-shadow);
+  background: orange;
+  color: var(--white-color);
+  border: none;
+  border-radius: 1.5rem;
+  position: relative;
+  z-index: 1;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.pricing-card:hover .btn {
+  background: var(--white-color);
+  color: orange;
 }
 
 .pricing-card::before {
@@ -48,28 +97,8 @@
   left: 0;
   opacity: 1;
 }
+
 .pricing-card:hover {
   color: var(--white-color);
 }
-
-.pricing-card > * {
-  position: relative;
-  z-index: 1;
-}
-.pricing-card .btn {
-  padding: 1rem 2.5rem;
-  background: orange;
-  color: var(--white-color);
-  border: none;
-  border-radius: 1.5rem;
-  position: relative;
-  z-index: 1;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
-}
-
-.pricing-card:hover .btn {
-  background: var(--white-color);
-  color: orange;
-}
-
 </style>
