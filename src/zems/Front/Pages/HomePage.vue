@@ -12,8 +12,8 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
 
 <template>
   <HeroSection />
-  <!-- <ServicesSection/>
-  <WhyChooseSection/>
+  <ServicesSection/>
+  <!-- <WhyChooseSection/>
   <VideoSection/>
   <ProcesSection/>
   <PricingSsection/>

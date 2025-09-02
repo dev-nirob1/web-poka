@@ -9,7 +9,7 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
 <template>
   <div class="hero relative flex-center">
     <div class="container">
-      <div class="medium-2 gap-5  medium-gap-2 align-center">
+      <div class="medium-2 gap-5 medium-gap-2 align-center">
         <div class="content">
           <HeroTitle>A Software <br> Development Agency</HeroTitle>
           <BaseParagraph>We work with International brands and Countries</BaseParagraph>
@@ -22,7 +22,6 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
     </div>
   </div>
 </template>
-
 
 <style scoped>
 .hero {
@@ -57,13 +56,10 @@ import HeroTitle from '@/components/Elements/HeroTitle.vue';
   .hero::before {
     bottom: -120px;
   }
-}
-
-@media (min-width: 992px) {
   .hero p {
     font-size: 1.1rem;
     font-weight: 600;
   }
-
 }
+
 </style>
