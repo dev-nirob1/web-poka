@@ -18,6 +18,7 @@ defineProps({
     </div>
   </div>
 </template>
+
 <style>
 .benefit-card {
   background: var(--white-color);
@@ -35,10 +36,6 @@ defineProps({
 
 .benefit-card:nth-child(3) .icon {
   background: orange;
-}
-
-.benefit-card:nth-child(2) {
-  margin-left: 5rem;
 }
 
 .benefit-card:not(:last-child) {
@@ -66,5 +63,10 @@ defineProps({
   background: var(--alternative-color);
   text-align: center;
   color: var(--white-color);
+}
+@media (min-width: 768px){
+  .benefit-card:nth-child(2) {
+  margin-left: 5rem;
+}
 }
 </style>

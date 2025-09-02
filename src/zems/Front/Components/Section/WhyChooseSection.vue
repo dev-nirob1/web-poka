@@ -24,24 +24,27 @@ const benefits = ref([
 <template>
   <section class="why-choose">
     <div class="container">
-      <div class="medium-2 gap-2">
+      <div class="large-2 gap-3">
         <div class="content">
-          <SectionTitle title="Get Benifits and Advantages Market Goal" subTitle="Why Choose Us" />
-          <h5 class="highlight">
+          <SectionTitle class="mb-1" title="Get Benifits and Advantages Market Goal" subTitle="Why Choose Us" />
+
+          <SubTitle class="highlight">
             A Satisfied Customer is best for business
-          </h5>
-          <h4>The activity of buying or selling goods and services in all the countries of the world.</h4>
+          </SubTitle>
+
+          <SubTitle>The activity of buying or selling goods and services in all the countries of the world.</SubTitle>
           <ul>
-            <li>What is global market economy?</li>
-            <li>Why is the global market so important?</li>
-            <li>Which is the largest stock market in the world?</li>
+            <ListItem>What is global market economy?</ListItem>
+            <ListItem>Why is the global market so important?</ListItem>
+            <ListItem>Which is the largest stock market in the world?</ListItem>
           </ul>
-          <button class="btn">Free Consultation</button>
+          <BaseButton>Free Consultation</BaseButton>
         </div>
 
         <div class="cards">
-          <BenefitCard v-for="(benefit, i) in benefits" :benefit="benefit" :key="i"/>
+          <BenefitCard v-for="(benefit, i) in benefits" :benefit="benefit" :key="i" />
         </div>
+
       </div>
     </div>
   </section>
@@ -49,14 +52,29 @@ const benefits = ref([
 
 <style scoped>
 .why-choose {
-  margin: 9rem 0 3rem 0;
+  padding: 9rem 0 3rem 0;
   position: relative;
+}
+
+.why-choose::after {
+  content: '';
+  position: absolute;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
+  top: -50px;
+  bottom: -150px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.why-choose ul {
+  margin: 1.5rem 0;
 }
 
 .why-choose ul li {
   position: relative;
   padding-left: 1rem;
-  margin-bottom: .25rem;
+  margin: .5rem 0;
   font-weight: 600;
   color: var(--light-color);
   font-size: 1rem;
@@ -69,32 +87,9 @@ const benefits = ref([
   color: var(--secondary-color);
 }
 
-.why-choose::after {
-  content: '';
-  position: absolute;
-  background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
-  top: -100px;
-  bottom: -100px;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.why-choose {
-  padding: 3.75rem 0;
-}
-
 .why-choose .highlight {
   color: #FF00F6;
-  margin: 1rem 0;
-}
-
-.why-choose ul {
-  margin: 1rem 0;
-}
-
-.why-choose ul li {
-  margin: .5rem 0;
+  margin: 1.5rem 0;
 }
 
 .why-choose .btn {
