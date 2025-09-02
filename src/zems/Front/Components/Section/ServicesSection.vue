@@ -23,18 +23,18 @@ import ServiceCard from '../Widget/ServiceCard.vue';
 .services {
   /* background: url('https://www.webpoka.com/front/images/background/pattern-4.png') no-repeat; */
   position: relative;
-  padding: 3.75rem 0;
-  z-index: 1;
+  padding: 4.75rem 0;
 }
-.services::after{
+
+.services::after {
   content: '';
   position: absolute;
- background: url('https://webpoka.com/front/images/background/pattern-4.png') left top no-repeat;
- top: 0;
- bottom: -200px;
- left: 0;
- right: 0;
- z-index: -1;
+  background: url('https://webpoka.com/front/images/background/pattern-4.png') left top no-repeat;
+  top: 0;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .cards:first-child {

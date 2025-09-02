@@ -16,5 +16,51 @@
   border-radius: 1rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.services-card::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: var(--secondary-color);
+  z-index: 0;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.services-card::after {
+  content: '';
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+  position: absolute;
+  bottom: -110%;
+  right: -110%;
+  z-index: 0;
+  /* opacity: ; */
+  transition: all 1s ease-in-out;
+
+}
+
+.services-card:hover::after {
+  bottom: -60%;
+  right: -50%;
+}
+
+.services-card:hover::before {
+  opacity: 1;
+  top: 0;
+}
+
+.services-card:hover {
+  color: var(--white-color);
+  z-index: 2;
 }
 </style>

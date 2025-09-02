@@ -44,7 +44,6 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   padding: 3.75rem 0;
   /* background: url('https://webpoka.com/front/images/background/pattern-5.png') right center no-repeat; */
   position: relative;
-  z-index: 1;
 }
 
 .why-choose::after {
