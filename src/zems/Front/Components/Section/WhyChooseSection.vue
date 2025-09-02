@@ -1,6 +1,24 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-
+import { ref } from 'vue';
+import BenefitCard from '../Widget/BenefitCard.vue';
+const benefits = ref([
+  {
+    title: "Affordable Price",
+    description: "We provide high-quality services at competitive prices to ensure maximum value for your investment.",
+    icon: "fa-solid fa-dollar-sign"
+  },
+  {
+    title: "Great Support",
+    description: "Our dedicated support team is available 24/7 to assist you with any questions or issues.",
+    icon: "fa-solid fa-headset"
+  },
+  {
+    title: "Quick Access",
+    description: "Get fast and easy access to our services and resources whenever you need them.",
+    icon: "fa-solid fa-bolt"
+  }
+])
 </script>
 
 <template>
@@ -22,17 +40,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
         </div>
 
         <div class="cards">
-          <div v-for="f in 3" :key="f" class="why-card">
-            <div class="card-content">
-              <div class="icon">
-                <i class="fa-solid fa-dollar"></i>
-              </div>
-              <div>
-                <h5>Offerdable Price</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur, sed do eiusmod incididunt aliqua.</p>
-              </div>
-            </div>
-          </div>
+          <BenefitCard v-for="(benefit, i) in benefits" :benefit="benefit" :key="i"/>
         </div>
       </div>
     </div>
@@ -41,8 +49,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
 <style scoped>
 .why-choose {
-  padding: 3.75rem 0;
-  /* background: url('https://webpoka.com/front/images/background/pattern-5.png') right center no-repeat; */
+  margin: 9rem 0 3rem 0;
   position: relative;
 }
 
@@ -54,6 +61,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   color: var(--light-color);
   font-size: 1rem;
 }
+
 .why-choose ul li::before {
   content: "✓";
   position: absolute;
@@ -64,56 +72,13 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 .why-choose::after {
   content: '';
   position: absolute;
-  background: url('https://webpoka.com/front/images/background/pattern-5.png') right no-repeat;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
   top: -100px;
   bottom: -100px;
   right: 0;
   left: 0;
   z-index: -1;
 }
-
-.why-card:nth-child(2) {
-  margin-left: 5rem;
-}
-
-.why-card {
-  background: var(--white-color);
-  box-shadow: var(--box-shadow);
-  position: relative;
-  padding: 2.5rem 2.5rem 0;
-  border-radius: 1rem;
-  max-width: 430px;
-  width: 100%;
-}
-
-.why-card:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.why-card .card-content {
-  position: relative;
-  padding-left: 88px;
-  padding-bottom: 35px;
-}
-
-.why-card p {
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.why-card .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4em;
-  padding-top: 1.5rem;
-  border-radius: 50px 50px 0 0;
-  background: var(--alternative-color);
-  text-align: center;
-  color: var(--white-color);
-}
-
 
 .why-choose {
   padding: 3.75rem 0;
