@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
 </script>
@@ -10,13 +10,14 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
       <div class="medium-2 large-4 gap-2">
         <div v-for="p in 4" :key="p" class="process">
           <div class="icon relative">
-            <img src="https://webpoka.com/front/images/resource/process-1.png" alt="">
+            <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <style scoped>
 .working-process{
   padding: 3.75rem 0;
