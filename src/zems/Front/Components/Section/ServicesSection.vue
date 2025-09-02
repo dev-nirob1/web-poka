@@ -1,6 +1,34 @@
-<script setup lang="ts">
-import SectionTitle from '@/components/Widget/SectionTitle.vue';
+<script setup>
+import { ref } from 'vue';
 import ServiceCard from '../Widget/ServiceCard.vue';
+import SectionTitle from '@/components/Widget/SectionTitle.vue';
+const services = ref([
+  {
+    title: "Web Development",
+    description: "We build fast, secure, and scalable websites and applications tailored to your business needs.",
+    icon: "fa-solid fa-code"
+  },
+  {
+    title: "Strategy & Planning",
+    description: "Our experts create result-driven strategies to help you grow and achieve long-term success.",
+    icon: "fa-solid fa-lightbulb"
+  },
+  {
+    title: "Marketing Research",
+    description: "We analyze market trends and consumer behavior to give your brand a competitive edge.",
+    icon: "fa-solid fa-chart-line"
+  },
+  {
+    title: "Growth Tracking",
+    description: "Track your business performance with data-driven insights and continuous optimization.",
+    icon: "fa-solid fa-chart-pie"
+  },
+  {
+    title: "Enterprise Consulting",
+    description: "We provide professional consulting to streamline operations and enhance productivity.",
+    icon: "fa-solid fa-briefcase"
+  }
+])
 
 </script>
 
@@ -10,8 +38,8 @@ import ServiceCard from '../Widget/ServiceCard.vue';
       <div class="medium-3 relative">
         <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
         <div class="medium-span-2 medium-2 gap-2 align-center">
-          <div class="cards" v-for="s in 5" :key="s">
-            <ServiceCard />
+          <div class="cards" v-for="(service, i) in services" :key="i">
+            <ServiceCard :service="service"/>
           </div>
         </div>
       </div>
@@ -20,7 +48,6 @@ import ServiceCard from '../Widget/ServiceCard.vue';
 </template>
 <style>
 .services {
-  /* background: url('https://www.webpoka.com/front/images/background/pattern-4.png') no-repeat; */
   position: relative;
   margin: 9rem 0 3rem 0;
 }
