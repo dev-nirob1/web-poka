@@ -36,10 +36,10 @@
 
 .services-card::after {
   content: '';
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background: var(--highlight-color);
+  background: rgb(from var(--highlight-color)r g b / 80%);
   position: absolute;
   bottom: -110%;
   right: -110%;
@@ -50,8 +50,8 @@
 }
 
 .services-card:hover::after {
-  bottom: -60%;
-  right: -50%;
+  bottom: -45%;
+  right: -35%;
 }
 
 .services-card:hover::before {
