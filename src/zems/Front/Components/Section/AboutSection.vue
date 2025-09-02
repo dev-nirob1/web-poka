@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import AccordionWidget from '../Widget/AccordionWidget.vue';
 
@@ -9,16 +9,17 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
     <div class="container">
       <div class="medium-2 gap-2">
         <div class="image">
-          <img src="https://webpoka.com/front/images/resource/about-2.png" alt="image">
+          <BaseImage image="https://webpoka.com/front/images/resource/about-2.png" alt="image" />
         </div>
         <div class="content">
           <SectionTitle title="We Are Happy to Assist You all Time Moment" subTitle="We Are Tecno" />
-          <p>
+          <BaseParagraph class="my-1">
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
             designs. The passage is attributed. So some forward-looking CIOs are putting.
-          </p>
+          </BaseParagraph>
+
           <AccordionWidget v-for="a in 3" :key="a"/>
-          <button class="btn">About More</button>
+          <BaseButton>About More</BaseButton>
         </div>
       </div>
     </div>
@@ -37,10 +38,11 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
 .about .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .about .btn {
   border: none;
+  font-weight: bold;
   color: var(--white-color);
   background: var(--secondary-color);
   padding: 1rem 2rem;

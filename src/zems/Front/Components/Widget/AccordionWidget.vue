@@ -15,10 +15,8 @@
 
 <style scoped>
 .accordion {
-  /* margin-bottom: 1.5rem; */
   overflow: hidden;
 }
-
 .accordion-title {
   padding: 1rem;
   font-weight: 500;
@@ -37,7 +35,7 @@
   font-weight: bold;
   color: var(--white-color);
   border-radius: 50%;
-  background: linear-gradient(to bottom, #EA33A6, #6538D6)
+  background: linear-gradient(to bottom, #6538D6, #EA33A6);
 }
 
 .accordion-body {

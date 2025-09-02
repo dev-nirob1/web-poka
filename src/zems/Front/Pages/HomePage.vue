@@ -1,4 +1,5 @@
 <script setup>
+import AboutSection from '../Components/Section/AboutSection.vue';
 import HeroSection from '../Components/Section/HeroSection.vue';
 import PricingSection from '../Components/Section/PricingSection.vue';
 import ServicesSection from '../Components/Section/ServicesSection.vue';
@@ -14,6 +15,6 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
   <VideoSection />
   <!-- <ProcesSection/> -->
   <PricingSection/>
-  <!-- <AboutSection/> -->
+  <AboutSection/>
   <BlogSection/>
 </template>
