@@ -1,26 +1,30 @@
+<script setup>
+defineProps({
+  price: {
+    type: Object
+  }
+})
+
+</script>
 <template>
   <div class="pricing-card">
-    <SubTitle>Starter Plan</SubTitle>
+    <SubTitle>{{price.title}}</SubTitle>
     <div class="icon">
-      <BaseImage image="https://webpoka.com/front/images/resource/price-icon-1.png" alt="icon" />
+      <BaseImage :image="price.icon" alt="icon" />
     </div>
 
     <div class="price flex-center">
       <sup><i class="fa-solid fa-dollar fa-2x"></i></sup>
-      <HeroTitle>99.9</HeroTitle>
+      <HeroTitle>{{price.price}}</HeroTitle>
       <SubTitle>/mon</SubTitle>
     </div>
 
     <ul>
-      <ListItem>Increase traffic 130%</ListItem>
-      <ListItem>Backlink analysis</ListItem>
-      <ListItem>24/7 support</ListItem>
-      <ListItem>10 Free Optimization</ListItem>
-      <ListItem>Organic traffic 215%</ListItem>
+      <ListItem v-for="(data,i) in price.features" :key="i">{{ data }}</ListItem>
     </ul>
 
     <BaseButton>Buy Now</BaseButton>
-    
+
   </div>
 
 </template>
@@ -48,7 +52,7 @@
 }
 
 .pricing-card ul {
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
 }
 
 .pricing-card ul li {

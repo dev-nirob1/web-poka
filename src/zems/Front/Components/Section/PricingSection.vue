@@ -1,7 +1,45 @@
-<script setup lang="ts">
+<script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import PricingCard from '../Widget/PricingCard.vue';
-
+import { ref } from 'vue';
+const pricing = ref([
+  {
+    title: "Starter Plan",
+    icon: "https://webpoka.com/front/images/resource/price-icon-1.png",
+    price: 99.9,
+    features: [
+      "Increase traffic by 130%",
+      "Backlink analysis included",
+      "24/7 customer support",
+      "10 free optimization tasks",
+      "Organic traffic growth 215%"
+    ]
+  },
+  {
+    title: "Professional Plan",
+    icon: "https://webpoka.com/front/images/resource/price-icon-2.png",
+    price: 199.9,
+    features: [
+      "Increase traffic by 250%",
+      "Comprehensive SEO audit",
+      "Priority 24/7 support",
+      "20 free optimization tasks",
+      "Organic traffic growth 400%"
+    ]
+  },
+  {
+    title: "Enterprise Plan",
+    icon: "https://webpoka.com/front/images/resource/price-icon-3.png",
+    price: 399.9,
+    features: [
+      "Increase traffic by 500%",
+      "Advanced backlink & content strategy",
+      "Dedicated account manager",
+      "50 free optimization tasks",
+      "Organic traffic growth 800%"
+    ],
+  }
+])
 </script>
 
 <template>
@@ -10,7 +48,7 @@ import PricingCard from '../Widget/PricingCard.vue';
       <SectionTitle class="mb-2 text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
 
       <div class="medium-2 large-3 gap-2">
-        <PricingCard v-for="pricing in 3" :key="pricing" />
+        <PricingCard v-for="(price, i) in pricing" :key="i" :price="price" />
       </div>
     </div>
   </section>
