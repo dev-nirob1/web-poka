@@ -29,7 +29,18 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   right: 0;
   height: 100%;
   width: 100%;
-  background: url('https://www.webpoka.com/front/images/resource/process-bg-1.png') center no-repeat;
+  background: url('https://www.webpoka.com/front/images/resource/process-bg-1.png') center center no-repeat;
   z-index: -1;
+ animation: rotateAnim 15s linear infinite;
+ background-origin: top left;
+}
+
+@keyframes rotateAnim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>
