@@ -55,6 +55,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   align-items: center;
   gap: 2rem;
 }
+
 .process img {
   width: 255px;
 }

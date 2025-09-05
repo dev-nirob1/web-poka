@@ -45,7 +45,14 @@ const pricing = ref([
 <template>
   <section class="pricing">
     <div class="container">
-      <SectionTitle class="mb-2 text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
+      <SectionTitle class="text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
+
+        <ul class="tab-panel">
+          <ListItem>
+            <BaseButton class="active">Monthly</BaseButton>
+            <BaseButton>Yearly</BaseButton>
+          </ListItem>
+        </ul>
 
       <div class="medium-2 large-3 gap-2">
         <PricingCard v-for="(price, i) in pricing" :key="i" :price="price" />
@@ -55,6 +62,33 @@ const pricing = ref([
 </template>
 
 <style>
+.tab-panel {
+  padding: .25rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem auto;
+  background:var(--secondary-color);
+  width: fit-content;
+}
+
+.tab-panel li .btn {
+  border: none;
+  padding: .85rem 3rem;
+  border-radius: 2.5rem;
+  color: var(--white-color);
+  margin: 0 ;
+}
+.tab-panel .btn:hover {
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+.tab-panel .btn.active {
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+
 .pricing {
   padding: 3.75rem 0;
   position: relative;
@@ -64,8 +98,8 @@ const pricing = ref([
   content: '';
   position: absolute;
   left: 0;
-  top: -150px;
-  bottom: -150px;
+  top: -100px;
+  bottom: -200px;
   right: 0;
   background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
   z-index: -1;
