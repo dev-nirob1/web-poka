@@ -6,9 +6,9 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 <template>
   <section class="working-process">
     <div class="container">
-      <SectionTitle class="text-center mb-2" subTitle="Steps For Done" title="Our Working Process" />
+      <SectionTitle class="text-center mb-3" subTitle="Steps For Done" title="Our Working Process" />
 
-      <div class="medium-2 large-4 gap-2">
+      <div class="medium-2 large-4 gap-1">
 
         <div class="process">
           <div class="icon relative">
@@ -46,16 +46,21 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
 <style scoped>
 .working-process {
-  padding: 3.75rem 0;
+  padding: 4.75rem 0;
 }
 
 .process {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
-.process:nth-child(2),.process:nth-child(4){
+.process img {
+  width: 255px;
+}
+
+.process:nth-child(2),
+.process:nth-child(4) {
   flex-direction: column-reverse;
 }
 
@@ -68,27 +73,28 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   border-radius: 50%;
   background: lightgray;
   font-size: 1.25rem;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .number::before {
   content: '';
-  height: 45px;
+  height: 65px;
   width: 1px;
   position: absolute;
   left: 50%;
-  top: -45px;
+  top: -65px;
   background: var(--primary-color);
 }
+
 .process:nth-child(2) .number,
-.process:nth-child(4) .number{
-    margin-bottom: 50px;
+.process:nth-child(4) .number {
+  margin-bottom: 70px;
 }
+
 .process:nth-child(2) .number::before,
-.process:nth-child(4) .number::before
- {
+.process:nth-child(4) .number::before {
   top: 40px;
- }
+}
 
 .icon::before {
   content: '';
