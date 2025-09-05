@@ -1,6 +1,7 @@
 <template>
   <section class="video relative">
     <div class="video-play flex-center">
+      <div class="video-box"></div>
       <BaseButton class="flex-center"><i class="fa-solid fa-play fa-2x"></i></BaseButton>
     </div>
   </section>
@@ -37,6 +38,20 @@
   width: 5rem;
   border-radius: 50%;
   background: var(--white-color);
+  animation: ripple 2s infinite;
 }
-
+@keyframes ripple {
+ 0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    opacity: 1;
+  }
+  70% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    opacity: 1;
+  }
+}
 </style>
