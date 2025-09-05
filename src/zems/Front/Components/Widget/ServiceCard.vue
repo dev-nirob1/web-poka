@@ -19,13 +19,16 @@ defineProps({
 
 <style>
 .service-card {
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-radius: 1rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+.service-card .sub-title {
+  font-size: 1.5rem;
 }
 
 .service-card i {
@@ -45,7 +48,7 @@ defineProps({
   position: absolute;
   top: 50%;
   left: 0;
-  background: var(--accent-color);
+  background: var(--secondary-color);
   z-index: -1;
   opacity: 0;
   transition: all .5s ease-in-out;
@@ -58,10 +61,10 @@ defineProps({
 
 .service-card::after {
   content: '';
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
-  background: rgb(from var(--highlight-color)r g b / 80%);
+  background: var(--highlight-color);
   position: absolute;
   bottom: -110%;
   right: -110%;
