@@ -18,7 +18,7 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
             designs. The passage is attributed. So some forward-looking CIOs are putting.
           </BaseParagraph>
 
-          <AccordionWidget v-for="a in 3" :key="a"/>
+          <AccordionWidget v-for="a in 3" :key="a" />
           <BaseButton>About More</BaseButton>
         </div>
       </div>
@@ -30,6 +30,7 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
 .about {
   padding: 3.75rem 0;
 }
+
 .about .image {
   width: 100%;
   height: auto;
@@ -40,6 +41,7 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
   height: 100%;
   object-fit: cover;
 }
+
 .about .btn {
   border: none;
   font-weight: bold;
@@ -47,5 +49,23 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
   background: var(--secondary-color);
   padding: 1rem 2rem;
   border-radius: 2rem;
+  z-index: 1;
+}
+
+.about .btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 0;
+  background: var(--highlight-color);
+  z-index: -1;
+  transition: width .5s ease-in-out;
+}
+
+.about .btn:hover::after {
+  width: 100%;
 }
 </style>

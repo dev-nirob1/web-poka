@@ -10,6 +10,7 @@
 .video {
   padding: 3.75rem 0;
 }
+
 .video::before {
   content: '';
   position: absolute;
@@ -24,11 +25,11 @@
 }
 
 .video-play {
-  max-width: 950px;
+  max-width: 90%;
   width: 100%;
   height: 80vh;
   margin: 0 auto;
-  background: url('https://www.webpoka.com/front/images/background/pattern-6.png') center  no-repeat, linear-gradient(to right, #EA33A6, #6538D6);
+  background: url('https://www.webpoka.com/front/images/background/pattern-6.png') center no-repeat, linear-gradient(to right, #EA33A6, #6538D6);
   border-radius: 1rem;
 }
 
@@ -40,18 +41,24 @@
   background: var(--white-color);
   animation: ripple 2s infinite;
 }
+
 @keyframes ripple {
- 0% {
+  0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
-    opacity: 1;
   }
+
   70% {
-    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
-    opacity: 1;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-play {
+    max-width: 950px;
   }
 }
 </style>
