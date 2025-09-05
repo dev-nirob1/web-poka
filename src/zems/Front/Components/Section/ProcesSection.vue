@@ -22,21 +22,21 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
             <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
           </div>
           <SubTitle>Date Exchange</SubTitle>
-          <p class="number">01</p>
+          <p class="number">02</p>
         </div>
         <div class="process">
           <div class="icon relative">
             <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
           </div>
           <SubTitle>Date Exchange</SubTitle>
-          <p class="number">01</p>
+          <p class="number">03</p>
         </div>
         <div class="process">
           <div class="icon relative">
             <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
           </div>
           <SubTitle>Date Exchange</SubTitle>
-          <p class="number">01</p>
+          <p class="number">04</p>
         </div>
 
       </div>
@@ -80,6 +80,15 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   top: -45px;
   background: var(--primary-color);
 }
+.process:nth-child(2) .number,
+.process:nth-child(4) .number{
+    margin-bottom: 50px;
+}
+.process:nth-child(2) .number::before,
+.process:nth-child(4) .number::before
+ {
+  top: 40px;
+ }
 
 .icon::before {
   content: '';
