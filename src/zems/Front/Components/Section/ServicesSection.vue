@@ -53,7 +53,7 @@ const services = ref([
   position: absolute;
   background: url('https://webpoka.com/front/images/background/pattern-4.png') left top no-repeat;
   top: 0;
-  bottom: -150px;
+  bottom: -250px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -76,13 +76,22 @@ const services = ref([
   }
 
   .cards:nth-child(5) {
-    margin-bottom: -7rem;
+    margin-bottom: -8rem;
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .cards:first-child {
     max-width: 360px;
+  }
+    .cards:nth-child(5) {
+    margin-bottom: -5rem;
+  }
+}
+
+@media(min-width: 1400px) {
+  .cards:first-child {
+    max-width: 420px;
   }
 }
 </style>

@@ -8,9 +8,9 @@ defineProps({
 <template>
   <div class="service-card">
     <div class="icon">
-      <i class="fa-3x" :class="service.icon"></i>
+      <i class="fa-4x" :class="service.icon"></i>
     </div>
-    <div class="mt-1">
+    <div class="mt-2">
       <SubTitle>{{ service.title }}</SubTitle>
       <BaseParagraph>{{ service.description }}</BaseParagraph>
     </div>
@@ -27,6 +27,7 @@ defineProps({
   overflow: hidden;
   z-index: 1;
 }
+
 .service-card .sub-title {
   font-size: 1.5rem;
 }
@@ -41,6 +42,7 @@ defineProps({
   color: var(--white-color);
   z-index: 2;
 }
+
 .service-card::before {
   content: '';
   width: 100%;
@@ -69,7 +71,6 @@ defineProps({
   bottom: -110%;
   right: -110%;
   z-index: -1;
-  opacity: .5;
   transition: all .7s ease-in-out;
 }
 
