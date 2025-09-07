@@ -13,9 +13,9 @@ defineProps({
       <BaseImage :image="price.icon" alt="icon" />
     </div>
 
-    <div class="price flex-center">
+    <div class="flex-center">
       <sup><i class="fa-solid fa-dollar fa-2x"></i></sup>
-      <HeroTitle>{{price.price}}</HeroTitle>
+      <HeroTitle class="price">{{price.price}}</HeroTitle>
       <SubTitle>/mon</SubTitle>
     </div>
 
@@ -43,6 +43,9 @@ defineProps({
   height: 120px;
   width: auto;
 }
+/* .pricing-card .price {
+  color: var(--secondary-color);
+} */
 
 .pricing-card .icon img {
   height: 100%;

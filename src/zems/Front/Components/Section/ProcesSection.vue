@@ -1,6 +1,36 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-
+import { ref } from 'vue';
+const process = ref([
+  {
+    id: 1,
+    bg: "https://www.webpoka.com/front/images/resource/process-bg-1.png",
+    icon: "https://webpoka.com/front/images/resource/process-1.png",
+    title: "Data Exchange",
+    number: "01"
+  },
+  {
+    id: 2,
+    bg: "https://www.webpoka.com/front/images/resource/process-bg-2.png",
+    icon: "https://webpoka.com/front/images/resource/process-2.png",
+    title: "Content Managment",
+    number: "02"
+  },
+  {
+    id: 3,
+    bg: "https://www.webpoka.com/front/images/resource/process-bg-3.png",
+    icon: "https://webpoka.com/front/images/resource/process-3.png",
+    title: "Workflow",
+    number: "03"
+  },
+  {
+    id: 4,
+    bg: "https://www.webpoka.com/front/images/resource/process-bg-4.png",
+    icon: "https://webpoka.com/front/images/resource/process-4.png",
+    title: "Business Digital",
+    number: "04"
+  }
+])
 </script>
 
 <template>
@@ -10,35 +40,14 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
       <div class="medium-2 large-4 gap-1">
 
-        <div class="process">
+        <div v-for="item in process" :key="item.id" class="process">
           <div class="icon relative">
-            <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
+            <BaseImage class="bg" :image="item.bg" alt="image" />
+            <BaseImage :image="item.icon" alt="image" />
           </div>
-          <SubTitle>Date Exchange</SubTitle>
-          <p class="number">01</p>
+          <SubTitle>{{ item.title }}</SubTitle>
+          <p class="number">{{ item.number }}</p>
         </div>
-        <div class="process">
-          <div class="icon relative">
-            <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
-          </div>
-          <SubTitle>Date Exchange</SubTitle>
-          <p class="number">02</p>
-        </div>
-        <div class="process">
-          <div class="icon relative">
-            <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
-          </div>
-          <SubTitle>Date Exchange</SubTitle>
-          <p class="number">03</p>
-        </div>
-        <div class="process">
-          <div class="icon relative">
-            <BaseImage image="https://webpoka.com/front/images/resource/process-1.png" alt="image" />
-          </div>
-          <SubTitle>Date Exchange</SubTitle>
-          <p class="number">04</p>
-        </div>
-
       </div>
     </div>
   </section>
@@ -53,11 +62,16 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.process img {
-  width: 255px;
+.process .bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://www.webpoka.com/front/images/resource/process-bg-1.png')center no-reapet;
+  z-index: -1;
+  animation: rotateAnim 15s linear infinite;
+  background-origin: top left;
 }
 
 .process:nth-child(2),
@@ -95,19 +109,6 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 .process:nth-child(2) .number::before,
 .process:nth-child(4) .number::before {
   top: 40px;
-}
-
-.icon::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: url('https://www.webpoka.com/front/images/resource/process-bg-1.png') center center no-repeat;
-  z-index: -1;
-  animation: rotateAnim 15s linear infinite;
-  background-origin: top left;
 }
 
 @keyframes rotateAnim {
