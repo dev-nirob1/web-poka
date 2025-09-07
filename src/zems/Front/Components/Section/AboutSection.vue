@@ -1,7 +1,34 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import AccordionWidget from '../Widget/AccordionWidget.vue';
+import { ref } from 'vue';
 
+const about = ref([
+  {
+    id: 1,
+    question: "What software development services do you offer?",
+    answer: "We provide end-to-end software development including custom application development, web and mobile apps, cloud solutions, enterprise software, and AI/ML integration. Our full-cycle development covers everything from ideation to deployment and maintenance."
+  },
+  {
+    id: 2,
+    question: "What technologies and frameworks do you specialize in?",
+    answer: "Our team has expertise in modern technologies including JavaScript/TypeScript (Vue, React, Angular), Python (Django, Flask), .NET, Java, and cloud platforms (AWS, Azure, GCP). We also work with databases like PostgreSQL, MongoDB, and Firebase."
+  },
+  {
+    id: 3,
+    question: "How do you ensure software quality and security?",
+    answer: "We implement rigorous QA processes including unit testing, integration testing, and security audits. All our code undergoes peer review, and we follow OWASP security principles. We also provide penetration testing for critical applications."
+  }])
+
+  const currentOpenItem = ref();
+
+const toggleAccordion = (id) => {
+  if (currentOpenItem.value == id) {
+    currentOpenItem.value = null;
+  } else {
+    currentOpenItem.value = id;
+  }
+};
 </script>
 
 <template>
@@ -18,7 +45,8 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
             designs. The passage is attributed. So some forward-looking CIOs are putting.
           </BaseParagraph>
 
-          <AccordionWidget v-for="a in 3" :key="a" />
+          <AccordionWidget v-for="item in about" :key="item.id" :currentOpenItem="currentOpenItem" :accordionData="item"
+            :toggleAccordion="toggleAccordion"/>
           <BaseButton class="btn-secondary">About More</BaseButton>
         </div>
       </div>
@@ -38,8 +66,7 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
 
 .about .image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
-
 </style>

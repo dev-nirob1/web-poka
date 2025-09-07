@@ -1,14 +1,25 @@
 <script setup>
-
+defineProps({
+  accordionData: {
+    type: Object
+  },
+  currentOpenItem: {
+    type: null
+  },
+  toggleAccordion: {
+    type: Function
+  }
+})
 </script>
 
 <template>
   <div class="accordion">
-    <div class="accordion-title">
-      <i class="fa-solid fa-plus"></i> Solutions is the latest software Sigma?
+    <div @click="toggleAccordion(accordionData.id)" class="accordion-title">
+      <i :class="currentOpenItem == accordionData.id ? 'fa-solid fa-minus' : 'fa-solid fa-plus'"></i>
+      {{ accordionData.question }}
     </div>
-    <div class="accordion-body">
-      The argument in favor of using to filler text goes something is that anybody can do it.
+    <div class="accordion-body" :class="{ 'active': currentOpenItem == accordionData.id }">
+      {{ accordionData.answer }}
     </div>
   </div>
 </template>
@@ -17,6 +28,7 @@
 .accordion {
   overflow: hidden;
 }
+
 .accordion-title {
   padding: 1rem;
   font-weight: 500;
