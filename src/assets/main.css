@@ -13,11 +13,11 @@ html {
   --heading-font: "Quicksand", serif;
 
   --primary-color: #007bff;
-  --secondary-color: #2200BD;
+  --secondary-color: #2200bd;
   --accent-color: #6f42c1;
   --highlight-color: #e83e8c;
   /* #FF00F6 */
-  --alternative-color: #ED1C24;
+  --alternative-color: #ed1c24;
   --white-color: #ffffff;
   --dark-color: #222222;
   --light-color: #6c757d;
@@ -30,7 +30,7 @@ html {
   --heading-4: 1.125rem;
 
   /* box shadows  */
-  --box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.10);;
+  --box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
 body {
   margin: 0;
@@ -175,16 +175,16 @@ ul {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   height: 100%;
   width: 0;
-  background: var(--highlight-color);
+  background: #ff00f6;
   z-index: -1;
-  transition: width .5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
 .btn-secondary:hover::after {

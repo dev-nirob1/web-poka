@@ -1,21 +1,27 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-
+defineProps({
+  blog: {
+    type: Object
+  }
+})
 </script>
 
 <template>
   <div class="blog-card">
-    <div class="image"><img src="https://www.webpoka.com/front/images/resource/news-1.jpg" alt="blog image"></div>
+    <div class="image">
+      <BaseImage :image="blog.image" alt="blog image" />
+    </div>
     <div class="blog-content">
       <RouterLink to="">
-        <h5>Top aide possible contender forced to resign over creepy.</h5>
+        <SubTitle>{{blog.title}}</SubTitle>
       </RouterLink>
-      <p>20 March, 2018</p>
+      <BaseParagraph>{{blog.date}}</BaseParagraph>
       <hr>
       <div class="card-footer">
         <div class="flex gap-1 align-center">
-          <img src="https://www.webpoka.com/front/images/resource/author-3.jpg" alt="avatar">
-          <h6>by Jhon Kenedy</h6>
+          <BaseImage :image="blog.author.avatar" alt="avatar"/>
+          <h6>{{blog.author.name}}</h6>
         </div>
         <div class="flex gap-1">
           <i class="fa-regular fa-comment"></i>
@@ -33,6 +39,10 @@ import { RouterLink } from 'vue-router';
 
 .blog-card a {
   text-decoration: none;
+  transition: .3s ease-in-out;
+}
+.blog-card a:hover {
+  color: var(--primary-color);
 }
 
 .blog-card p {
