@@ -39,7 +39,6 @@ const process = ref([
       <SectionTitle class="text-center mb-3" subTitle="Steps For Done" title="Our Working Process" />
 
       <div class="medium-2 large-4 gap-1">
-
         <div v-for="item in process" :key="item.id" class="process">
           <div class="icon relative">
             <BaseImage class="bg" :image="item.bg" alt="image" />
@@ -118,6 +117,22 @@ const process = ref([
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px){
+  .icon img{
+    max-width: 240px;
+  }
+}
+@media (min-width: 992px){
+  .icon img{
+    max-width: 200px;
+  }
+}
+@media (min-width: 1200px){
+    .icon img{
+    max-width: 260px;
   }
 }
 </style>
