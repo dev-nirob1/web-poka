@@ -18,7 +18,7 @@
 <style scoped>
 .hero {
   min-height: 100vh;
-  padding: 210px 0 150px 0;;
+  padding: 210px 0 150px 0;
   color: var(--white-color);
 }
 
@@ -48,10 +48,10 @@
   .hero::before {
     bottom: -120px;
   }
+
   .hero p {
     font-size: 1.1rem;
     font-weight: 600;
   }
 }
-
 </style>

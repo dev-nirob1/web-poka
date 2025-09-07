@@ -66,7 +66,7 @@ defineProps({
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: var(--highlight-color);
+  background: #F233A4;
   position: absolute;
   bottom: -110%;
   right: -110%;
@@ -75,7 +75,7 @@ defineProps({
 }
 
 .service-card:hover::after {
-  bottom: -45%;
+  bottom: -40%;
   right: -35%;
 }
 

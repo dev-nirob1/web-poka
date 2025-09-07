@@ -63,7 +63,7 @@ const pricing = ref([
 
 <style>
 .tab-panel {
-  padding: .25rem;
+  padding: 3px;
   border-radius: 3rem;
   display: flex;
   flex-wrap: wrap;
