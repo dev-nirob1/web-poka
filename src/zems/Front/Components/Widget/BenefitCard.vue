@@ -26,8 +26,6 @@ defineProps({
   position: relative;
   padding: 2.5rem 2.5rem 0;
   border-radius: 1rem;
-  max-width: 430px;
-  width: 100%;
 }
 
 .benefit-card:nth-child(2) .icon {
@@ -64,9 +62,24 @@ defineProps({
   text-align: center;
   color: var(--white-color);
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
   .benefit-card:nth-child(2) {
-  margin-left: 5rem;
+    margin-left: 5rem;
+  }
 }
+
+@media(min-width: 992px) {
+  .benefit-card {
+    max-width: 380px;
+    width: 100%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .benefit-card {
+    max-width: 470px;
+    width: 100%;
+  }
 }
 </style>

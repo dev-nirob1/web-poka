@@ -48,6 +48,7 @@ const process = ref([
           <p class="number">{{ item.number }}</p>
         </div>
       </div>
+
     </div>
   </section>
 </template>
@@ -92,11 +93,11 @@ const process = ref([
 
 .number::before {
   content: '';
-  height: 65px;
-  width: 1px;
   position: absolute;
   left: 50%;
   top: -65px;
+  height: 65px;
+  width: 1px;
   background: var(--primary-color);
 }
 
