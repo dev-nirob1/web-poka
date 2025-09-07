@@ -38,7 +38,7 @@ const benefits = ref([
             <ListItem>Why is the global market so important?</ListItem>
             <ListItem>Which is the largest stock market in the world?</ListItem>
           </ul>
-          <BaseButton>Free Consultation</BaseButton>
+          <BaseButton class="btn-secondary">Free Consultation</BaseButton>
         </div>
 
         <div class="cards">
@@ -92,11 +92,4 @@ const benefits = ref([
   margin: 1.5rem 0;
 }
 
-.why-choose .btn {
-  border: none;
-  color: var(--white-color);
-  background: #2200BD;
-  padding: 1.25rem 2.5rem;
-  border-radius: 2rem;
-}
 </style>

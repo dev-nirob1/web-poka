@@ -19,7 +19,7 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
           </BaseParagraph>
 
           <AccordionWidget v-for="a in 3" :key="a" />
-          <BaseButton>About More</BaseButton>
+          <BaseButton class="btn-secondary">About More</BaseButton>
         </div>
       </div>
     </div>
@@ -42,30 +42,4 @@ import AccordionWidget from '../Widget/AccordionWidget.vue';
   object-fit: cover;
 }
 
-.about .btn {
-  border: none;
-  font-weight: bold;
-  color: var(--white-color);
-  background: var(--secondary-color);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  z-index: 1;
-}
-
-.about .btn::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 0;
-  background: var(--highlight-color);
-  z-index: -1;
-  transition: width .5s ease-in-out;
-}
-
-.about .btn:hover::after {
-  width: 100%;
-}
 </style>
