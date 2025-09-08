@@ -62,6 +62,22 @@ const pricing = ref([
 </template>
 
 <style>
+.pricing {
+  padding: 3.75rem 0;
+  position: relative;
+}
+
+.pricing::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -100px;
+  bottom: -200px;
+  right: 0;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
+  z-index: -1;
+}
+
 .tab-panel {
   padding: 3px;
   border-radius: 3rem;
@@ -87,21 +103,5 @@ const pricing = ref([
 .tab-panel .btn.active {
   background: var(--white-color);
   color: var(--dark-color);
-}
-
-.pricing {
-  padding: 3.75rem 0;
-  position: relative;
-}
-
-.pricing::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -100px;
-  bottom: -200px;
-  right: 0;
-  background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
-  z-index: -1;
 }
 </style>

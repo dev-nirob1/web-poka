@@ -8,19 +8,19 @@ defineProps({
 </script>
 <template>
   <div class="pricing-card">
-    <SubTitle>{{price.title}}</SubTitle>
+    <SubTitle>{{ price.title }}</SubTitle>
     <div class="icon">
       <BaseImage :image="price.icon" alt="icon" />
     </div>
 
     <div class="flex-center">
       <sup><i class="fa-solid fa-dollar fa-2x"></i></sup>
-      <HeroTitle class="price">{{price.price}}</HeroTitle>
+      <HeroTitle class="price">{{ price.price }}</HeroTitle>
       <SubTitle>/mon</SubTitle>
     </div>
 
     <ul>
-      <ListItem v-for="(data,i) in price.features" :key="i">{{ data }}</ListItem>
+      <ListItem v-for="(data, i) in price.features" :key="i">{{ data }}</ListItem>
     </ul>
 
     <BaseButton>Buy Now</BaseButton>
@@ -43,15 +43,17 @@ defineProps({
   height: 120px;
   width: auto;
 }
-/* .pricing-card .price {
-  color: var(--secondary-color);
-} */
 
 .pricing-card .icon img {
   height: 100%;
   width: auto;
   display: block;
   margin: 0 auto;
+}
+
+.price {
+  transition: .4s ease-in-out;
+  color: var(--secondary-color);
 }
 
 .pricing-card ul {
@@ -77,7 +79,7 @@ defineProps({
   border-radius: 1.5rem;
   position: relative;
   z-index: 1;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .pricing-card:hover .btn {
@@ -105,7 +107,8 @@ defineProps({
   opacity: 1;
 }
 
-.pricing-card:hover {
+.pricing-card:hover,
+.pricing-card:hover .price {
   color: var(--white-color);
 }
 </style>

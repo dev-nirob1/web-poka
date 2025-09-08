@@ -65,8 +65,12 @@ const process = ref([
   gap: 1rem;
 }
 
-.process .bg {
+.process .bg,
+.process .number::before {
   position: absolute;
+}
+
+.process .bg {
   inset: 0;
   background: url('https://www.webpoka.com/front/images/resource/process-bg-1.png')center no-reapet;
   z-index: -1;
@@ -91,9 +95,8 @@ const process = ref([
   margin-top: 70px;
 }
 
-.number::before {
+.process .number::before {
   content: '';
-  position: absolute;
   left: 50%;
   top: -65px;
   height: 65px;
@@ -121,18 +124,20 @@ const process = ref([
   }
 }
 
-@media (min-width: 768px){
-  .icon img{
+@media (min-width: 768px) {
+  .icon img {
     max-width: 240px;
   }
 }
-@media (min-width: 992px){
-  .icon img{
+
+@media (min-width: 992px) {
+  .icon img {
     max-width: 200px;
   }
 }
-@media (min-width: 1200px){
-    .icon img{
+
+@media (min-width: 1200px) {
+  .icon img {
     max-width: 260px;
   }
 }
