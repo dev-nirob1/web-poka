@@ -56,15 +56,24 @@ const benefits = ref([
   position: relative;
 }
 
+.why-choose::after,
+.why-choose ul li::before {
+  position: absolute;
+  left: 0;
+}
+
 .why-choose::after {
   content: '';
-  position: absolute;
   background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
   top: -50px;
   bottom: -150px;
   right: 0;
-  left: 0;
   z-index: -1;
+}
+
+.why-choose .highlight {
+  color: #FF00F6;
+  margin: 1.5rem 0;
 }
 
 .why-choose ul {
@@ -82,14 +91,6 @@ const benefits = ref([
 
 .why-choose ul li::before {
   content: "✓";
-  position: absolute;
-  left: 0;
   color: var(--secondary-color);
 }
-
-.why-choose .highlight {
-  color: #FF00F6;
-  margin: 1.5rem 0;
-}
-
 </style>
