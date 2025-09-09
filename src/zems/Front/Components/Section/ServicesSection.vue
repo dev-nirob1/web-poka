@@ -34,7 +34,7 @@ const services = ref([
 
 <template>
   <section class="services relative">
-    <div class="container">
+    <div class="container relative">
       <div class="large-3 gap-2 relative">
         <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
 
@@ -44,6 +44,10 @@ const services = ref([
           </div>
         </div>
       </div>
+      <!-- animated icons  -->
+      <BaseImage class="icon-1" image="https://webpoka.com/front/images/icons/icon-1.png" alt="icon" />
+      <BaseImage class="icon-2" image="https://webpoka.com/front/images/icons/icon-2.png" alt="icon" />
+      <BaseImage class="icon-3" image="https://webpoka.com/front/images/icons/icon-4.png" alt="icon" />
     </div>
   </section>
 </template>
@@ -56,7 +60,61 @@ const services = ref([
   bottom: -250px;
   left: 0;
   right: 0;
+  z-index: -2;
+}
+
+.icon-1 {
+  position: absolute;
+  left: 0;
+  top: 12rem;
   z-index: -1;
+  animation: spin 5s linear infinite;
+}
+.icon-2 {
+  position: absolute;
+  left: -2rem;
+  bottom: 0;
+  animation: float-up-down 5s linear infinite;
+}
+
+.icon-3 {
+  position: absolute;
+  right: -4rem;
+  top: 5rem;
+  animation: float-left-right 5s linear infinite;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: 992px) {
@@ -84,7 +142,8 @@ const services = ref([
   .cards:first-child {
     max-width: 360px;
   }
-    .cards:nth-child(5) {
+
+  .cards:nth-child(5) {
     margin-bottom: -5rem;
   }
 }
