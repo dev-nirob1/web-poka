@@ -23,7 +23,7 @@ const benefits = ref([
 
 <template>
   <section class="why-choose">
-    <div class="container">
+    <div class="container relative">
       <div class="large-2 gap-3">
         <div class="content">
           <SectionTitle class="mb-1" title="Get Benifits and Advantages Market Goal" subTitle="Why Choose Us" />
@@ -46,6 +46,9 @@ const benefits = ref([
         </div>
 
       </div>
+      <!-- animated icons  -->
+      <BaseImage class="icon-1" image="https://webpoka.com/front/images/icons/icon-1.png" alt="icon" />
+      <BaseImage class="icon-2" image="https://webpoka.com/front/images/icons/icon-2.png" alt="icon" />
     </div>
   </section>
 </template>
@@ -68,7 +71,7 @@ const benefits = ref([
   top: -50px;
   bottom: -150px;
   right: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 .why-choose .highlight {
@@ -92,5 +95,34 @@ const benefits = ref([
 .why-choose ul li::before {
   content: "✓";
   color: var(--secondary-color);
+}
+
+/* animated icons  */
+.icon-1,
+.icon-2 {
+  position: absolute;
+  animation: spin 10s linear infinite;
+  z-index: -1;
+}
+
+.icon-1 {
+  right: 3rem;
+  bottom: 5rem;
+
+}
+
+.icon-2 {
+  right: 0;
+  top: 5rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>

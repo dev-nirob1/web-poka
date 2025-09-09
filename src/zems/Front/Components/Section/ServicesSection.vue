@@ -51,7 +51,7 @@ const services = ref([
     </div>
   </section>
 </template>
-<style>
+<style scoped>
 .services::after {
   content: '';
   position: absolute;
