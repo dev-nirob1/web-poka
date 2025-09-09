@@ -63,22 +63,28 @@ const services = ref([
   z-index: -2;
 }
 
-.icon-1 {
+/* animated icons  */
+.icon-1,
+.icon-2,
+.icon-3 {
   position: absolute;
+  z-index: -1;
+}
+
+.icon-1 {
   left: 0;
   top: 12rem;
-  z-index: -1;
   animation: spin 5s linear infinite;
 }
+
 .icon-2 {
-  position: absolute;
   left: -2rem;
   bottom: 0;
   animation: float-up-down 5s linear infinite;
 }
 
 .icon-3 {
-  position: absolute;
+  display: none;
   right: -4rem;
   top: 5rem;
   animation: float-left-right 5s linear infinite;
@@ -89,6 +95,7 @@ const services = ref([
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -98,20 +105,25 @@ const services = ref([
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-30px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 @keyframes float-left-right {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-30px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -136,6 +148,12 @@ const services = ref([
   .cards:nth-child(5) {
     margin-bottom: -8rem;
   }
+
+  /* animated icons  */
+  .icon-2, .icon-3 {
+    display: block;
+  }
+
 }
 
 @media (min-width: 1200px) {

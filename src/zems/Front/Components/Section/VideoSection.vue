@@ -58,7 +58,12 @@
 
 @media (min-width: 768px) {
   .video-play {
-    max-width: 70%;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .video-play {
+    max-width: 950px;
   }
 }
 </style>
