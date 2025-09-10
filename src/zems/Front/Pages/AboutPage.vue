@@ -5,11 +5,9 @@ import OurTeam from '../Components/Section/OurTeam.vue';
 </script>
 
 <template>
-<div>
   <BreadCrumb/>
   <AboutSection/>
   <OurTeam/>
-</div>
 </template>
 
 <style scoped>

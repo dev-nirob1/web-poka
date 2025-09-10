@@ -3,6 +3,7 @@ import AboutPage from "./Pages/AboutPage.vue";
 import BlogPage from "./Pages/BlogPage.vue";
 import ContactPage from "./Pages/ContactPage.vue";
 import HomePage from "./Pages/HomePage.vue";
+import ProjectsPage from "./Pages/ProjectsPage.vue";
 
 export default [
   {
@@ -28,6 +29,11 @@ export default [
         path: "/contact-us",
         name: "contact-us",
         component: ContactPage,
+      },
+      {
+        path: "/projects",
+        name: "projects",
+        component: ProjectsPage,
       },
     ],
   },
