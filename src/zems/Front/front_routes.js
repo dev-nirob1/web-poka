@@ -1,6 +1,7 @@
 import FrontLayout from "./FrontLayout/FrontLayout.vue";
 import AboutPage from "./Pages/AboutPage.vue";
 import BlogPage from "./Pages/BlogPage.vue";
+import ContactPage from "./Pages/ContactPage.vue";
 import HomePage from "./Pages/HomePage.vue";
 
 export default [
@@ -22,6 +23,11 @@ export default [
         path: "/blogs",
         name: "blogs",
         component: BlogPage,
+      },
+      {
+        path: "/contact-us",
+        name: "contact-us",
+        component: ContactPage,
       },
     ],
   },
