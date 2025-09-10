@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <div class="container">
-      <div class="medium-2">
+      <div class="medium-2 gap-2">
 
         <div class="info">
           <BaseTitle>Get in Touch</BaseTitle>
@@ -39,10 +39,27 @@
           </ul>
         </div>
 
-
-        <div class="form">
-          div
-        </div>
+        <form>
+          <div class="medium-2 align-center gap-1">
+            <div>
+              <label for="name"></label>
+              <InputField id="name" type="text" placeholder="Enter Your Name" />
+            </div>
+            <div>
+              <label for="email"></label>
+              <InputField id="email" type="email" placeholder="Enter Your Email" />
+            </div>
+          </div>
+          <div>
+            <label for="number"></label>
+            <InputField id="number" type="number" placeholder="Enter Your number" />
+          </div>
+          <div>
+            <label for="message"></label>
+            <BaseTextArea rows="6" id="message" placeholder="Enter Message..."></BaseTextArea>
+          </div>
+          <BaseButton class="btn-secondary">GET A FREE SERVICE</BaseButton>
+        </form>
       </div>
     </div>
   </div>
@@ -50,9 +67,11 @@
 
 <style scoped>
 .contact {
-  padding: 3.75rem 0;
+  padding: 10.75rem 0;
 }
-
+.info, form {
+  padding: 1rem;
+}
 .info ul {
   list-style: none;
   padding: 0;
@@ -63,7 +82,7 @@
   display: flex;
   align-items: start;
   gap: 1rem;
-  padding: .5rem;
+  padding: 1rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   background-color: var(--white-color);
@@ -71,7 +90,7 @@
 
 .info ul li i {
   border-radius: .5rem;
-  padding: 1rem;
+  padding: .5rem;
   background-color: var(--primary-color);
   color: var(--white-color);
   display: flex;
@@ -81,6 +100,28 @@
 
 .info ul li p {
   margin: 0;
-  padding-top: .5rem;
+  padding-top: .25rem;
+}
+
+
+input,
+select,
+textarea {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-size: .9rem;
 }
 </style>
