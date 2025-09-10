@@ -9,31 +9,34 @@
           </BaseParagraph>
           <ul class="all-2">
             <ListItem>
-              <i class="fa-solid fa-location fa-2x"></i>
-              <div>
-                <SubTitle>Location</SubTitle>
-                <BaseParagraph>Zems Ltd, Dublin D02 XY56, Ireland</BaseParagraph>
-              </div>
-            </ListItem>
-            <ListItem>
               <i class="fa-solid fa-envelope fa-2x"></i>
               <div>
                 <SubTitle>Email</SubTitle>
-                <BaseParagraph>support@zems.com</BaseParagraph>
+                <BaseParagraph>support@webpoka.com</BaseParagraph>
               </div>
             </ListItem>
+
             <ListItem>
               <i class="fa-solid fa-phone fa-2x"></i>
               <div>
                 <SubTitle>Call Us</SubTitle>
-                <BaseParagraph>+353050436340</BaseParagraph>
+                <BaseParagraph>+880 1711 223344</BaseParagraph>
               </div>
             </ListItem>
+
             <ListItem>
-              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-clock fa-2x"></i>
               <div>
                 <SubTitle>Availability</SubTitle>
-                <BaseParagraph>Mon-Fri: 9AM-6PM GMT</BaseParagraph>
+                <BaseParagraph>Sat – Thu: 9:00 AM – 6:00 PM (BST)</BaseParagraph>
+              </div>
+            </ListItem>
+
+            <ListItem>
+              <i class="fa-solid fa-location-dot fa-2x"></i>
+              <div>
+                <SubTitle>Office</SubTitle>
+                <BaseParagraph>Dhaka, Bangladesh</BaseParagraph>
               </div>
             </ListItem>
           </ul>
@@ -69,9 +72,16 @@
 .contact {
   padding: 10.75rem 0;
 }
-.info, form {
+
+.info,
+form {
   padding: 1rem;
 }
+
+form {
+  background: rgb(from var(--highlight-color)r g b / 5%);
+}
+
 .info ul {
   list-style: none;
   padding: 0;
@@ -112,6 +122,7 @@ textarea {
   border: none;
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
+  border-radius: .5rem;
 }
 
 input:focus,
@@ -123,5 +134,8 @@ input::placeholder,
 textarea::placeholder,
 select::placeholder {
   font-size: .9rem;
+}
+form .btn-secondary {
+  border-radius: .5rem;
 }
 </style>
