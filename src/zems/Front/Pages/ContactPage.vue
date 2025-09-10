@@ -1,4 +1,10 @@
+<script setup>
+import BreadCrumb from '../Components/Section/BreadCrumb.vue';
+
+</script>
+
 <template>
+  <BreadCrumb/>
   <div class="contact">
     <div class="container">
       <div class="medium-2 gap-2">
@@ -70,7 +76,7 @@
 
 <style scoped>
 .contact {
-  padding: 10.75rem 0;
+  padding: 3.75rem 0;
 }
 
 .info,
