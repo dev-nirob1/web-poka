@@ -37,7 +37,7 @@ const blogs = ref([
 </script>
 
 <template>
-  <section class="blogs">
+  <div class="blogs">
     <div class="container">
 
       <SectionTitle class="mb-2 text-center" subTitle="Latest News" title="Media Information" />
@@ -46,7 +46,7 @@ const blogs = ref([
         <BlogCard v-for="blog in blogs" :blog="blog" :key="blog.id"/>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <style scoped>
 .blogs {

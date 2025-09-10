@@ -2,6 +2,7 @@
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import BlogCard from '../Components/Widget/BlogCard.vue';
 import { ref } from 'vue';
+import BreadCrumb from '../Components/Section/BreadCrumb.vue';
 const blogs = ref([
   {
     id: 1,
@@ -37,13 +38,16 @@ const blogs = ref([
 </script>
 
 <template>
-  <div class="blogs">
-    <div class="container">
-      <SectionTitle class="text-center mb-2" title="blogs" sub-title="all of our blogs"/>
-      <div class="medium-2 large-3 gap-2">
-        <BlogCard v-for="blog in blogs" :blog="blog" :key="blog.id"/>
+  <div class="all-blogs">
+    <BreadCrumb />
+    <section class="blogs">
+      <div class="container">
+        <SectionTitle class="text-center mb-2" title="Explore Our Latest Blogs" sub-title="Fresh Ideas" />
+        <div class="medium-2 large-3 gap-2">
+          <BlogCard v-for="blog in blogs" :blog="blog" :key="blog.id" />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 <style scoped>
