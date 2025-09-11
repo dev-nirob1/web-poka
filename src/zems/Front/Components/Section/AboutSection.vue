@@ -3,24 +3,30 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import AccordionWidget from '../Widget/AccordionWidget.vue';
 import { ref } from 'vue';
 
-const about = ref([
-  {
-    id: 1,
-    question: "What software development services do you offer?",
-    answer: "We provide end-to-end software development including custom application development, web and mobile apps, cloud solutions, enterprise software, and AI/ML integration. Our full-cycle development covers everything from ideation to deployment and maintenance."
-  },
+const faqs = ref([
   {
     id: 2,
-    question: "What technologies and frameworks do you specialize in?",
-    answer: "Our team has expertise in modern technologies including JavaScript/TypeScript (Vue, React, Angular), Python (Django, Flask), .NET, Java, and cloud platforms (AWS, Azure, GCP). We also work with databases like PostgreSQL, MongoDB, and Firebase."
+    question: "Do you build software for startups and enterprises?",
+    answer: "Yes! We cater to startups, SMEs, and large enterprises. Whether you need a simple MVP to test your idea or a complex enterprise system, we provide scalable solutions that meet your unique requirements."
   },
   {
     id: 3,
-    question: "How do you ensure software quality and security?",
-    answer: "We implement rigorous QA processes including unit testing, integration testing, and security audits. All our code undergoes peer review, and we follow OWASP security principles. We also provide penetration testing for critical applications."
-  }])
+    question: "Can I integrate your software with existing systems?",
+    answer: "Absolutely. Our team specializes in integrating new solutions with your current systems, whether it’s CRM, ERP, payment gateways, or cloud services, ensuring seamless data flow and consistent user experience."
+  },
+  {
+    id: 4,
+    question: "What makes your development process different?",
+    answer: "We follow an agile, transparent, and client-focused approach. From requirement analysis to deployment, we maintain open communication, iterative delivery, and continuous feedback, ensuring the final product exceeds expectations."
+  },
+  {
+    id: 5,
+    question: "Do you offer ongoing support and updates?",
+    answer: "Yes, we provide post-launch support, software updates, and maintenance plans. Our goal is to keep your applications secure, up-to-date, and optimized for performance as your business evolves."
+  }
+]);
 
-  const currentOpenItem = ref();
+const currentOpenItem = ref();
 
 const toggleAccordion = (id) => {
   if (currentOpenItem.value == id) {
@@ -39,14 +45,13 @@ const toggleAccordion = (id) => {
           <BaseImage image="https://webpoka.com/front/images/resource/about-2.png" alt="image" />
         </div>
         <div class="content">
-          <SectionTitle title="We Are Happy to Assist You all Time Moment" subTitle="We Are Tecno" />
+          <SectionTitle title="Always Here to Assist You" subTitle="About Us" />
           <BaseParagraph class="my-1">
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
-            designs. The passage is attributed. So some forward-looking CIOs are putting.
+            At Tecno, we specialize in building custom software solutions that drive business growth. Our team ensures quality, security, and timely delivery on every project.
           </BaseParagraph>
 
-          <AccordionWidget v-for="item in about" :key="item.id" :currentOpenItem="currentOpenItem" :accordionData="item"
-            :toggleAccordion="toggleAccordion"/>
+          <AccordionWidget v-for="item in faqs" :key="item.id" :currentOpenItem="currentOpenItem" :accordionData="item"
+            :toggleAccordion="toggleAccordion" />
           <BaseButton class="btn-secondary">About More</BaseButton>
         </div>
       </div>
