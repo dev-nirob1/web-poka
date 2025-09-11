@@ -4,7 +4,34 @@ import BaseParagraph from '../Elements/BaseParagraph.vue';
 import ListItem from '../Elements/ListItem.vue';
 import BaseImage from '../Elements/BaseImage.vue';
 import SubTitle from '../Elements/SubTitle.vue';
+import { ref } from 'vue';
 
+const images = ref([
+  {
+    id: 1,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-1.jpg'
+  },
+  {
+    id: 2,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-2.jpg'
+  },
+  {
+    id: 3,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-3.jpg'
+  },
+  {
+    id: 4,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-4.jpg'
+  },
+  {
+    id: 5,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-5.jpg'
+  },
+  {
+    id: 6,
+    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-6.jpg'
+  },
+])
 </script>
 
 <template>
@@ -12,22 +39,23 @@ import SubTitle from '../Elements/SubTitle.vue';
   <footer class="footer">
     <div class="container medium-2 large-4 gap-2 py-3">
       <!-- Footer logo and social media links -->
-      <div class="contact-info">
+      <div class="contact-info medium-span-2">
         <RouterLink to="" class="logo">
           <BaseImage image="https://www.webpoka.com/front/images/logo-2.png" alt="logo" />
         </RouterLink>
 
-        <BaseParagraph> A software company from Bangladesh providing modern and reliable digital solutions.
-        </BaseParagraph>
+        <BaseParagraph>We are a Bangladeshi software development company delivering innovative web, mobile, and
+          enterprise solutions to businesses worldwide.</BaseParagraph>
+
         <ul>
-          <ListItem><span>Location: </span>Dhaka, Bangladesh</ListItem>
-          <ListItem><span>Email: </span>info@webpoka.com</ListItem>
-          <ListItem><span>Phone: </span>+880-1234-567890</ListItem>
+          <ListItem><span>Location: </span>Home 60, Road 27, Mirpur 12, Dhaka</ListItem>
+          <ListItem><span>Email: </span>support@webpoka.com</ListItem>
+          <ListItem><span>Phone: </span>09611-648163</ListItem>
         </ul>
       </div>
 
       <!-- Quick navigation links -->
-      <div>
+      <!-- <div>
         <SubTitle>Links</SubTitle>
         <ul class="footer-links">
           <ListItem>
@@ -49,29 +77,26 @@ import SubTitle from '../Elements/SubTitle.vue';
             <RouterLink to="">Professional Services</RouterLink>
           </ListItem>
         </ul>
-      </div>
+      </div> -->
 
       <!-- Buying/Selling Information -->
       <div>
         <SubTitle>Support</SubTitle>
         <ul class="footer-links">
           <ListItem>
-            <RouterLink to="">Home</RouterLink>
+            <RouterLink to="/">Home</RouterLink>
           </ListItem>
           <ListItem>
-            <RouterLink to="">Services</RouterLink>
+            <RouterLink to="/about-us">Services</RouterLink>
           </ListItem>
           <ListItem>
-            <RouterLink to="">About Us</RouterLink>
+            <RouterLink to="/projects">Projects</RouterLink>
           </ListItem>
           <ListItem>
-            <RouterLink to="">Testimonials</RouterLink>
+            <RouterLink to="/blogs">Blogs</RouterLink>
           </ListItem>
           <ListItem>
-            <RouterLink to="">News</RouterLink>
-          </ListItem>
-          <ListItem>
-            <RouterLink to="">Contact</RouterLink>
+            <RouterLink to="/contact-us">Contact</RouterLink>
           </ListItem>
         </ul>
       </div>
@@ -80,8 +105,7 @@ import SubTitle from '../Elements/SubTitle.vue';
       <div class="gallery-img">
         <SubTitle>Gallery</SubTitle>
         <div class="all-2 large-3 gap-1">
-          <BaseImage v-for="i in 6" :key="i"
-            image="https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-1.jpg" alt="gallery image" />
+          <BaseImage v-for="img in images" :key="img.id" :image="img.image" alt="gallery image" />
         </div>
 
       </div>
@@ -122,7 +146,7 @@ import SubTitle from '../Elements/SubTitle.vue';
 }
 
 /* Logo Styles */
-.footer .logo img{
+.footer .logo img {
   height: 70px;
   width: auto;
 }
