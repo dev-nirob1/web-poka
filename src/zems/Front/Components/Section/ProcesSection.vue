@@ -6,37 +6,38 @@ const process = ref([
     id: 1,
     bg: "https://www.webpoka.com/front/images/resource/process-bg-1.png",
     icon: "https://webpoka.com/front/images/resource/process-1.png",
-    title: "Data Exchange",
+    title: "Data Integration",
     number: "01"
   },
   {
     id: 2,
     bg: "https://www.webpoka.com/front/images/resource/process-bg-2.png",
     icon: "https://webpoka.com/front/images/resource/process-2.png",
-    title: "Content Managment",
+    title: "Content Management",
     number: "02"
   },
   {
     id: 3,
     bg: "https://www.webpoka.com/front/images/resource/process-bg-3.png",
     icon: "https://webpoka.com/front/images/resource/process-3.png",
-    title: "Workflow",
+    title: "Workflow Automation",
     number: "03"
   },
   {
     id: 4,
     bg: "https://www.webpoka.com/front/images/resource/process-bg-4.png",
     icon: "https://webpoka.com/front/images/resource/process-4.png",
-    title: "Business Digital",
+    title: "Digital Transformation",
     number: "04"
   }
-])
+]);
+
 </script>
 
 <template>
   <section class="working-process">
     <div class="container">
-      <SectionTitle class="text-center mb-3" subTitle="Steps For Done" title="Our Working Process" />
+      <SectionTitle class="text-center mb-3" subTitle="Our Process" title="Our Process to Success" />
 
       <div class="medium-2 large-4 gap-1">
         <div v-for="item in process" :key="item.id" class="process">

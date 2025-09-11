@@ -8,11 +8,11 @@ const pricing = ref([
     icon: "https://webpoka.com/front/images/resource/price-icon-1.png",
     price: 99.9,
     features: [
-      "Increase traffic by 130%",
-      "Backlink analysis included",
-      "24/7 customer support",
-      "10 free optimization tasks",
-      "Organic traffic growth 215%"
+      "Basic web development",
+      "Responsive design included",
+      "Email support",
+      "Up to 5 pages or screens",
+      "Initial performance optimization"
     ]
   },
   {
@@ -20,11 +20,11 @@ const pricing = ref([
     icon: "https://webpoka.com/front/images/resource/price-icon-2.png",
     price: 199.9,
     features: [
-      "Increase traffic by 250%",
-      "Comprehensive SEO audit",
-      "Priority 24/7 support",
-      "20 free optimization tasks",
-      "Organic traffic growth 400%"
+      "Advanced web & mobile development",
+      "UI/UX design consultation",
+      "Priority support 24/7",
+      "Up to 15 pages or screens",
+      "Performance & security optimization"
     ]
   },
   {
@@ -32,27 +32,28 @@ const pricing = ref([
     icon: "https://webpoka.com/front/images/resource/price-icon-3.png",
     price: 399.9,
     features: [
-      "Increase traffic by 500%",
-      "Advanced backlink & content strategy",
+      "Custom software solutions",
       "Dedicated account manager",
-      "50 free optimization tasks",
-      "Organic traffic growth 800%"
-    ],
+      "Full-stack development & deployment",
+      "Unlimited pages or screens",
+      "Continuous monitoring & optimization"
+    ]
   }
 ])
+
 </script>
 
 <template>
   <section class="pricing">
     <div class="container">
-      <SectionTitle class="text-center" subTitle="Best Pricing" title="Our Pricing Plans" />
+      <SectionTitle class="text-center" subTitle="Flexible Plans" title="Our Pricing Options" />
 
-        <ul class="tab-panel">
-          <ListItem>
-            <BaseButton class="active">Monthly</BaseButton>
-            <BaseButton>Yearly</BaseButton>
-          </ListItem>
-        </ul>
+      <ul class="tab-panel">
+        <ListItem>
+          <BaseButton class="active">Monthly</BaseButton>
+          <BaseButton>Yearly</BaseButton>
+        </ListItem>
+      </ul>
 
       <div class="medium-2 large-3 gap-2">
         <PricingCard v-for="(price, i) in pricing" :key="i" :price="price" />
@@ -85,7 +86,7 @@ const pricing = ref([
   flex-wrap: wrap;
   gap: 1rem;
   margin: 3rem auto;
-  background:var(--secondary-color);
+  background: var(--secondary-color);
   width: fit-content;
 }
 
@@ -94,12 +95,14 @@ const pricing = ref([
   padding: .85rem 3rem;
   border-radius: 2.5rem;
   color: var(--white-color);
-  margin: 0 ;
+  margin: 0;
 }
+
 .tab-panel .btn:hover {
   background: var(--white-color);
   color: var(--dark-color);
 }
+
 .tab-panel .btn.active {
   background: var(--white-color);
   color: var(--dark-color);

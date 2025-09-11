@@ -125,14 +125,12 @@ ul {
   justify-content: center;
 }
 
-
 /* section title  */
 .section-title span {
   margin-left: 1rem;
 }
 .text-center.section-title span {
   margin-left: 0;
-
 }
 
 /* button styles  */
