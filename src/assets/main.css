@@ -38,7 +38,6 @@ body {
   overflow-x: hidden;
   font-family: var(--body-font);
   line-height: 1.7;
-  /* font-size: 14px; */
   color: var(--dark-color);
   background-color: var(--body-bg);
 }
@@ -125,6 +124,17 @@ ul {
 .justify-center {
   justify-content: center;
 }
+
+
+/* section title  */
+.section-title span {
+  margin-left: 1rem;
+}
+.text-center.section-title span {
+  margin-left: 0;
+
+}
+
 /* button styles  */
 .btn {
   position: relative;

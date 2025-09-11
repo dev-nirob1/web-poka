@@ -12,7 +12,7 @@ defineProps({
 <template>
   <div class="section-title">
     <SubTitle>{{ subTitle }}</SubTitle>
-    <span> </span>
+    <span></span>
 
     <BaseTitle>{{ title }}</BaseTitle>
   </div>
@@ -25,10 +25,9 @@ defineProps({
 .section-title span {
   position: relative;
   display: inline-block;
-  text-align: center;
   height: 5px;
   width: 10px;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   background: var(--secondary-color);
 }
 
