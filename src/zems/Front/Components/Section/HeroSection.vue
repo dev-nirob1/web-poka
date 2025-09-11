@@ -26,10 +26,7 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 100px;
-  right: 0;
+  inset: 0;
   background: url('https://www.webpoka.com/front/images/background/3.png') bottom / cover no-repeat;
   z-index: -1;
 }

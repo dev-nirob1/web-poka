@@ -2,23 +2,24 @@
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import { ref } from 'vue';
 import BenefitCard from '../Widget/BenefitCard.vue';
+import { RouterLink } from 'vue-router';
 const benefits = ref([
   {
-    title: "Affordable Price",
-    description: "We provide high-quality services at competitive prices to ensure maximum value for your investment.",
+    title: "Affordable Solutions",
+    description: "We deliver high-quality software services at competitive rates to maximize your ROI.",
     icon: "fa-solid fa-dollar-sign"
   },
   {
-    title: "Great Support",
-    description: "Our dedicated support team is available 24/7 to assist you with any questions or issues.",
+    title: "24/7 Support",
+    description: "Our dedicated support team is available around the clock to assist you with any challenges.",
     icon: "fa-solid fa-headset"
   },
   {
-    title: "Quick Access",
-    description: "Get fast and easy access to our services and resources whenever you need them.",
-    icon: "fa-solid fa-bolt"
+    title: "Fast Delivery",
+    description: "We ensure quick and efficient access to our services without compromising quality.",
+    icon: "fa-solid fa-paper-plane"
   }
-])
+]);
 </script>
 
 <template>
@@ -26,19 +27,20 @@ const benefits = ref([
     <div class="container relative">
       <div class="large-2 gap-3">
         <div class="content">
-          <SectionTitle class="mb-1" title="Get Benifits and Advantages Market Goal" subTitle="Why Choose Us" />
+          <SectionTitle class="mb-1" title="Proven Benefits That Boost Your Growth" subTitle="Why Choose Us" />
 
           <SubTitle class="highlight">
-            A Satisfied Customer is best for business
+           A Satisfied Customer is Our Greatest Achievement
           </SubTitle>
-
-          <SubTitle>The activity of buying or selling goods and services in all the countries of the world.</SubTitle>
+          <SubTitle>
+            We help businesses thrive with innovative software solutions and expert guidance.
+          </SubTitle>
           <ul>
-            <ListItem>What is global market economy?</ListItem>
-            <ListItem>Why is the global market so important?</ListItem>
-            <ListItem>Which is the largest stock market in the world?</ListItem>
+            <ListItem>How can software accelerate business growth?</ListItem>
+            <ListItem>Why choose a dedicated development team?</ListItem>
+            <ListItem>What makes our solutions stand out globally?</ListItem>
           </ul>
-          <BaseButton class="btn-secondary">Free Consultation</BaseButton>
+          <RouterLink to="/contact" class="btn btn-secondary">Get Consultation</RouterLink>
         </div>
 
         <div class="cards">
