@@ -84,7 +84,6 @@ const services = ref([
 }
 
 .icon-3 {
-  display: none;
   right: -4rem;
   top: 5rem;
   animation: float-left-right 5s linear infinite;
@@ -147,11 +146,6 @@ const services = ref([
 
   .cards:nth-child(5) {
     margin-bottom: -8rem;
-  }
-
-  /* animated icons  */
-  .icon-2, .icon-3 {
-    display: block;
   }
 
 }
