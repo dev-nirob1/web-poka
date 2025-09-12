@@ -56,10 +56,10 @@ const projects = ref([
         </div>
         <div class="p-1">
           <SubTitle>{{ app.title }}</SubTitle>
-          <BaseParagraph class="pb-1">{{ app.description.substring(0, 60) }}...
+          <BaseParagraph>{{ app.description.substring(0, 60) }}...
           </BaseParagraph>
-          <div class="my-1">
-            <RouterLink class="btn-secondary" :to="`/projects/${app.title}`">VIEW DETAILS</RouterLink>
+          <div>
+            <RouterLink class="btn btn-secondary" :to="`/projects/${app.title}`">VIEW DETAILS</RouterLink>
           </div>
         </div>
       </div>

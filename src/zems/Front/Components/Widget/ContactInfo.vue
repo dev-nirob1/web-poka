@@ -5,7 +5,7 @@
       Have a question or project in mind? Reach out to us today — our team is here to assist you with custom software
       solutions, collaborations, or any general inquiries.
     </BaseParagraph>
-    <ul class="all-2">
+    <ul class="medium-2">
       <ListItem>
         <i class="fa-solid fa-envelope fa-2x"></i>
         <div>
