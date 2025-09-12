@@ -37,10 +37,14 @@ defineProps({
   scroll-snap-align: start;
   width: 100%;
 }
+.testimonial-card .sub-title{
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
 
 .testimonial-card img {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   object-fit: cover;
   border-radius: 1rem;
 }
