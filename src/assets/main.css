@@ -12,12 +12,11 @@ html {
   --body-font: "Cabin", sans-serif;
   --heading-font: "Quicksand", serif;
 
-  --primary-color: #007bff;
-  --secondary-color: #2200bd;
-  --accent-color: #6f42c1;
+  --primary-color: #2200bd;
+  --secondary-color: #007bff;
+  --alternative-color: #df6569;
   --highlight-color: #e83e8c;
-  /* #FF00F6 */
-  --alternative-color: #ed1c24;
+  --accent-color: #FFB400;
   --white-color: #ffffff;
   --dark-color: #222222;
   --light-color: #6c757d;
@@ -151,7 +150,7 @@ ul {
 .btn-primary {
   padding: 1.1rem 5rem 1.1rem 2rem;
   border-radius: 3rem;
-  background: linear-gradient(to right, #2a00bf, #8500d7);
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   color: var(--white-color);
   font-size: 1.1rem;
 }
@@ -172,13 +171,13 @@ ul {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(to left, #2a00bf, #8500d7);
+  background: linear-gradient(to left,var(--primary-color), var(--secondary-color));
 }
 
 /* ---------secondary button -------------- */
 .btn-secondary {
   color: var(--white-color);
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   z-index: 1;
@@ -192,7 +191,7 @@ ul {
   transform: translateX(-50%);
   height: 100%;
   width: 0;
-  background: #ff00f6;
+  background: rgb(from var(--highlight-color) r g b / 95%);
   z-index: -1;
   transition: width 0.5s ease-in-out;
 }

@@ -86,7 +86,7 @@ const pricing = ref([
   flex-wrap: wrap;
   gap: 1rem;
   margin: 3rem auto;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   width: fit-content;
 }
 

@@ -62,7 +62,7 @@ const handleNext = () => {
 <template>
   <!-- ======== Footer section ======== -->
   <footer class="footer">
-    <div class="container medium-2 large-4 gap-2 py-3">
+    <div class="container medium-2 large-4 gap-2 py-1 medium-py-3">
       <!-- Footer logo and social media links -->
       <div class="contact-info medium-span-2">
         <RouterLink to="" class="logo">
@@ -112,7 +112,7 @@ const handleNext = () => {
             <RouterLink to="/">Home</RouterLink>
           </ListItem>
           <ListItem>
-            <RouterLink to="/about-us">Services</RouterLink>
+            <RouterLink to="/about-us">About Us</RouterLink>
           </ListItem>
           <ListItem>
             <RouterLink to="/projects">Projects</RouterLink>
@@ -129,7 +129,7 @@ const handleNext = () => {
       <!-- image gallery part -->
       <div class="gallery-img">
         <SubTitle>Gallery</SubTitle>
-        <div class="all-2 large-3 gap-1">
+        <div class="all-3 gap-1">
           <div @click="handleOpenModal(i)" v-for="(img, i) in images" :key="img.id">
             <BaseImage :image="img.image" alt="gallery image" />
           </div>

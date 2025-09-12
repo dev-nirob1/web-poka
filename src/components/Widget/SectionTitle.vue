@@ -19,7 +19,7 @@ defineProps({
 </template>
 <style>
 .section-title .sub-title {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .section-title span {
@@ -28,7 +28,7 @@ defineProps({
   height: 5px;
   width: 10px;
   /* margin-left: 1rem; */
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 .section-title span::after,
@@ -37,7 +37,7 @@ defineProps({
   position: absolute;
   height: 2px;
   width: 10px;
-  background: var(--alternative-color);
+  background: var(--accent-color);
 }
 
 .section-title span::after {

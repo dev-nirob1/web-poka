@@ -7,7 +7,7 @@
     </BaseParagraph>
     <ul class="medium-2">
       <ListItem>
-        <i class="fa-solid fa-envelope fa-2x"></i>
+        <i class="fa-solid fa-envelope"></i>
         <div>
           <SubTitle>Email</SubTitle>
           <BaseParagraph>support@webpoka.com</BaseParagraph>
@@ -15,7 +15,7 @@
       </ListItem>
 
       <ListItem>
-        <i class="fa-solid fa-phone fa-2x"></i>
+        <i class="fa-solid fa-phone"></i>
         <div>
           <SubTitle>Call Us</SubTitle>
           <BaseParagraph> 09611-648163</BaseParagraph>
@@ -23,7 +23,7 @@
       </ListItem>
 
       <ListItem>
-        <i class="fa-solid fa-clock fa-2x"></i>
+        <i class="fa-solid fa-clock"></i>
         <div>
           <SubTitle>Availability</SubTitle>
           <BaseParagraph>Saturday - Thursday: 9:00 AM - 6:00 PM (BST)</BaseParagraph>
@@ -31,7 +31,7 @@
       </ListItem>
 
       <ListItem>
-        <i class="fa-solid fa-location-dot fa-2x"></i>
+        <i class="fa-solid fa-location-dot"></i>
         <div>
           <SubTitle>Office</SubTitle>
           <BaseParagraph>House 60, Road 27, Mirpur 12, Dhaka, Bangladesh</BaseParagraph>
@@ -59,6 +59,7 @@
 
 .info ul li i {
   border-radius: .5rem;
+  font-size: 1.5rem;
   padding: .5rem;
   background-color: var(--primary-color);
   color: var(--white-color);

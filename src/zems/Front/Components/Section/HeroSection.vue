@@ -3,7 +3,8 @@
     <div class="container">
       <div class="medium-2 gap-5 medium-gap-2 align-center">
         <div class="content">
-          <HeroTitle>Smart Software <br> Smarter Solutions</HeroTitle>
+          <HeroTitle>A Software <br> Development Agency
+          </HeroTitle>
           <BaseParagraph> We build modern web, mobile, and cloud applications for businesses and
             startups across the globe.</BaseParagraph>
           <BaseButton class="btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i></BaseButton>

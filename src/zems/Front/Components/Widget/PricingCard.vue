@@ -53,7 +53,7 @@ defineProps({
 
 .price {
   transition: .4s ease-in-out;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .pricing-card ul {
@@ -73,9 +73,8 @@ defineProps({
   padding: 1rem 2.5rem;
   font-weight: bold;
   box-shadow: var(--box-shadow);
-  background: orange;
+  background: var(--accent-color);
   color: var(--white-color);
-  border: none;
   border-radius: 1.5rem;
   position: relative;
   z-index: 1;
@@ -84,7 +83,7 @@ defineProps({
 
 .pricing-card:hover .btn {
   background: var(--white-color);
-  color: orange;
+  color: var(--accent-color);
 }
 
 .pricing-card::before {
@@ -94,7 +93,7 @@ defineProps({
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;

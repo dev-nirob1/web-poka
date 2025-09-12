@@ -77,7 +77,7 @@ const benefits = ref([
 }
 
 .why-choose .highlight {
-  color: #FF00F6;
+  color: var(--highlight-color);
   margin: 1.5rem 0;
 }
 

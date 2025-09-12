@@ -42,7 +42,7 @@ defineProps({
   transition: .3s ease-in-out;
 }
 .blog-card a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .blog-card p {

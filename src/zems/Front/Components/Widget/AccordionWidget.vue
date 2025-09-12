@@ -47,7 +47,7 @@ defineProps({
   font-weight: bold;
   color: var(--white-color);
   border-radius: 50%;
-  background: linear-gradient(to bottom, #6538D6, #EA33A6);
+  background: linear-gradient(to bottom, var(--primary-color), var(--highlight-color));
 }
 
 .accordion-body {

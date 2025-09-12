@@ -24,16 +24,28 @@ defineProps({
   background: var(--white-color);
   box-shadow: var(--box-shadow);
   position: relative;
-  padding: 2.5rem 2.5rem 0;
+  padding: 1.5rem 1.5rem 0;
   border-radius: 1rem;
 }
 
+.benefit-card .icon {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 4rem;
+  padding-top: 1.5rem;
+  border-radius: 50px 50px 0 0;
+  background: var(--alternative-color);
+  text-align: center;
+  color: var(--white-color);
+}
+
 .benefit-card:nth-child(2) .icon {
-  background: var(--primary-color)
+  background: var(--secondary-color)
 }
 
 .benefit-card:nth-child(3) .icon {
-  background: orange;
+  background: var(--accent-color);
 }
 
 .benefit-card:not(:last-child) {
@@ -48,19 +60,7 @@ defineProps({
 .benefit-card p {
   margin-bottom: 0;
   font-size: 14px;
-}
-
-.benefit-card .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4rem;
-  padding-top: 1.5rem;
-  border-radius: 50px 50px 0 0;
-  background: var(--alternative-color);
-  text-align: center;
-  color: var(--white-color);
+  color: var(--light-color);
 }
 
 @media (min-width: 768px) {
@@ -70,6 +70,10 @@ defineProps({
 }
 
 @media(min-width: 992px) {
+  .benefit-card {
+    padding: 2.5rem 2.5rem 0;
+  }
+
   .benefit-card {
     max-width: 380px;
     width: 100%;

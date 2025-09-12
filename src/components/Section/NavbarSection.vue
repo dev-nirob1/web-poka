@@ -72,9 +72,10 @@ onMounted(() => {
 <style scoped>
  .navbar.scrolling {
   background: var(--dark-color);
-  padding: 0.75rem 0;
+  padding: .75rem 0;
 }
 .navbar {
+  padding: 0.5rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,7 +105,7 @@ onMounted(() => {
   left: -100%;
   width: 80%;
   margin: 0;
-  background: var(--dark);
+  background: var(--dark-color);
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
@@ -133,14 +134,15 @@ onMounted(() => {
 .hamburger {
   height: 3rem;
   width: 3rem;
-  color: var(--white-color);
+  /* color: var(--white-color); */
+  background: orange;
   border: none;
   cursor: pointer;
 }
 
 @media (min-width: 992px) {
   .navbar {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
   .navbar ul {
     position: inherit;

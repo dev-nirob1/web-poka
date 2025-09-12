@@ -29,7 +29,7 @@
   width: 100%;
   height: 50vh;
   margin: 0 auto;
-  background: url('https://www.webpoka.com/front/images/background/pattern-6.png') center no-repeat, linear-gradient(to right, var(--highlight-color), var(--secondary-color));
+  background: url('https://www.webpoka.com/front/images/background/pattern-6.png') center no-repeat, linear-gradient(to right, var(--highlight-color), var(--primary-color));
   border-radius: 1rem;
 }
 
