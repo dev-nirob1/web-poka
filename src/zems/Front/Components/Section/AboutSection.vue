@@ -2,6 +2,7 @@
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import AccordionWidget from '../Widget/AccordionWidget.vue';
 import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const faqs = ref([
   {
@@ -47,12 +48,16 @@ const toggleAccordion = (id) => {
         <div class="content">
           <SectionTitle title="Always Here to Assist You" subTitle="About Us" />
           <BaseParagraph class="my-1">
-            At Tecno, we specialize in building custom software solutions that drive business growth. Our team ensures quality, security, and timely delivery on every project.
+            At Tecno, we specialize in building custom software solutions that drive business growth. Our team ensures
+            quality, security, and timely delivery on every project.
           </BaseParagraph>
 
           <AccordionWidget v-for="item in faqs" :key="item.id" :currentOpenItem="currentOpenItem" :accordionData="item"
             :toggleAccordion="toggleAccordion" />
-          <BaseButton class="btn-secondary">About More</BaseButton>
+
+          <div class="mt-1">
+            <RouterLink to="/" class="btn btn-secondary">About More</RouterLink>
+          </div>
         </div>
       </div>
     </div>

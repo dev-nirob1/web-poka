@@ -128,14 +128,13 @@ onMounted(() => {
   padding: 0.5rem 0;
 }
 .navbar ul li .router-link-exact-active {
-  color: var(--primary-light-color);
+  color: var(--accent-color);
 }
 /* Mobile menu toggle */
 .hamburger {
   height: 3rem;
   width: 3rem;
-  /* color: var(--white-color); */
-  background: orange;
+  background: var(--accent-color);
   border: none;
   cursor: pointer;
 }
@@ -161,7 +160,7 @@ onMounted(() => {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-light-color);
+    background: var(--accent-color);
     transition: width 0.3s ease;
   }
   .navbar ul li .router-link-exact-active::after {

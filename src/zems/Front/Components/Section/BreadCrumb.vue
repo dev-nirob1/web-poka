@@ -17,7 +17,7 @@ console.log(route);
 
 <style scoped>
 .breadcrumb {
-  padding: 9rem 0 3rem 0;
+  padding: 10rem 0 2.5rem 0;
   background: var(--dark-color);
   color: var(--white-color)
 }

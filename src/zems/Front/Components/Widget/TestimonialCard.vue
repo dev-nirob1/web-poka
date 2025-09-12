@@ -30,7 +30,7 @@ defineProps({
 <style>
 .testimonial-card {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
@@ -68,7 +68,7 @@ defineProps({
   }
 
   .bg-graphic {
-    right: 1rem;
+    right: 2rem;
     top: 1rem;
   }
 }

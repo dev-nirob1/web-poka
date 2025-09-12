@@ -40,7 +40,7 @@ const benefits = ref([
             <ListItem>Why choose a dedicated development team?</ListItem>
             <ListItem>What makes our solutions stand out globally?</ListItem>
           </ul>
-          <RouterLink to="/contact" class="btn btn-secondary">Get Consultation</RouterLink>
+          <RouterLink to="/contact-us" class="btn btn-secondary">Get Consultation</RouterLink>
         </div>
 
         <div class="cards">
