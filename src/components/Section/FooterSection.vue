@@ -5,6 +5,7 @@ import ListItem from '../Elements/ListItem.vue';
 import BaseImage from '../Elements/BaseImage.vue';
 import SubTitle from '../Elements/SubTitle.vue';
 import { ref } from 'vue';
+import ImageViewerModal from '../Widget/ImageViewerModal.vue';
 
 const images = ref([
   {
@@ -32,6 +33,30 @@ const images = ref([
     image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-6.jpg'
   },
 ])
+
+const isModalOpen = ref(false)
+const selectedIndex = ref(0)
+const handleOpenModal = (imageIndex) => {
+  isModalOpen.value = true
+  // console.log('index', imageIndex);
+  selectedIndex.value = imageIndex;
+  // console.log('selected',selectedIndex, 'clicked', imageIndex);
+}
+const handleCloseModal = () => {
+  isModalOpen.value = false
+}
+const handlePrev = () => {
+  if (selectedIndex.value > 0) {
+    selectedIndex.value -= 1;
+  }
+}
+const handleNext = () => {
+  selectedIndex.value += 1;
+  if (selectedIndex.value === images.value.length) {
+    selectedIndex.value = 0;
+    // console.log('selected ', selectedIndex);
+  }
+}
 </script>
 
 <template>
@@ -101,13 +126,22 @@ const images = ref([
         </ul>
       </div>
 
-      <!-- Newsletter subscription form -->
+      <!-- image gallery part -->
       <div class="gallery-img">
         <SubTitle>Gallery</SubTitle>
         <div class="all-2 large-3 gap-1">
-          <BaseImage v-for="img in images" :key="img.id" :image="img.image" alt="gallery image" />
+          <div @click="handleOpenModal(i)" v-for="(img, i) in images" :key="img.id">
+            <BaseImage :image="img.image" alt="gallery image" />
+          </div>
         </div>
 
+        <!-- popup view for image -->
+        <ImageViewerModal :isModalOpen="isModalOpen" :handleCloseModal="handleCloseModal" :handleNext="handleNext"
+          :handlePrev="handlePrev">
+          <div class="image">
+            <BaseImage :image="images[selectedIndex].image" :alt="images[selectedIndex].alt" />
+          </div>
+        </ImageViewerModal>
       </div>
     </div>
 
