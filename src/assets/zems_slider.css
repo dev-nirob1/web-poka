@@ -1,0 +1,49 @@
+.zems_slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.zems_slider .zems_slider_container {
+  display: flex;
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.zems_slider .zems_slider_container .zems_slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+}
+.zems_slider .zems_slide_pager {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+.zems_slider .zems_slide_pager li {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.zems_slider .zems_control {
+  padding: 5px;
+  border: 1px solid red;
+}
+.zems_slider .prev-btn, .zems_slider .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  z-index: 55;
+}
+.zems_slider .prev-btn {
+  left: 10px;
+}
+.zems_slider .next-btn {
+  right: 10px;
+}/*# sourceMappingURL=zems_slider.css.map */

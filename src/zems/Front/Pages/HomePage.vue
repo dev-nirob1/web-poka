@@ -5,6 +5,7 @@ import HeroSection from '../Components/Section/HeroSection.vue';
 import PricingSection from '../Components/Section/PricingSection.vue';
 import ProcesSection from '../Components/Section/ProcesSection.vue';
 import ServicesSection from '../Components/Section/ServicesSection.vue';
+import TestimonialSection from '../Components/Section/TestimonialSection.vue';
 import VideoSection from '../Components/Section/VideoSection.vue';
 import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
 
@@ -18,5 +19,6 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
   <ProcesSection/>
   <PricingSection />
   <AboutSection />
+  <TestimonialSection/>
   <BlogSection />
 </template>

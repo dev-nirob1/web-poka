@@ -1,4 +1,5 @@
 @import "./grid.css";
+@import "./zems_slider.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap");
 
@@ -14,9 +15,9 @@ html {
 
   --primary-color: #2200bd;
   --secondary-color: #007bff;
-  --alternative-color: #df6569;
+  --alternative-color: #ed1c24;
   --highlight-color: #e83e8c;
-  --accent-color: #FFB400;
+  --accent-color: #ffb400;
   --white-color: #ffffff;
   --dark-color: #222222;
   --light-color: #6c757d;
@@ -131,7 +132,18 @@ ul {
 .text-center.section-title span {
   margin-left: 0;
 }
+.testimonials .section-title,
+.testimonials .section-title .sub-title {
+  color: var(--white-color) ;
+}
 
+.testimonials .section-title span::before,
+.testimonials .section-title span::after {
+  background: var(--white-color) ;
+}
+.testimonials .section-title span {
+background-color: var(--accent-color);
+}
 /* button styles  */
 .btn {
   position: relative;
@@ -171,7 +183,7 @@ ul {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(to left,var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
 }
 
 /* ---------secondary button -------------- */
