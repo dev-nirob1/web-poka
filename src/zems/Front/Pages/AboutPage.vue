@@ -2,10 +2,12 @@
 import AboutSection from '../Components/Section/AboutSection.vue';
 import BreadCrumb from '../Components/Section/BreadCrumb.vue';
 import OurTeam from '../Components/Section/OurTeam.vue';
+import VideoPlayModal from '../Components/Widget/VideoPlayModal.vue';
 </script>
 
 <template>
   <BreadCrumb/>
+  <VideoPlayModal/>
   <AboutSection/>
   <OurTeam/>
 </template>
