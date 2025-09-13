@@ -11,9 +11,9 @@ defineProps({
 
 <template>
   <div v-if="isModalOpen" class="video-modal flex-center">
-    <BaseButton @click="handleCloseModal" class="video-close"><i class="fa-solid fa-x"></i></BaseButton>
 
     <div class="modal-content">
+      <BaseButton @click="handleCloseModal" class="video-close"><i class="fa-solid fa-x"></i></BaseButton>
       <div class="width-full height-full">
         <iframe src="https://www.youtube.com/embed/NrgkeOR_g5E" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
