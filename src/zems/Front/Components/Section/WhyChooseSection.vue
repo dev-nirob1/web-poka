@@ -114,7 +114,7 @@ const benefits = ref([
 }
 
 .icon-2 {
-  right: 0;
+  right: 1rem;
   top: 5rem;
 }
 

@@ -72,19 +72,19 @@ const services = ref([
 }
 
 .icon-1 {
-  left: 0;
-  top: 12rem;
+  left: 4rem;
+  top: 0;
   animation: spin 5s linear infinite;
 }
 
 .icon-2 {
-  left: -2rem;
-  bottom: 0;
+  left: 1rem;
+  bottom: -3rem;
   animation: float-up-down 5s linear infinite;
 }
 
 .icon-3 {
-  right: -4rem;
+  right: 0;
   top: 5rem;
   animation: float-left-right 5s linear infinite;
 }
@@ -132,7 +132,22 @@ const services = ref([
   .services {
     margin: 9rem 0 3rem 0;
   }
+.icon-1 {
+  left: 0;
+  top: 12rem;
+  animation: spin 5s linear infinite;
+}
+  .icon-2 {
+  left: -2rem;
+  bottom: 0;
+  animation: float-up-down 5s linear infinite;
+}
 
+.icon-3 {
+  right: -4rem;
+  top: 5rem;
+  animation: float-left-right 5s linear infinite;
+}
   .cards:first-child {
     position: absolute;
     left: 0;

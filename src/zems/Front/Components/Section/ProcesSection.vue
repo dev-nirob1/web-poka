@@ -57,6 +57,7 @@ const process = ref([
 <style scoped>
 .working-process {
   padding: 4.75rem 0;
+  overflow: hidden;
 }
 
 .process {
