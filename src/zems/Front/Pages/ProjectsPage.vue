@@ -5,42 +5,45 @@ import { ref } from 'vue';
 
 const projects = ref([
   {
-    "id": 1,
-    "title": "Restaurant App",
-    "description": "A user-friendly app for browsing menus, placing orders, and managing reservations.",
-    "image": "https://media.istockphoto.com/id/1331919924/photo/technology-makes-life-so-much-easier-for-young-asian-woman-using-mobile-app-device-on.jpg?s=612x612&w=0&k=20&c=8MFgliNHfNLWxUjpZWcNtSs4dndEYQEU491ll5WF0_s="
+    id: 1,
+    title: "E-Commerce Web App",
+    description: "A full-stack e-commerce platform using React, Node.js, and MongoDB with product management, cart, and checkout features.",
+    image: "https://cdn.pixabay.com/photo/2018/09/30/14/52/commerce-3713687_1280.jpg"
   },
   {
-    "id": 2,
-    "title": "Fitness Tracker",
-    "description": "Track workouts, monitor progress, and reach fitness goals with personalized plans.",
-    "image": "https://plus.unsplash.com/premium_photo-1681433383783-661b519b154a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zml0bmVzcyUyMHRyYWNrZXJ8ZW58MHx8MHx8fDA%3D"
+    id: 2,
+    title: "Blog CMS",
+    description: "A content management system for blogs using Next.js and Firebase, allowing dynamic post creation and user authentication.",
+    image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=870&auto=format&fit=crop"
   },
   {
-    "id": 3,
-    "title": "E-Commerce Platform",
-    "description": "A complete solution for online shopping with product listings, reviews, and secure payments.",
-    "image": "https://images.unsplash.com/photo-1688561807381-05137151978f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    id: 3,
+    title: "Task Manager App",
+    description: "A productivity web app built with React and Redux Toolkit for managing tasks, deadlines, and priorities effectively.",
+    image: "https://img.freepik.com/free-vector/appointment-booking-with-smartphone_23-2148554946.jpg"
   },
   {
-    "id": 4,
-    "title": "Travel Booking App",
-    "description": "Easily book flights, hotels, and plan your trips with a seamless travel experience.",
-    "image": "https://img.freepik.com/free-photo/top-view-travel-elements-collection_23-2148691133.jpg?semt=ais_hybrid&w=740"
+    id: 4,
+    title: "Weather Dashboard",
+    description: "A web application using Vue.js and OpenWeather API to display current weather and 7-day forecasts with charts and icons.",
+    image: "https://images.unsplash.com/photo-1530563885674-66db50a1af19?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    "id": 5,
-    "title": "Online Learning App",
-    "description": "Access hundreds of courses, track learning progress, and earn certificates from experts.",
-    "image": "https://images.unsplash.com/photo-1597933471507-1ca5765185d8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b25saW5lJTIwbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D"
+    id: 5,
+    title: "Chat Application",
+    description: "A real-time chat application built with React, Socket.io, and Node.js for one-on-one and group messaging.",
+    image: "https://cdn.pixabay.com/photo/2016/11/02/17/19/keyboard-1792310_1280.png"
   },
   {
-    "id": 6,
-    "title": "Finance Manager",
-    "description": "Manage your expenses, create budgets, and get insights to make smarter financial decisions.",
-    "image": "https://img.freepik.com/free-photo/businessmen-hands-white-table-with-documents-drafts_176420-361.jpg?uid=R140702484&ga=GA1.1.1873161437.1736591058&semt=ais_hybrid&w=740"
+    id: 6,
+    title: "Admin Dashboard",
+    description: "A responsive admin dashboard built with React and Chart.js to visualize analytics, manage users, and monitor app metrics.",
+    image: "https://img.freepik.com/free-vector/user-panel-template-infographic-dashboard_23-2148378206.jpg"
   }
-])
+]);
+
+
+
 </script>
 
 <template>
@@ -82,7 +85,7 @@ const projects = ref([
 .project-card .image {
   position: relative;
   overflow: hidden;
-  height: 220px;
+  height: 250px;
   width: auto;
   border-radius: .5rem .5rem 0 0;
 }

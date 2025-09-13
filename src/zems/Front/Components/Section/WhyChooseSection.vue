@@ -30,12 +30,12 @@ const benefits = ref([
           <SectionTitle class="mb-1" title="Proven Benefits That Boost Your Growth" subTitle="Why Choose Us" />
 
           <SubTitle class="highlight">
-           A Satisfied Customer is Our Greatest Achievement
+            A Satisfied Customer is Our Greatest Achievement
           </SubTitle>
           <SubTitle>
             We help businesses thrive with innovative software solutions and expert guidance.
           </SubTitle>
-          <ul>
+          <ul class="features">
             <ListItem>How can software accelerate business growth?</ListItem>
             <ListItem>Why choose a dedicated development team?</ListItem>
             <ListItem>What makes our solutions stand out globally?</ListItem>
@@ -61,14 +61,10 @@ const benefits = ref([
   position: relative;
 }
 
-.why-choose::after,
-.why-choose ul li::before {
-  position: absolute;
-  left: 0;
-}
-
 .why-choose::after {
   content: '';
+  position: absolute;
+  left: 0;
   background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
   top: -50px;
   bottom: -150px;
@@ -83,20 +79,6 @@ const benefits = ref([
 
 .why-choose ul {
   margin: 1.5rem 0;
-}
-
-.why-choose ul li {
-  position: relative;
-  padding-left: 1rem;
-  margin: .5rem 0;
-  font-weight: 600;
-  color: var(--light-color);
-  font-size: 1rem;
-}
-
-.why-choose ul li::before {
-  content: "✓";
-  color: var(--secondary-color);
 }
 
 /* animated icons  */

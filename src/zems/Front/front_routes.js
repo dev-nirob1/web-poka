@@ -4,6 +4,7 @@ import BlogDetails from "./Pages/BlogDetails.vue";
 import BlogPage from "./Pages/BlogPage.vue";
 import ContactPage from "./Pages/ContactPage.vue";
 import HomePage from "./Pages/HomePage.vue";
+import ProjectDetails from "./Pages/ProjectDetails.vue";
 import ProjectsPage from "./Pages/ProjectsPage.vue";
 
 export default [
@@ -40,6 +41,11 @@ export default [
         path: "/projects",
         name: "projects",
         component: ProjectsPage,
+      },
+      {
+        path: "/project/:slug",
+        name: "project-details",
+        component: ProjectDetails,
       },
     ],
   },
