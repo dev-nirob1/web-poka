@@ -13,7 +13,7 @@ defineProps({
       <BaseImage :image="blog.image" alt="blog image" />
     </div>
     <div class="blog-content">
-      <RouterLink to="/blog/slug">
+      <RouterLink :to="`/blog/${blog.title}`">
         <SubTitle>{{blog.title}}</SubTitle>
       </RouterLink>
       <BaseParagraph>{{blog.date}}</BaseParagraph>

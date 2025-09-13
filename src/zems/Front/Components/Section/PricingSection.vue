@@ -92,7 +92,7 @@ const pricing = ref([
 
 .tab-panel li .btn {
   border: none;
-  padding: .85rem 3rem;
+  padding: .85rem 2.5rem;
   border-radius: 2.5rem;
   color: var(--white-color);
   margin: 0;

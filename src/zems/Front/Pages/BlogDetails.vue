@@ -130,6 +130,7 @@ import BreadCrumb from '../Components/Section/BreadCrumb.vue';
   position: sticky;
   top: 7rem;
 }
+
 .blog-details .author .btn {
   color: var(--white-color);
   border-radius: .5rem;

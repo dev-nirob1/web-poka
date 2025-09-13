@@ -56,7 +56,7 @@ const toggleAccordion = (id) => {
             :toggleAccordion="toggleAccordion" />
 
           <div class="mt-1">
-            <RouterLink to="/" class="btn btn-secondary">About More</RouterLink>
+            <RouterLink to="/about-us" class="btn btn-secondary">About More</RouterLink>
           </div>
         </div>
       </div>

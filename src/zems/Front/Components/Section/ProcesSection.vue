@@ -39,7 +39,7 @@ const process = ref([
     <div class="container">
       <SectionTitle class="text-center mb-3" subTitle="Our Process" title="Our Process to Success" />
 
-      <div class="medium-2 large-4 gap-1">
+      <div class="medium-2 large-4 align-center gap-1">
         <div v-for="item in process" :key="item.id" class="process">
           <div class="icon relative">
             <BaseImage class="bg" :image="item.bg" alt="image" />
@@ -56,7 +56,7 @@ const process = ref([
 
 <style scoped>
 .working-process {
-  padding: 4.75rem 0;
+  padding: 3.75rem 0;
   overflow: hidden;
 }
 

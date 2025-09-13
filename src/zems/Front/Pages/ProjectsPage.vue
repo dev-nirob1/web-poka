@@ -2,6 +2,7 @@
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import BreadCrumb from '../Components/Section/BreadCrumb.vue';
 import { ref } from 'vue';
+import ProjectCard from '../Components/Widget/ProjectCard.vue';
 
 const projects = ref([
   {
@@ -48,63 +49,20 @@ const projects = ref([
 
 <template>
   <BreadCrumb />
-  <div class="container">
-    <SectionTitle class="text-center my-3" title="Our Work in Action" sub-title="Projects" />
+  <div class="projects">
+    <div class="container">
+      <SectionTitle class="text-center mb-3" title="Our Work in Action" sub-title="Projects" />
 
-    <div class="all-projects medium-2 large-3 gap-2">
+      <div class="all-projects medium-2 large-3 gap-2">
 
-      <div v-for="app in projects" :key="app.id" class="project-card">
-        <div class="image">
-          <BaseImage :image="app.image" alt="project image" />
-        </div>
-        <div class="p-1">
-          <SubTitle>{{ app.title }}</SubTitle>
-          <BaseParagraph>{{ app.description.substring(0, 60) }}...
-          </BaseParagraph>
-          <div>
-            <RouterLink class="btn btn-secondary" :to="`/projects/${app.title}`">VIEW DETAILS</RouterLink>
-          </div>
-        </div>
+        <ProjectCard v-for="app in projects" :app="app" :key="app.id" />
+
       </div>
-
     </div>
   </div>
 </template>
-
 <style scoped>
-.project-card {
-  background-color: var(--white-color);
-  box-shadow: var(--box-shadow);
-  border-radius: .5rem;
-}
-
-.project-card p {
-  margin-top: .5rem;
-}
-
-.project-card .image {
-  position: relative;
-  overflow: hidden;
-  height: 250px;
-  width: auto;
-  border-radius: .5rem .5rem 0 0;
-}
-
-.project-card .image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: .5rem .5rem 0 0;
-  transition: all .5s ease-in-out;
-}
-
-.project-card .image:hover img {
-  transform: scale(1.1);
-}
-
-.project-card .btn-secondary {
-  border-radius: .5rem;
+.projects {
+  padding: 3.75rem 0;
 }
 </style>

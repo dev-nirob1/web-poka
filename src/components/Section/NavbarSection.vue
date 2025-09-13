@@ -63,7 +63,7 @@ onMounted(() => {
 
           <!-- Mobile Menu Toggle Button -->
       <BaseButton class="hamburger" @click="toggleMenu">
-        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2xl"></i>
+        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2x"></i>
       </BaseButton>
     </nav>
   </header>
@@ -137,6 +137,9 @@ onMounted(() => {
   background: var(--accent-color);
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
