@@ -1,18 +1,24 @@
+<script setup>
+defineProps({
+  isModalOpen: {
+    type: Boolean
+  },
+  handleCloseModal: {
+    type: Function
+  }
+})
+</script>
+
 <template>
-  <div class="video-modal flex-center">
-    <!-- Overlay -->
-    <div class="video-overlay"></div>
+  <div v-if="isModalOpen" class="video-modal flex-center">
+    <BaseButton @click="handleCloseModal" class="video-close"><i class="fa-solid fa-x"></i></BaseButton>
 
-    <!-- Modal content -->
-    <div class="video-wrapper">
-      <!-- Close button -->
-      <button class="video-close">✕</button>
-
-      <!-- YouTube iframe -->
-      <div class="video-embed">
+    <div class="modal-content">
+      <div class="width-full height-full">
         <iframe src="https://www.youtube.com/embed/NrgkeOR_g5E" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
   </div>
@@ -25,42 +31,37 @@
   z-index: 999;
 }
 
-.video-overlay {
+.video-modal::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0, .7);
 }
 
-.video-wrapper {
+.modal-content {
   position: relative;
   min-width: 70vw;
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: var(--box-shadow);
+  z-index: 1;
 }
 
-/* Close button */
 .video-close {
   position: absolute;
   top: 0;
   right: 0.5rem;
-  background: rgb(from var(--dark-color)r g b / 20%);
+  background: var(--secondary-color);
   border: none;
   color: var(--white-color);
-  font-size: 1.2rem;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.4rem;
+  padding: 0.5rem .75rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   z-index: 1000;
 }
 
-.video-embed {
-  width: 100%;
-  height: 100%;
-}
-
-.video-embed iframe {
+iframe {
   width: 100%;
   height: 100%;
   border: none;

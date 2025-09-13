@@ -1,3 +1,16 @@
+<script setup>
+import VideoPlayModal from '@/components/Widget/VideoPlayModal.vue';
+import { ref } from 'vue';
+
+const isModalOpen = ref(false)
+
+const handleOpenModal = () => {
+  isModalOpen.value = true
+}
+const handleCloseModal = () => {
+  isModalOpen.value = false
+}
+</script>
 <template>
   <div class="hero relative flex-center">
     <div class="container">
@@ -7,13 +20,16 @@
           </HeroTitle>
           <BaseParagraph> We build modern web, mobile, and cloud applications for businesses and
             startups across the globe.</BaseParagraph>
-          <BaseButton class="btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i></BaseButton>
+          <BaseButton @click="handleOpenModal" class="btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i>
+          </BaseButton>
         </div>
         <div class="image">
           <BaseImage image="https://www.webpoka.com/front/images/resource/2.png" alt="image" />
         </div>
       </div>
     </div>
+
+    <VideoPlayModal :isModalOpen="isModalOpen" :handleCloseModal="handleCloseModal" />
   </div>
 </template>
 
