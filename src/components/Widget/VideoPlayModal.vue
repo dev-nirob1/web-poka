@@ -28,7 +28,7 @@ defineProps({
 .video-modal {
   position: fixed;
   inset: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .video-modal::before {
@@ -40,7 +40,8 @@ defineProps({
 
 .modal-content {
   position: relative;
-  min-width: 70vw;
+  height: 70vh;
+  width: 80%;
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   overflow: hidden;
@@ -66,4 +67,10 @@ iframe {
   height: 100%;
   border: none;
 }
+@media (min-width: 768px){
+  .modal-content {
+  height: 80vh;
+  width: 60vw;}
+}
+
 </style>
