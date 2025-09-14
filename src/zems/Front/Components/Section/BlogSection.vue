@@ -1,6 +1,6 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import BlogCard from '../Widget/BlogCard.vue';
+import BlogCard from '@zems/Front/Components/Widget/BlogCard.vue';
 import { ref } from 'vue';
 const blogs = ref([
   {
@@ -43,7 +43,7 @@ const blogs = ref([
       <SectionTitle class="mb-2 text-center" subTitle="Latest News" title="Media Information" />
 
       <div class="medium-2 large-3 gap-2">
-        <BlogCard v-for="blog in blogs" :blog="blog" :key="blog.id"/>
+        <BlogCard v-for="blog in blogs" :blog="blog" :key="blog.id" />
       </div>
     </div>
   </div>
@@ -52,5 +52,4 @@ const blogs = ref([
 .blogs {
   padding: 3.75rem 0;
 }
-
 </style>

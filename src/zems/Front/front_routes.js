@@ -28,7 +28,7 @@ export default [
         component: BlogPage,
       },
       {
-        path: "/blog/:id",
+        path: "/blog/:slug",
         name: "blog-details",
         component: BlogDetails,
       },

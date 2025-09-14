@@ -1,6 +1,6 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import PricingCard from '../Widget/PricingCard.vue';
+import PricingCard from '@zems/Front/Components/Widget/PricingCard.vue';
 import { ref } from 'vue';
 const pricing = ref([
   {
@@ -44,7 +44,7 @@ const pricing = ref([
 </script>
 
 <template>
-  <section class="pricing">
+  <section class="pricing relative">
     <div class="container">
       <SectionTitle class="text-center" subTitle="Flexible Plans" title="Our Pricing Options" />
 
@@ -65,7 +65,6 @@ const pricing = ref([
 <style>
 .pricing {
   padding: 3.75rem 0;
-  position: relative;
 }
 
 .pricing::after {

@@ -1,7 +1,7 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import { ref } from 'vue';
-import BenefitCard from '../Widget/BenefitCard.vue';
+import BenefitCard from '@zems/Front/Components/Widget/BenefitCard.vue';
 import { RouterLink } from 'vue-router';
 const benefits = ref([
   {
@@ -23,9 +23,11 @@ const benefits = ref([
 </script>
 
 <template>
-  <section class="why-choose">
+  <section class="why-choose relative">
     <div class="container relative">
       <div class="large-2 gap-3">
+
+        <!-- content  -->
         <div class="content">
           <SectionTitle class="mb-1" title="Proven Benefits That Boost Your Growth" subTitle="Why Choose Us" />
 
@@ -43,6 +45,7 @@ const benefits = ref([
           <RouterLink to="/contact-us" class="btn btn-secondary">Get Consultation</RouterLink>
         </div>
 
+        <!-- cards  -->
         <div class="cards">
           <BenefitCard v-for="(benefit, i) in benefits" :benefit="benefit" :key="i" />
         </div>
@@ -58,7 +61,6 @@ const benefits = ref([
 <style scoped>
 .why-choose {
   padding: 9rem 0 3rem 0;
-  position: relative;
 }
 
 .why-choose::after {

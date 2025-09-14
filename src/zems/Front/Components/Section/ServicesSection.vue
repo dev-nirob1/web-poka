@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import ServiceCard from '../Widget/ServiceCard.vue';
+import ServiceCard from '@zems/Front/Components/Widget/ServiceCard.vue';
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 const services = ref([
   {
@@ -39,6 +39,7 @@ const services = ref([
         <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
 
         <div class="large-span-2 medium-2 gap-2 align-center">
+          <!-- service card -->
           <div class="cards" v-for="(service, i) in services" :key="i">
             <ServiceCard :service="service" />
           </div>
@@ -52,7 +53,7 @@ const services = ref([
   </section>
 </template>
 <style scoped>
-.services::after {
+.services::before {
   content: '';
   position: absolute;
   background: url('https://webpoka.com/front/images/background/pattern-4.png') left top no-repeat;
@@ -132,22 +133,25 @@ const services = ref([
   .services {
     margin: 9rem 0 3rem 0;
   }
-.icon-1 {
-  left: 0;
-  top: 12rem;
-  animation: spin 5s linear infinite;
-}
-  .icon-2 {
-  left: -2rem;
-  bottom: 0;
-  animation: float-up-down 5s linear infinite;
-}
 
-.icon-3 {
-  right: -4rem;
-  top: 5rem;
-  animation: float-left-right 5s linear infinite;
-}
+  .icon-1 {
+    left: 0;
+    top: 12rem;
+    animation: spin 5s linear infinite;
+  }
+
+  .icon-2 {
+    left: -2rem;
+    bottom: 0;
+    animation: float-up-down 5s linear infinite;
+  }
+
+  .icon-3 {
+    right: -4rem;
+    top: 5rem;
+    animation: float-left-right 5s linear infinite;
+  }
+
   .cards:first-child {
     position: absolute;
     left: 0;

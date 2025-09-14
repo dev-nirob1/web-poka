@@ -1,6 +1,6 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import AccordionWidget from '../Widget/AccordionWidget.vue';
+import AccordionWidget from '@zems/Front/Components/Widget/AccordionWidget.vue';
 import { ref } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 

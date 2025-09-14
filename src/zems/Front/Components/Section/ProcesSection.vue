@@ -92,7 +92,7 @@ const process = ref([
   text-align: center;
   line-height: 2.5rem;
   border-radius: 50%;
-  background: lightgray;
+  background: rgb(from var(--light-color) r g b / 10%);
   font-size: 1.25rem;
   margin-top: 70px;
 }

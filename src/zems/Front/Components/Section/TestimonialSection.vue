@@ -1,6 +1,6 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import TestimonialCard from '../Widget/TestimonialCard.vue';
+import TestimonialCard from '@zems/Front/Components/Widget/TestimonialCard.vue';
 import { onMounted, ref } from 'vue';
 import { zemsSlider_basic } from '@/plugins/zems_slider/zems_slider';
 const reviews = ref([

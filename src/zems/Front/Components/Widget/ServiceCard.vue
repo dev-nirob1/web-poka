@@ -66,7 +66,7 @@ defineProps({
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: #F233A4;
+  background: var(--highlight-color);
   position: absolute;
   bottom: -110%;
   right: -110%;

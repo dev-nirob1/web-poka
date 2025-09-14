@@ -15,6 +15,7 @@ const handleCloseModal = () => {
   <div class="hero relative flex-center">
     <div class="container">
       <div class="medium-2 gap-5 medium-gap-2 align-center">
+        <!-- hero content  -->
         <div class="content">
           <HeroTitle>A Software <br> Development Agency
           </HeroTitle>
@@ -23,12 +24,14 @@ const handleCloseModal = () => {
           <BaseButton @click="handleOpenModal" class="btn-primary">Watch Video <i class="fa-solid fa-arrow-right"></i>
           </BaseButton>
         </div>
+
+        <!-- image  -->
         <div class="image">
           <BaseImage image="https://www.webpoka.com/front/images/resource/2.png" alt="image" />
         </div>
       </div>
     </div>
-<!-- popup -->
+    <!-- popup -->
     <VideoPlayModal :isModalOpen="isModalOpen" :handleCloseModal="handleCloseModal" />
   </div>
 </template>
