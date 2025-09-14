@@ -75,7 +75,8 @@ const handleNext = () => {
         <ul>
           <ListItem><span>Location: </span>Home 60, Road 27, Mirpur 12, Dhaka</ListItem>
           <ListItem><span>Email: </span>support@webpoka.com</ListItem>
-          <ListItem><span>Phone: </span>09611-648163</ListItem>
+          <ListItem><span>Phone: </span>
+            01941-861014, 09611-648163</ListItem>
         </ul>
       </div>
 
@@ -150,10 +151,15 @@ const handleNext = () => {
       <div class="container flex">
         <BaseParagraph>{{ new Date().getFullYear() }} &copy; All rights reserved by Webpoka, Bangladesh</BaseParagraph>
         <div class="social-icon">
-          <RouterLink to=""><i class="fab fa-facebook-f"></i></RouterLink>
-          <RouterLink to=""><i class="fab fa-twitter"></i></RouterLink>
-          <RouterLink to=""><i class="fab fa-instagram"></i></RouterLink>
-          <RouterLink to=""><i class="fab fa-pinterest-p"></i></RouterLink>
+          <a href="https://www.facebook.com/webpoka.bd" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/@webpoka" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://wa.me/01941-861014" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -258,8 +264,9 @@ const handleNext = () => {
 }
 
 .footer-bottom a {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;

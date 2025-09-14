@@ -12,10 +12,10 @@ const toggleMenu = () => {
 };
 
 onMounted(() => {
-    const navbar = document.querySelector('.navbar');
+  const navbar = document.querySelector('.navbar');
   const navLinks = document.querySelector('.nav-links')
 
- window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 10) {
       navbar.classList.add('scrolling');
     } else {
@@ -58,10 +58,27 @@ onMounted(() => {
           <ListItem>
             <RouterLink to="/contact-us">Contact</RouterLink>
           </ListItem>
+
+          <ListItem>
+            <a href="https://www.fiverr.com/webpoka" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" height="25">
+
+                <rect width="120" height="40" rx="1" ry="1" fill="#1DBF73" />
+
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif"
+                  font-size="30" font-weight="bold" fill="#fff">
+                  fiverr
+                </text>
+              </svg>
+
+            </a>
+
+
+          </ListItem>
         </ul>
       </div>
 
-          <!-- Mobile Menu Toggle Button -->
+      <!-- Mobile Menu Toggle Button -->
       <BaseButton class="hamburger" @click="toggleMenu">
         <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2x"></i>
       </BaseButton>
@@ -70,10 +87,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
- .navbar.scrolling {
+.navbar.scrolling {
   background: var(--dark-color);
   padding: .75rem 0;
 }
+
 .navbar {
   padding: 0.5rem 0;
   position: fixed;
@@ -84,6 +102,7 @@ onMounted(() => {
   transition: all 0.3s ease;
   color: var(--white-color);
 }
+
 .navbar a {
   text-decoration: none;
 }
@@ -98,6 +117,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
 }
+
 .navbar ul {
   list-style: none;
   position: fixed;
@@ -115,11 +135,24 @@ onMounted(() => {
   font-weight: 600;
 
 }
+
 .navbar ul.active {
   top: 5rem;
   left: 0;
   color: var(--white-color);
+  display: flex;
+  align-items: center;
 }
+
+/* .navbar ul .fiverr {
+height: auto;
+width: 25px;
+}
+.navbar ul .fiverr img{
+height: 100%;
+width: 100%;
+} */
+
 .navbar ul li a {
   position: relative;
   display: inline-block;
@@ -127,9 +160,11 @@ onMounted(() => {
   transition: color 0.3s ease-in-out;
   padding: 0.5rem 0;
 }
+
 .navbar ul li .router-link-exact-active {
   color: var(--accent-color);
 }
+
 /* Mobile menu toggle */
 .hamburger {
   height: 3rem;
@@ -144,8 +179,9 @@ onMounted(() => {
 
 @media (min-width: 992px) {
   .navbar {
-  padding-top: 3rem;
-}
+    padding-top: 3rem;
+  }
+
   .navbar ul {
     position: inherit;
     width: 100%;
@@ -154,6 +190,7 @@ onMounted(() => {
     background-color: transparent;
     padding: 0.75rem 0;
   }
+
   /* Desktop menu hover effects */
   .navbar ul li a::after,
   .navbar ul li .router-link-exact-active::after {
@@ -166,9 +203,11 @@ onMounted(() => {
     background: var(--accent-color);
     transition: width 0.3s ease;
   }
+
   .navbar ul li .router-link-exact-active::after {
     width: 100%;
   }
+
   .navbar ul li a:hover::after {
     width: 100%;
   }

@@ -29,6 +29,7 @@ import BreadCrumb from '../Components/Section/BreadCrumb.vue';
             responsive design for smooth operations.
           </BaseParagraph>
 
+          <SubTitle>Features</SubTitle>
           <ul class="features">
             <ListItem>Interactive analytics with charts and reports</ListItem>
             <ListItem>Role-based access control for team members</ListItem>
@@ -37,7 +38,7 @@ import BreadCrumb from '../Components/Section/BreadCrumb.vue';
           </ul>
 
           <div class="flex align-center gap-1">
-            <RouterLink to="/projects/admin-dashboard" class="btn btn-secondary">View Live</RouterLink>
+            <RouterLink to="" class="btn btn-secondary">View Live</RouterLink>
             <BaseButton class="btn btn-secondary">Order Now</BaseButton>
           </div>
         </div>
