@@ -2,7 +2,7 @@
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import AccordionWidget from '../Widget/AccordionWidget.vue';
 import { ref } from 'vue';
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router';
 
 const faqs = ref([
   {
@@ -36,6 +36,8 @@ const toggleAccordion = (id) => {
     currentOpenItem.value = id;
   }
 };
+
+const route = useRoute()
 </script>
 
 <template>
@@ -55,7 +57,7 @@ const toggleAccordion = (id) => {
           <AccordionWidget v-for="item in faqs" :key="item.id" :currentOpenItem="currentOpenItem" :accordionData="item"
             :toggleAccordion="toggleAccordion" />
 
-          <div class="mt-1">
+          <div v-if="route.name === 'home'" class="mt-1">
             <RouterLink to="/about-us" class="btn btn-secondary">About More</RouterLink>
           </div>
         </div>
