@@ -246,6 +246,10 @@ const handleNext = () => {
   max-width: 120px;
   width: 100%;
 }
+.footer .gallery-img img:hover {
+  cursor: pointer;
+  opacity: .7;
+}
 
 /* Footer copyright bar*/
 .footer .footer-bottom {

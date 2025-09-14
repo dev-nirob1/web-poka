@@ -85,7 +85,12 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 }
 .founder .image::after {
   content: '';
-  
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  right: -1rem; bottom: -1rem;
+  background: var(--alternative-color);
+  z-index: -1;
 }
 
 .founder .image img {

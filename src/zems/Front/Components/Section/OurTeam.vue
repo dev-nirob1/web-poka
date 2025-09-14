@@ -5,42 +5,43 @@ import { ref } from 'vue';
 
 const members = ref([
   {
-    "id": 1,
-    "name": "Mr. James",
-    "role": "Python Developer",
-    "image": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+    id: 1,
+    name: "Rafiqur Rahman",
+    role: "Python Developer",
+    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&auto=format&fit=crop&q=60",
   },
   {
-    "id": 2,
-    "name": "Ms. Ayesha",
-    "role": "Frontend Engineer",
-    "image": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+    id: 2,
+    name: "Ayesha Siddique",
+    role: "Frontend Engineer",
+    image: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=500&auto=format&fit=crop&q=60",
   },
   {
-    "id": 3,
-    "name": "Mr. David",
-    "role": "UI/UX Designer",
-    "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    id: 3,
+    name: "Sabbir Hossain",
+    role: "UI/UX Designer",
+    image: "https://images.unsplash.com/photo-1568585105565-e372998a195d?w=500&auto=format&fit=crop&q=60",
   },
   {
-    "id": 4,
-    "name": "Ms. Sofia",
-    "role": "Product Manager",
-    "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 4,
+    name: "Sofia Karim",
+    role: "Product Manager",
+    image: "https://images.unsplash.com/photo-1660587398631-cff6fc7c33ce?w=500&auto=format&fit=crop&q=60",
   },
   {
-    "id": 5,
-    "name": "Mr. Rafiq",
-    "role": "DevOps Engineer",
-    "image": "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg",
+    id: 5,
+    name: "Tariq Mahmud",
+    role: "DevOps Engineer",
+    image: "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?w=500&auto=format&fit=crop&q=60",
   },
   {
-    "id": 6,
-    "name": "Ms. Clara",
-    "role": "Backend Developer",
-    "image": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 6,
+    name: "Clara Nazneen",
+    role: "Backend Developer",
+    image: "https://images.unsplash.com/photo-1701980889802-55ff39e2e973?w=500&auto=format&fit=crop&q=60",
   }
 ])
+
 </script>
 
 <template>
