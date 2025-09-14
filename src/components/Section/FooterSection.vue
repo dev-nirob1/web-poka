@@ -135,14 +135,6 @@ const handleNext = () => {
             <BaseImage :image="img.image" alt="gallery image" />
           </div>
         </div>
-
-        <!-- popup view for image -->
-        <ImageViewerModal :isModalOpen="isModalOpen" :handleCloseModal="handleCloseModal" :handleNext="handleNext"
-          :handlePrev="handlePrev">
-          <div class="image">
-            <BaseImage :image="images[selectedIndex].image" :alt="images[selectedIndex].alt" />
-          </div>
-        </ImageViewerModal>
       </div>
     </div>
 
@@ -163,6 +155,15 @@ const handleNext = () => {
         </div>
       </div>
     </div>
+
+
+            <!-- popup view for image -->
+        <ImageViewerModal :isModalOpen="isModalOpen" :handleCloseModal="handleCloseModal" :handleNext="handleNext"
+          :handlePrev="handlePrev">
+          <div class="image">
+            <BaseImage :image="images[selectedIndex].image" :alt="images[selectedIndex].alt" />
+          </div>
+        </ImageViewerModal>
   </footer>
 
 </template>

@@ -59,8 +59,10 @@ defineProps({
   position: fixed;
   background: var(--secondary-color);
   color: var(--white-color);
+  border-radius: .25rem;
   border: none;
 }
+
 .modal .btn-prev,
 .modal .btn-next {
   top: 50%;
@@ -82,6 +84,7 @@ defineProps({
   width: 80vw;
 }
 .modal .modal-details .image {
+  height: 100%;
   width: 100%;
 }
 .modal .modal-details img {
@@ -92,8 +95,8 @@ defineProps({
 
 @media (min-width: 768px) {
   .modal .modal-details {
-    height: 70vh;
-    width: 50vw;
+    height: 60vh;
+    width: 40vw;
   }
 }
 </style>
