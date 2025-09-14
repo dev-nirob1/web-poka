@@ -1,5 +1,5 @@
 <script setup>
-import BreadCrumb from '../Components/Section/BreadCrumb.vue';
+import BreadCrumb from '@zems/Front/Components/Section/BreadCrumb.vue';
 
 </script>
 
@@ -38,20 +38,20 @@ import BreadCrumb from '../Components/Section/BreadCrumb.vue';
 
             <!-- Blog content -->
             <div class="blog-data">
-              <p>
+              <BaseParagraph>
                 Building a modern admin dashboard requires clean design, responsive layout, and robust functionality.
                 In this guide, we explore the best practices for creating dashboards that are both user-friendly and
                 scalable.
-              </p>
-              <p>
+              </BaseParagraph>
+              <BaseParagraph>
                 Key components include dynamic charts, role-based access, and efficient data handling. By leveraging
                 Vue.js
                 and modern web technologies, developers can create dashboards that enhance productivity and improve user
                 experience.
-              </p>
-              <p>
+              </BaseParagraph>
+              <BaseParagraph>
                 Remember to focus on both frontend aesthetics and backend performance for the best results.
-              </p>
+              </BaseParagraph>
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import BreadCrumb from '../Components/Section/BreadCrumb.vue';
+import BreadCrumb from '@zems/Front/Components/Section/BreadCrumb.vue';
 import { ref } from 'vue';
-import ProjectCard from '../Components/Widget/ProjectCard.vue';
+import ProjectCard from '@zems/Front/Components/Widget/ProjectCard.vue';
 
 const projects = ref([
   {

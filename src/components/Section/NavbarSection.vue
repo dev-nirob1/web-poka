@@ -1,9 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import { onMounted, ref } from 'vue';
-import ListItem from '../Elements/ListItem.vue';
-import BaseButton from '../Elements/BaseButton.vue';
-import BaseImage from '../Elements/BaseImage.vue';
 
 const isMenuOpen = ref(false)
 
@@ -70,10 +67,7 @@ onMounted(() => {
                   fiverr
                 </text>
               </svg>
-
             </a>
-
-
           </ListItem>
         </ul>
       </div>

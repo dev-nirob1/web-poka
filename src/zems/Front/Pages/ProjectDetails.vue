@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import BreadCrumb from '../Components/Section/BreadCrumb.vue';
+import BreadCrumb from '@zems/Front/Components/Section/BreadCrumb.vue';
 
 </script>
 

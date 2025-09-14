@@ -1,11 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import BaseParagraph from '../Elements/BaseParagraph.vue';
-import ListItem from '../Elements/ListItem.vue';
-import BaseImage from '../Elements/BaseImage.vue';
-import SubTitle from '../Elements/SubTitle.vue';
 import { ref } from 'vue';
-import ImageViewerModal from '../Widget/ImageViewerModal.vue';
+import ImageViewerModal from '@/components/Widget/ImageViewerModal.vue';
 
 const images = ref([
   {

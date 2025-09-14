@@ -1,6 +1,6 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
-import BlogCard from '../Components/Widget/BlogCard.vue';
+import BlogCard from '@zems/Front/Components/Widget/BlogCard.vue';
 import { ref } from 'vue';
 import BreadCrumb from '../Components/Section/BreadCrumb.vue';
 const blogs = ref([
