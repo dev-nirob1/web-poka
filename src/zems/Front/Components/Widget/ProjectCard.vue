@@ -23,6 +23,7 @@ defineProps({
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
   border-radius: .5rem;
+  cursor: pointer;
 }
 
 .project-card p {

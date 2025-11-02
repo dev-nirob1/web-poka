@@ -8,8 +8,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
     <div class="container">
       <div class="medium-2 gap-2">
         <div class="image">
-          <BaseImage
-            image="https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/494463877_10230442409430083_6634931321085281581_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGXnft4XdwM54TNxhVT1DnM3cfBiYqjVdXdx8GJiqNV1cjulR7trbc8PHXBC6eacUa90SkOzrr__YkMRW6-dbdB&_nc_ohc=Hwh0mWYUjBQQ7kNvwHAdJye&_nc_oc=AdltO_AxuXXBCla6C46E0H6ViqGxh5wkxlsmEtXk3gmdtF7MbE1EH8ViCSV_XlPOjVg&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=AScqK64cNr3LgitmbhVY1A&oh=00_AfaWPozOSHsqJ4UYKrGmPwth56o7PST7W7jakcL1tHjDSQ&oe=68CC680B" />
+          <BaseImage image="/founder.jpg" />
         </div>
         <div class="content">
           <SectionTitle class="mb-1" title="Behind Webpoka Vision" sub-title="Our Founder"></SectionTitle>
@@ -80,17 +79,30 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 
 .founder .image {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
 }
+.founder .image::before,
 .founder .image::after {
   content: '';
   position: absolute;
-  height: 300px;
-  width: 300px;
-  right: -1rem; bottom: -1rem;
-  background: var(--alternative-color);
+  height: 180px;
+  width: 180px;
   z-index: -1;
+}
+
+.founder .image::after {
+  right: -1rem;
+  bottom: -1rem;
+  background: linear-gradient( to bottom, var(--primary-color), var(--highlight-color));
+}
+
+.founder .image::before {
+  top: -1rem;
+  left: -1rem;
+  background: linear-gradient( to top, var(--primary-color), var(--highlight-color));
+
 }
 
 .founder .image img {
@@ -109,5 +121,17 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   align-items: center;
   gap: 1rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .founder .image {
+    margin: 0;
+  }
+
+  .founder .image::before,
+  .founder .image::after {
+    height: 300px;
+    width: 300px;
+  }
 }
 </style>
