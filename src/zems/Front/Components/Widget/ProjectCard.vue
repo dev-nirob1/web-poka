@@ -12,10 +12,8 @@ defineProps({
     </div>
     <div class="p-1">
       <SubTitle>{{ app.title }}</SubTitle>
-      <BaseParagraph>{{ app.description.substring(0, 60) }}...
-      </BaseParagraph>
       <div>
-        <RouterLink class="btn btn-secondary" :to="`/project/${app.title}`">VIEW DETAILS</RouterLink>
+        <RouterLink class="btn btn-secondary" :to="app.liveLink">Watch Live</RouterLink>
       </div>
     </div>
   </div>
@@ -34,7 +32,7 @@ defineProps({
 .project-card .image {
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 280px;
   width: auto;
   border-radius: .5rem .5rem 0 0;
 }
@@ -55,5 +53,6 @@ defineProps({
 
 .project-card .btn-secondary {
   border-radius: .5rem;
+  margin-top: 1rem;
 }
 </style>
