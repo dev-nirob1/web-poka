@@ -257,6 +257,7 @@ const handleNext = () => {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .footer-bottom .social-icon {
@@ -264,19 +265,21 @@ const handleNext = () => {
   gap: .5rem;
 }
 
-.footer-bottom a {
+.footer-bottom .social-icon a{
   height: 2rem;
   width: 2rem;
   font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--white-color);
+  border-radius: .25rem;
+  border: 1px solid var(--border-color);
+  color: var(--dark-color);
+  display: grid;
+  place-content: center;
 }
 
 @media (min-width: 768px) {
   .footer .footer-bottom .flex {
     flex-direction: row;
+  text-align: left;
   }
 }
 </style>

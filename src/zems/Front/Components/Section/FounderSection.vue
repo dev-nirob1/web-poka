@@ -83,6 +83,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   height: 100%;
   margin: 0 auto;
 }
+
 .founder .image::before,
 .founder .image::after {
   content: '';
@@ -95,13 +96,13 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
 .founder .image::after {
   right: -1rem;
   bottom: -1rem;
-  background: linear-gradient( to bottom, var(--primary-color), var(--highlight-color));
+  background: linear-gradient(to bottom, var(--primary-color), var(--highlight-color));
 }
 
 .founder .image::before {
   top: -1rem;
   left: -1rem;
-  background: linear-gradient( to top, var(--primary-color), var(--highlight-color));
+  background: linear-gradient(to top, var(--primary-color), var(--highlight-color));
 
 }
 
@@ -121,6 +122,14 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
   align-items: center;
   gap: 1rem;
   font-size: 1.5rem;
+}
+.socials li {
+ height: 2.5rem;
+ width: 2.5rem;
+ border-radius: .25rem;
+ border: 1px solid var(--border-color);
+ display: grid;
+ place-content: center;
 }
 
 @media (min-width: 768px) {
