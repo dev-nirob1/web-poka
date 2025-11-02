@@ -6,27 +6,27 @@ import ImageViewerModal from '@/components/Widget/ImageViewerModal.vue';
 const images = ref([
   {
     id: 1,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-1.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/events/events.avif'
   },
   {
     id: 2,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-2.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/renovation/renovation.avif'
   },
   {
     id: 3,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-3.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/cryptocoin/cryptocoin.avif'
   },
   {
     id: 4,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-4.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/vesco/vesco.avif'
   },
   {
     id: 5,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-5.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/xocondos/xocondos.avif'
   },
   {
     id: 6,
-    image: 'https://www.webpoka.com/front/images/gallery/footer-gallery-thumb-6.jpg'
+    image: 'https://portfolio.webpoka.com/projects/landing_page/chainese/chainese.avif'
   },
 ])
 
@@ -240,6 +240,7 @@ const handleNext = () => {
 
 .footer .gallery-img img {
   max-width: 120px;
+  height: 70px;
   width: 100%;
 }
 .footer .gallery-img img:hover {
