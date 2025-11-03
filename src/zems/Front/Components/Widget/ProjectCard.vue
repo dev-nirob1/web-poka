@@ -13,7 +13,7 @@ defineProps({
     <div class="p-1">
       <SubTitle>{{ app.title }}</SubTitle>
       <div>
-        <RouterLink class="btn btn-secondary" :to="app.liveLink">Watch Live</RouterLink>
+        <a class="btn btn-secondary" :href="app.liveLink" target="_blank" refrral>Watch Live</a>
       </div>
     </div>
   </div>
