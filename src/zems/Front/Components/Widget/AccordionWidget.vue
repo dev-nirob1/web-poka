@@ -35,15 +35,13 @@ defineProps({
   cursor: pointer;
   display: flex;
   gap: 1rem;
-  align-items: center;
 }
 
 .accordion-title i {
   height: 2rem;
   width: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   font-weight: bold;
   color: var(--white-color);
   border-radius: 50%;
@@ -54,7 +52,7 @@ defineProps({
   padding: 0;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .accordion-body.active {

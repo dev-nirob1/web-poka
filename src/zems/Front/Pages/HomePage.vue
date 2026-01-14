@@ -16,9 +16,9 @@ import WhyChooseSection from '../Components/Section/WhyChooseSection.vue';
   <ServicesSection />
   <WhyChooseSection />
   <VideoSection />
-  <ProcesSection/>
+  <ProcesSection />
   <PricingSection />
   <AboutSection />
-  <TestimonialSection/>
+  <TestimonialSection />
   <BlogSection />
 </template>

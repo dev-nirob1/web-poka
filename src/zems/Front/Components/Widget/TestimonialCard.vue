@@ -34,8 +34,6 @@ defineProps({
   border-radius: 1rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
-  scroll-snap-align: start;
-  width: 100%;
 }
 .testimonial-card .sub-title{
   font-size: 1.5rem;

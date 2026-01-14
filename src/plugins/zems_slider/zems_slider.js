@@ -55,7 +55,7 @@ const zemsSlider_basic = (data= false) => {
             pagerControl.className = 'zems_control'
             const pre = document.createElement('div')
             pre.className = 'prev-btn'
-            const preContent = document.createTextNode('←')
+            const preContent = document.createTextNode('❮')
             pre.appendChild(preContent)
             pre.addEventListener('click', ()=>{
                 prevSlide()
@@ -63,7 +63,7 @@ const zemsSlider_basic = (data= false) => {
             pagerControl.appendChild(pre)
             const next = document.createElement('div')
             next.className = 'next-btn'
-            const nextContent = document.createTextNode('→')
+            const nextContent = document.createTextNode('❯')
             next.appendChild(nextContent)
             next.addEventListener('click', () => {
                 nextSlide()
