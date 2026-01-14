@@ -78,32 +78,4 @@ const pricing = ref([
   z-index: -1;
 }
 
-.tab-panel {
-  padding: 3px;
-  border-radius: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 3rem auto;
-  background: var(--primary-color);
-  width: fit-content;
-}
-
-.tab-panel li .btn {
-  border: none;
-  padding: .85rem 2.5rem;
-  border-radius: 2.5rem;
-  color: var(--white-color);
-  margin: 0;
-}
-
-.tab-panel .btn:hover {
-  background: var(--white-color);
-  color: var(--dark-color);
-}
-
-.tab-panel .btn.active {
-  background: var(--white-color);
-  color: var(--dark-color);
-}
 </style>

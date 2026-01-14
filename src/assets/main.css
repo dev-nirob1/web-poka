@@ -175,6 +175,37 @@ ul {
   line-height: 1;
 }
 
+/* tab design  */
+
+.tab-panel {
+  padding: 3px;
+  border-radius: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem auto;
+  background: var(--primary-color);
+  width: fit-content;
+}
+
+.tab-panel li .btn {
+  border: none;
+  padding: .85rem 2.5rem;
+  border-radius: 2.5rem;
+  color: var(--white-color);
+  margin: 0;
+}
+
+.tab-panel .btn:hover {
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+
+.tab-panel .btn.active {
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+
 /* --------primary-btn----------- */
 .btn-primary {
   padding: 1.1rem 5rem 1.1rem 2rem;
