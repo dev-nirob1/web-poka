@@ -178,7 +178,7 @@ ul {
 /* tab design  */
 
 .tab-panel {
-  padding: 3px;
+  padding: .25rem;
   border-radius: 3rem;
   display: flex;
   flex-wrap: wrap;

@@ -131,12 +131,21 @@ const handleTabChange = (cat) => {
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .projects {
   padding: 3.75rem 0;
 }
 
 .tab-panel {
   gap: .25rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  align-items:center;
+}
+@media (min-width: 768px){
+  .tab-panel {
+    border-radius: 3rem;
+    padding: .25rem;
+  }
 }
 </style>
