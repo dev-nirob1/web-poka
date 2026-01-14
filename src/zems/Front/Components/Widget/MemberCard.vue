@@ -27,6 +27,7 @@ defineProps({
 .member-card .image {
   height: 350px;
   width: 100%;
+  overflow: hidden;
 }
 
 .member-card .image img {
