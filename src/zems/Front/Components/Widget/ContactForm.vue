@@ -1,6 +1,6 @@
 <script setup>
 const handleSubmit = () => {
-  alert('Thanks For Message!')
+  alert('Message received successfully! Our team will contact you soon.')
 }
 </script>
 

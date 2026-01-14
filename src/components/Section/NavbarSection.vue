@@ -74,7 +74,7 @@ onMounted(() => {
 
       <!-- Mobile Menu Toggle Button -->
       <BaseButton class="hamburger" @click="toggleMenu">
-        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2x"></i>
+        <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'"></i>
       </BaseButton>
     </nav>
   </header>
@@ -102,7 +102,7 @@ onMounted(() => {
 }
 
 .logo img {
-  height: 70px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -138,14 +138,6 @@ onMounted(() => {
   align-items: center;
 }
 
-/* .navbar ul .fiverr {
-height: auto;
-width: 25px;
-}
-.navbar ul .fiverr img{
-height: 100%;
-width: 100%;
-} */
 
 .navbar ul li a {
   position: relative;
@@ -161,8 +153,9 @@ width: 100%;
 
 /* Mobile menu toggle */
 .hamburger {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.25rem;
   background: var(--accent-color);
   border: none;
   cursor: pointer;
@@ -175,6 +168,8 @@ width: 100%;
   .navbar {
     padding-top: 3rem;
   }
+  .logo img {
+  height: 70px;}
 
   .navbar ul {
     position: inherit;
