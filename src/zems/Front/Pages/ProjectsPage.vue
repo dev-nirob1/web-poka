@@ -6,6 +6,27 @@ import ProjectCard from '@zems/Front/Components/Widget/ProjectCard.vue';
 
 const projects = ref([
   // LANDING PAGES
+    {
+    id: 11,
+    title: "Real Estate Landing Page",
+    category: "landing-page",
+    liveLink: "https://scionassetbd.com/",
+    image: "/projectImage/cityview.png"
+  },
+    {
+    id: 9,
+    title: "Bag Selling Landing Page",
+    category: "landing-page",
+    liveLink: "https://scionassetbd.com/",
+    image: "/projectImage/bagpoint.png"
+  },
+  {
+    id: 10,
+    title: "Pizza Slice Landing Page",
+    category: "landing-page",
+    liveLink: "https://scionassetbd.com/",
+    image: "/projectImage/slicepoint.png"
+  },
   {
     id: 1,
     title: "Crypto Coin",
@@ -65,7 +86,8 @@ const projects = ref([
     category: "full-stack",
     liveLink: "https://scionassetbd.com/",
     image: "/projectImage/scion-asset.png"
-  }
+  },
+
 ]);
 const tabs = [
   { label: "Landing Pages", value: "landing-page" },
