@@ -35,7 +35,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: var(--body-font);
   line-height: 1.7;
   color: var(--dark-color);

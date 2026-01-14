@@ -33,16 +33,19 @@ const services = ref([
 </script>
 
 <template>
+  <!-- relative for background ::before -->
   <section class="services relative">
-    <div class="container relative">
-      <div class="large-3 gap-2 relative">
-        <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
+  <!-- relative for icons position -->
 
-        <div class="large-span-2 medium-2 gap-2 align-center">
-          <!-- service card -->
-          <div class="cards" v-for="(service, i) in services" :key="i">
-            <ServiceCard :service="service" />
-          </div>
+    <div class="container relative">
+      <div class="medium-2 large-3 gap-2">
+
+        <div class="medium-span-2">
+          <SectionTitle subTitle="Our Services" title="We Are Providing Digital Services" />
+        </div>
+        <!-- service card -->
+        <div class="cards" v-for="(service, i) in services" :key="i">
+          <ServiceCard :service="service" />
         </div>
       </div>
       <!-- animated icons  -->
@@ -51,6 +54,7 @@ const services = ref([
       <BaseImage class="icon-3" image="https://webpoka.com/front/images/icons/icon-4.png" alt="icon" />
     </div>
   </section>
+
 </template>
 <style scoped>
 .services::before {
@@ -152,36 +156,23 @@ const services = ref([
     animation: float-left-right 5s linear infinite;
   }
 
-  .cards:first-child {
-    position: absolute;
-    left: 0;
-    max-width: 300px;
-    margin-top: 8rem;
-  }
-
-  .cards:nth-child(3) {
-    margin-bottom: -5rem;
-  }
-
-  .cards:nth-child(5) {
-    margin-bottom: -8rem;
+  .medium-span-2 {
+    grid-column-end: span 1;
   }
 
 }
 
 @media (min-width: 1200px) {
-  .cards:first-child {
-    max-width: 360px;
+  .cards:nth-child(4) {
+    margin-top: -11rem;
+  }
+
+  .cards:nth-child(3) {
+    margin-top: 5rem;
   }
 
   .cards:nth-child(5) {
-    margin-bottom: -5rem;
-  }
-}
-
-@media(min-width: 1400px) {
-  .cards:first-child {
-    max-width: 420px;
+    margin-top: -5rem;
   }
 }
 </style>
