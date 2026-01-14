@@ -10,21 +10,21 @@ const projects = ref([
     id: 11,
     title: "Real Estate Landing Page",
     category: "landing-page",
-    liveLink: "https://scionassetbd.com/",
+    liveLink: "https://cityview-landing-page.netlify.app/",
     image: "/projectImage/cityview.png"
   },
     {
     id: 9,
     title: "Bag Selling Landing Page",
     category: "landing-page",
-    liveLink: "https://scionassetbd.com/",
+    liveLink: "https://bagpoint.netlify.app/",
     image: "/projectImage/bagpoint.png"
   },
   {
     id: 10,
     title: "Pizza Slice Landing Page",
     category: "landing-page",
-    liveLink: "https://scionassetbd.com/",
+    liveLink: "https://slicepoint.netlify.app/",
     image: "/projectImage/slicepoint.png"
   },
   {
