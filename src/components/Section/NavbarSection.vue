@@ -34,7 +34,7 @@ onMounted(() => {
     <nav class="flex justify-between align-center container">
       <!-- Logo -->
       <RouterLink to="/" class="logo">
-        <BaseImage class="width-full" image="https://www.webpoka.com/front/images/logo.png" alt="logo" />
+        <BaseImage class="width-full" image="/public/logo.jpeg" alt="logo" />
       </RouterLink>
 
       <!-- Navigation Links -->
@@ -118,8 +118,9 @@ onMounted(() => {
   top: 5rem;
   left: -100%;
   width: 80%;
+  height: 100vh;
   margin: 0;
-  background: var(--dark-color);
+  background: var(--primary-color);
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
@@ -174,6 +175,7 @@ onMounted(() => {
   .navbar ul {
     position: inherit;
     width: 100%;
+    height: auto;
     flex-direction: row;
     align-items: center;
     background-color: transparent;
