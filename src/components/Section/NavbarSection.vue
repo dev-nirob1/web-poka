@@ -82,7 +82,7 @@ onMounted(() => {
 
 <style scoped>
 .navbar.scrolling {
-  background: var(--dark-color);
+  background: var(--primary-color);
   padding: .75rem 0;
 }
 

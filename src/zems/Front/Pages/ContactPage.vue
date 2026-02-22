@@ -2,6 +2,7 @@
 import BreadCrumb from '@zems/Front/Components/Section/BreadCrumb.vue';
 import ContactForm from '@zems/Front/Components/Widget/ContactForm.vue';
 import ContactInfo from '@zems/Front/Components/Widget/ContactInfo.vue';
+import LocationSection from '../Components/Section/LocationSection.vue';
 
 </script>
 
@@ -14,6 +15,7 @@ import ContactInfo from '@zems/Front/Components/Widget/ContactInfo.vue';
         <ContactForm/>
       </div>
     </div>
+    <LocationSection/>
   </div>
 </template>
 
