@@ -61,9 +61,13 @@ const handleNext = () => {
     <div class="container medium-2 large-4 gap-2 py-1 medium-py-3">
       <!-- Footer logo and social media links -->
       <div class="contact-info medium-span-2">
-        <RouterLink to="" class="logo">
-          <BaseImage image="https://www.webpoka.com/front/images/logo-2.png" alt="logo" />
-        </RouterLink>
+        <RouterLink to="/" class="logo">
+        <BaseImage image="/webpoka.png" alt="logo" />
+        <div>
+          <h4 class="company-name">Webpoka</h4>
+          <BaseParagraph>Reliable Software Company</BaseParagraph>
+        </div>
+      </RouterLink>
 
         <BaseParagraph>We are a Bangladeshi software development company delivering innovative web, mobile, and
           enterprise solutions to businesses worldwide.</BaseParagraph>
@@ -183,11 +187,28 @@ const handleNext = () => {
 }
 
 /* Logo Styles */
+.footer .logo {
+  display: flex;
+  align-items: center;
+}
 .footer .logo img {
   height: 70px;
-  width: auto;
+  width: 70px;
+}
+.footer .logo p {
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1;
+  padding-top: .25rem;
 }
 
+.footer .logo .company-name {
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  line-height: 1;
+}
 .footer .sub-title {
   margin-bottom: 1.5rem;
   position: relative;

@@ -44,6 +44,13 @@ onMounted(() => {
       <!-- Navigation Links -->
       <div class="flex align-center gap-1">
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">
+          <ListItem class="logo-mobile">
+                <BaseImage class="width-full" image="/webpoka.png" alt="logo" />
+                <div>
+                  <SubTitle>Webpoka</SubTitle>
+                  <BaseParagraph>Reliable Software Company</BaseParagraph>
+                </div>
+          </ListItem>
           <ListItem>
             <RouterLink to="/">Home</RouterLink>
           </ListItem>
@@ -104,20 +111,30 @@ onMounted(() => {
 .navbar a {
   text-decoration: none;
 }
-.logo {
+
+.logo, .logo-mobile {
   display: flex;
   align-items: center;
 }
-.logo p {
-  margin: 0;
-  font-size: .77rem;
+.logo-mobile img{
+height: 50px;
+width: 50px;
 }
-.logo .sub-title{
+.logo p, .logo-mobile p {
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1;
+  padding-top: .2rem;
+}
+
+.logo .sub-title {
+  font-family: 'Arial', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 1.75rem;
   line-height: 1;
 }
+
 .logo img {
   height: 60px;
   width: auto;
@@ -132,7 +149,7 @@ onMounted(() => {
 .navbar ul {
   list-style: none;
   position: fixed;
-  top: 5rem;
+  top: 0;
   left: -100%;
   width: 80%;
   height: 100vh;
@@ -140,7 +157,7 @@ onMounted(() => {
   background: var(--primary-color);
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1.5rem;
   gap: 1.5rem;
   transition: 0.3s;
   font-size: 1rem;
@@ -149,11 +166,11 @@ onMounted(() => {
 }
 
 .navbar ul.active {
-  top: 5rem;
+  top: 0;
   left: 0;
   color: var(--white-color);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -173,8 +190,9 @@ onMounted(() => {
 .hamburger {
   height: 2rem;
   width: 2rem;
-  font-size: 1.25rem;
-  background: var(--accent-color);
+  font-size: 1.5rem;
+  /* background: var(--accent-color); */
+  color: var(--white-color);
   border: none;
   cursor: pointer;
   display: flex;
@@ -186,9 +204,13 @@ onMounted(() => {
   .navbar {
     padding-top: 3rem;
   }
-  .logo img {
-  height: 70px;}
 
+  .logo img {
+    height: 70px;
+  }
+.logo-mobile {
+  display: none;
+}
   .navbar ul {
     position: inherit;
     width: 100%;
