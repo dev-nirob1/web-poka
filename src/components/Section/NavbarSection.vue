@@ -45,11 +45,11 @@ onMounted(() => {
       <div class="flex align-center gap-1">
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">
           <ListItem class="logo-mobile">
-                <BaseImage class="width-full" image="/webpoka.png" alt="logo" />
-                <div>
-                  <SubTitle>Webpoka</SubTitle>
-                  <BaseParagraph>Reliable Software Company</BaseParagraph>
-                </div>
+            <BaseImage image="/webpoka.png" alt="logo" />
+            <div>
+              <SubTitle>Webpoka</SubTitle>
+              <BaseParagraph>Reliable Software Company</BaseParagraph>
+            </div>
           </ListItem>
           <ListItem>
             <RouterLink to="/">Home</RouterLink>
@@ -68,16 +68,8 @@ onMounted(() => {
           </ListItem>
 
           <ListItem>
-            <a href="https://www.fiverr.com/webpoka" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" height="25">
-
-                <rect width="120" height="40" rx="1" ry="1" fill="#1DBF73" />
-
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif"
-                  font-size="30" font-weight="bold" fill="#fff">
-                  fiverr
-                </text>
-              </svg>
+            <a class="fiver-link" href="https://www.fiverr.com/webpoka" target="_blank" rel="noopener noreferrer">
+              <BaseImage image="/fiverr.png" alt="fiverr" />Fiverr
             </a>
           </ListItem>
         </ul>
@@ -98,7 +90,7 @@ onMounted(() => {
 }
 
 .navbar {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -108,26 +100,35 @@ onMounted(() => {
   color: var(--white-color);
 }
 
+.navbar .fiver-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .fiver-link img {
+  height: 30px;
+  width: 30px;
+}
+
 .navbar a {
   text-decoration: none;
 }
 
-.logo, .logo-mobile {
+.logo,
+.logo-mobile {
   display: flex;
   align-items: center;
 }
-.logo-mobile img{
-height: 50px;
-width: 50px;
-}
-.logo p, .logo-mobile p {
+
+.logo p,
+.logo-mobile p {
   margin: 0;
   font-size: .8rem;
   line-height: 1;
   padding-top: .2rem;
 }
 
-.logo .sub-title {
+.logo .sub-title, .logo-mobile .sub-title {
   font-family: 'Arial', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -135,7 +136,7 @@ width: 50px;
   line-height: 1;
 }
 
-.logo img {
+.logo img, .logo-mobile img {
   height: 60px;
   width: auto;
   display: block;
@@ -158,7 +159,7 @@ width: 50px;
   flex-direction: column;
   align-items: flex-start;
   padding: 1.5rem;
-  gap: 1.5rem;
+  gap: 1rem;
   transition: 0.3s;
   font-size: 1rem;
   font-weight: 600;
@@ -208,9 +209,12 @@ width: 50px;
   .logo img {
     height: 70px;
   }
-.logo-mobile {
-  display: none;
-}
+
+  .logo-mobile {
+    display: none;
+  }
+
+
   .navbar ul {
     position: inherit;
     width: 100%;
