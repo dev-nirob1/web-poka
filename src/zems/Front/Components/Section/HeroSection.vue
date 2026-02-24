@@ -39,7 +39,7 @@ const handleCloseModal = () => {
 <style scoped>
 .hero {
   min-height: 100vh;
-  padding: 210px 0 150px 0;
+  padding: 150px 0;
   color: var(--white-color);
 }
 
@@ -63,6 +63,10 @@ const handleCloseModal = () => {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 210px 0 150px 0;
+  }
+
   .hero::before {
     bottom: -120px;
   }

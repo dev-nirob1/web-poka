@@ -16,7 +16,7 @@ const route = useRoute()
 
 <style scoped>
 .breadcrumb {
-  padding: 10rem 0 2.5rem 0;
+  padding: 12rem 0 2.5rem 0;
   background: var(--primary-color);
   color: var(--white-color)
 }

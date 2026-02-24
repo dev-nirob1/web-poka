@@ -27,7 +27,9 @@ const handleCloseModal = () => {
 .video {
   padding: 3.75rem 0;
 }
-
+.video .btn i{
+  opacity: .8;
+}
 .video::before {
   content: '';
   position: absolute;
