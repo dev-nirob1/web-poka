@@ -184,7 +184,7 @@ onMounted(() => {
 }
 
 .navbar ul li .router-link-exact-active {
-  color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* Mobile menu toggle */
@@ -234,7 +234,7 @@ onMounted(() => {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--accent-color);
+    background: var(--white-color);
     transition: width 0.3s ease;
   }
 
