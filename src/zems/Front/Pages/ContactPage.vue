@@ -24,8 +24,13 @@ import LocationSection from '../Components/Section/LocationSection.vue';
   padding: 3.75rem 0;
 }
 
-.info,
-form {
-  padding: 1rem;
+.contact::after {
+  content: '';
+  position: absolute;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: -2;
 }
 </style>

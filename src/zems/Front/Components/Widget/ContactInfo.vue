@@ -41,6 +41,9 @@
   </div>
 </template>
 <style>
+.info {
+  padding: 1rem;
+}
 .info ul {
   list-style: none;
   padding: 0;

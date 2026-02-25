@@ -8,7 +8,6 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <div class="map-marker">📍</div>
       </div>
   </section>
 </template>
@@ -25,13 +24,5 @@
   height: 100%;
   border: none;
 }
-.map-marker {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: red;
-  z-index: 20;
-}
+
 </style>

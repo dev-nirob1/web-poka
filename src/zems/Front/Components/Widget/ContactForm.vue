@@ -5,7 +5,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <form @submit.prevent="handleSubmit">
+  <form class="relative" @submit.prevent="handleSubmit">
     <div class="medium-2 align-center gap-1">
       <label>
         <InputField type="text" placeholder="Enter Your Name" required />
@@ -26,7 +26,7 @@ const handleSubmit = () => {
 </template>
 <style>
 form {
-  background: rgb(from var(--highlight-color)r g b / 5%);
+padding: 1rem;
 }
 
 input,
