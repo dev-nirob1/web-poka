@@ -1,8 +1,9 @@
 <script setup>
 import SectionTitle from '@/components/Widget/SectionTitle.vue';
 import TestimonialCard from '@zems/Front/Components/Widget/TestimonialCard.vue';
-import { onMounted, ref } from 'vue';
-import { zemsSlider_basic } from '@/plugins/zems_slider/zems_slider';
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import {  ref } from 'vue';
 const reviews = ref([
   {
     "review": "Webpoka streamlined our student record system and automated scheduling. It’s now effortless to stay organized and give more attention to learning.",
@@ -43,28 +44,58 @@ const reviews = ref([
 ])
 
 
-onMounted(() => {
-  zemsSlider_basic()
-})
+// Carousel configuration
+const config = {
+   autoplay: 3000,
+   transition: 500,
+  itemsToShow: 1,
+  wrapAround: true,
+  gap: 25,
+  snapAlign: 'center',
+
+  // 'breakpointMode' determines how the carousel breakpoints are calculated
+  // Acceptable values: 'viewport' (default) | 'carousel'
+  // 'viewport' - breakpoints are based on the viewport width
+  // 'carousel' - breakpoints are based on the carousel width
+  breakpointMode: 'carousel',
+
+  // Breakpoints are mobile-first
+  // Any settings not specified will fall back to the carousel's default settings
+  breakpoints: {
+    // 300px and up
+    300: {
+      itemsToShow: 1,
+      snapAlign: 'center',
+    },
+   600: {
+      itemsToShow: 2,
+      snapAlign: 'start',
+    },
+  },
+}
 </script>
 
 <template>
   <section class="testimonials relative">
     <div class="container">
       <SectionTitle class="mb-3" title="What Clients Say About Our Services" sub-title="Testimonials" />
-      <div class="zems_slider" data-control="on" data-gap="20" data-play="on">
-        <div class="zems_slider_container">
-          <TestimonialCard class="zems_slide" v-for="(review, i) in reviews" :key="i" :review="review" />
-        </div>
-      </div>
-    </div>
 
+  <Carousel v-if="reviews.length" v-bind="config">
+        <Slide v-for="(review, i) in reviews" :key="i">
+          <TestimonialCard :review="review" />
+        </Slide>
+        <template #addons>
+          <Navigation />
+        </template>
+      </Carousel>
+    </div>
   </section>
 </template>
 <style scoped>
 .testimonials {
   padding: 3.75rem 0;
 }
+
 .testimonials::before {
   content: '';
   position: absolute;
@@ -75,7 +106,8 @@ onMounted(() => {
   background: url('https://webpoka.com/front/images/background/pattern-9.png') center no-repeat;
   z-index: -1;
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
   .testimonials::before {
     top: -50px;
     left: -100px;

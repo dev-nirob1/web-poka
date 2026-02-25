@@ -9,18 +9,18 @@ defineProps({
 <template>
   <div class="testimonial-card">
     <div class="flex justify-between gap-1">
-      <i class="bg-graphic fa-solid fa-quote-right fa-10x"></i>
+      <i class="bg-graphic fa-solid fa-quote-right fa-6x"></i>
       <div class="flex align-center gap-1">
+        <BaseImage class="height-full width-full" :image="review.image" :alt="review.description" />
         <div>
           <SubTitle>{{ review.name }}</SubTitle>
           <span>{{ review.description }}</span>
         </div>
-        <BaseImage class="height-full width-full" :image="review.image" :alt="review.description" />
       </div>
     </div>
     <div class="flex">
-      <BaseParagraph>
-        <i class="fa-solid fa-quote-left fa-2x"></i>
+      <BaseParagraph class="quote">
+        <!-- <i class="fa-solid fa-quote-left fa-2x"></i> -->
         {{ review.review }}
       </BaseParagraph>
     </div>
@@ -36,15 +36,15 @@ defineProps({
   box-shadow: var(--box-shadow);
 }
 .testimonial-card .sub-title{
-  font-size: 1.5rem;
-  color: var(--accent-color);
+  font-size: 1.25rem;
+  color: var(--primary-color);
 }
 
 .testimonial-card img {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 .bg-graphic {
@@ -53,7 +53,9 @@ defineProps({
   bottom: 0;
   opacity: .1;
 }
-
+.testimonial-card .quote {
+  font-size: 1.15rem;
+}
 
 @media (min-width: 992px) {
   .testimonial-card {
@@ -62,7 +64,7 @@ defineProps({
 
   .testimonial-card p,
   .testimonial-card span {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .bg-graphic {
