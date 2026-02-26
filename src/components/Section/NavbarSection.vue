@@ -34,22 +34,14 @@ onMounted(() => {
     <nav class="flex justify-between align-center container">
       <!-- Logo -->
       <RouterLink to="/" class="logo">
-        <BaseImage class="width-full" image="/webpoka.png" alt="logo" />
-        <div>
-          <SubTitle>Webpoka</SubTitle>
-          <BaseParagraph>Reliable Software Company</BaseParagraph>
-        </div>
+        <BaseImage class="width-full" image="/webpoka-logo-white.png" alt="logo" />
       </RouterLink>
 
       <!-- Navigation Links -->
       <div class="flex align-center gap-1">
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">
           <ListItem class="logo-mobile">
-            <BaseImage image="/webpoka.png" alt="logo" />
-            <div>
-              <SubTitle>Webpoka</SubTitle>
-              <BaseParagraph>Reliable Software Company</BaseParagraph>
-            </div>
+            <BaseImage image="/webpoka-logo-white.png" alt="logo" />
           </ListItem>
           <ListItem>
             <RouterLink to="/">Home</RouterLink>
@@ -112,28 +104,6 @@ onMounted(() => {
 
 .navbar a {
   text-decoration: none;
-}
-
-.logo,
-.logo-mobile {
-  display: flex;
-  align-items: center;
-}
-
-.logo p,
-.logo-mobile p {
-  margin: 0;
-  font-size: .8rem;
-  line-height: 1;
-  padding-top: .2rem;
-}
-
-.logo .sub-title, .logo-mobile .sub-title {
-  font-family: 'Arial', sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.75rem;
-  line-height: 1;
 }
 
 .logo img, .logo-mobile img {

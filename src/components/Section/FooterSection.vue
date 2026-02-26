@@ -62,11 +62,7 @@ const handleNext = () => {
       <!-- Footer logo and social media links -->
       <div class="contact-info medium-span-2">
         <RouterLink to="/" class="logo">
-        <BaseImage image="/webpoka.png" alt="logo" />
-        <div>
-          <h4 class="company-name">Webpoka</h4>
-          <BaseParagraph>Reliable Software Company</BaseParagraph>
-        </div>
+        <BaseImage image="/webpoka-logo.png" alt="logo" />
       </RouterLink>
 
         <BaseParagraph>We are a Bangladeshi software development company delivering innovative web, mobile, and
@@ -187,27 +183,10 @@ const handleNext = () => {
 }
 
 /* Logo Styles */
-.footer .logo {
-  display: flex;
-  align-items: center;
-}
-.footer .logo img {
-  height: 70px;
-  width: 70px;
-}
-.footer .logo p {
-  margin: 0;
-  font-size: .8rem;
-  line-height: 1;
-  padding-top: .25rem;
-}
 
-.footer .logo .company-name {
-  font-family: 'Arial', sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.75rem;
-  line-height: 1;
+.footer .logo img {
+  height: 80px;
+  width: 95%;
 }
 .footer .sub-title {
   margin-bottom: 1.5rem;
@@ -303,5 +282,8 @@ const handleNext = () => {
     flex-direction: row;
   text-align: left;
   }
+  .footer .logo img {
+  width: auto;
+}
 }
 </style>
