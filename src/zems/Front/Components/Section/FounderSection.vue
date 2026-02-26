@@ -8,7 +8,7 @@ import SectionTitle from '@/components/Widget/SectionTitle.vue';
     <div class="container">
       <div class="medium-2 gap-2">
         <div class="image">
-          <BaseImage image="/founder.jpg" />
+          <BaseImage image="/founder.jpeg" />
         </div>
         <div class="content">
           <SectionTitle class="mb-1" title="Behind Webpoka Vision" sub-title="Our Founder"></SectionTitle>
