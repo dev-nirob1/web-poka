@@ -87,6 +87,62 @@ const projects = ref([
     liveLink: "https://scionassetbd.com/",
     image: "/projectImage/scion-asset.png"
   },
+    {
+    id: 15,
+    title: "Mirchi Restaurant Website",
+    category: "front-end",
+    liveLink: "https://mirchi-restaurant.netlify.app/",
+    image: "/projectImage/mirchi-restaurant.png"
+  },
+    {
+    id: 16,
+    title: "Real Estate Website",
+    category: "front-end",
+    liveLink: "https://velvet-gold-real-estage.netlify.app/",
+    image: "/projectImage/velvet-gold.png"
+  },
+    {
+    id: 17,
+    title: "Event Management Website",
+    category: "front-end",
+    liveLink: "https://the-venue-event-management.netlify.app/",
+    image: "/projectImage/event-management.png"
+  },
+    {
+    id: 18,
+    title: "Gym Website",
+    category: "front-end",
+    liveLink: "https://fitlab-fitness-website.netlify.app/",
+    image: "/projectImage/gym-website.png"
+  },
+    {
+    id: 19,
+    title: "E-commerce Website",
+    category: "front-end",
+    liveLink: "https://nebula-store-e-commerce.netlify.app/",
+    image: "/projectImage/nebul-ecommerce.png"
+  },
+    {
+    id: 20,
+    title: "Bakery Website",
+    category: "front-end",
+    liveLink: "https://lumina-bakery-website.netlify.app/",
+    image: "/projectImage/lumina-bakery.png"
+  },
+    {
+    id: 21,
+    title: "School Website",
+    category: "front-end",
+    liveLink: "https://kids-green-school.netlify.app/",
+    image: "/projectImage/kids-green.png"
+  },
+    {
+    id: 21,
+    title: "Healthcare Website",
+    category: "front-end",
+    liveLink: "https://luxemed-healthcare.netlify.app/",
+    image: "/projectImage/luxemed-healthcare.png"
+  },
 
 ]);
 const tabs = [
@@ -95,7 +151,7 @@ const tabs = [
   { label: "Full Stack", value: "full-stack" }
 ];
 
-const activeTab = ref('landing-page');
+const activeTab = ref('front-end');
 const filteredProjects = computed(() => {
   return projects.value.filter(
     project => project.category === activeTab.value

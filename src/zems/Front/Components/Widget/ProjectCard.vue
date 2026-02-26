@@ -36,7 +36,7 @@ defineProps({
   height: 220px;
   width: 100%;
   border-radius: .5rem .5rem 0 0;
-  transition: all .4s ease-in-out;
+  transition: all 1s ease-in-out;
 
     background-position: top;
   background-size: cover;
