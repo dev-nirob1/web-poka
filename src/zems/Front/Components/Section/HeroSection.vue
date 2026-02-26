@@ -75,5 +75,16 @@ const handleCloseModal = () => {
     font-size: 1.1rem;
     font-weight: 600;
   }
+  .hero .image {
+    position: absolute;
+    top:2rem;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
