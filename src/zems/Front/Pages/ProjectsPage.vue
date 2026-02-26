@@ -90,8 +90,8 @@ const projects = ref([
 
 ]);
 const tabs = [
-  { label: "Landing Pages", value: "landing-page" },
   { label: "Front-End", value: "front-end" },
+  { label: "Landing Pages", value: "landing-page" },
   { label: "Full Stack", value: "full-stack" }
 ];
 
@@ -111,6 +111,7 @@ const handleTabChange = (cat) => {
 
 <template>
   <BreadCrumb title="Our Portfolio" routeName="Projects" url="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
   <div class="projects">
     <div class="container">
       <SectionTitle class="text-center mb-3" title="Our Work in Action" sub-title="Projects" />
