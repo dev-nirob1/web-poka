@@ -94,7 +94,7 @@ onMounted(() => {
 
 .navbar .fiver-link {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .navbar .fiver-link img {
@@ -190,6 +190,7 @@ onMounted(() => {
     width: 100%;
     height: auto;
     flex-direction: row;
+    gap: 1.5rem;
     align-items: center;
     background-color: transparent;
     padding: 0.75rem 0;
