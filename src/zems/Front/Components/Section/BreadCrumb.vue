@@ -33,7 +33,7 @@ const route = useRoute()
 
 <style scoped>
 .breadcrumb {
-  height: 60vh;
+  height: 45vh;
   color: var(--white-color);
   padding-bottom: 5rem;
   display: flex;
@@ -102,6 +102,9 @@ const route = useRoute()
 }
 
 @media (min-width: 768px) {
+  .breadcrumb {
+  height: 60vh;
+  }
   .breadcrumb ul {
     font-size: 1.25rem;
   }

@@ -76,7 +76,7 @@ const projects = ref([
     title: "Real Estate Front-end",
     category: "front-end",
     liveLink: "https://real-estate-dream-home.netlify.app/",
-    image: "/projectImage/dream-homes.png"
+    image: "/projectImage/dream-homes.webp"
   },
 
   // FULL-STACK PROJECTS
@@ -92,56 +92,56 @@ const projects = ref([
     title: "Mirchi Restaurant Website",
     category: "front-end",
     liveLink: "https://mirchi-restaurant.netlify.app/",
-    image: "/projectImage/mirchi-restaurant.png"
+    image: "/projectImage/mirchi-restaurant.webp"
   },
     {
     id: 16,
     title: "Real Estate Website",
     category: "front-end",
     liveLink: "https://velvet-gold-real-estage.netlify.app/",
-    image: "/projectImage/velvet-gold.png"
+    image: "/projectImage/velvet-gold.webp"
   },
     {
     id: 17,
     title: "Event Management Website",
     category: "front-end",
     liveLink: "https://the-venue-event-management.netlify.app/",
-    image: "/projectImage/event-management.png"
+    image: "/projectImage/event-management.webp"
   },
     {
     id: 18,
     title: "Gym Website",
     category: "front-end",
     liveLink: "https://fitlab-fitness-website.netlify.app/",
-    image: "/projectImage/gym-website.png"
+    image: "/projectImage/gym-website.webp"
   },
     {
     id: 19,
     title: "E-commerce Website",
     category: "front-end",
     liveLink: "https://nebula-store-e-commerce.netlify.app/",
-    image: "/projectImage/nebul-ecommerce.png"
+    image: "/projectImage/nebul-ecommerce.webp"
   },
     {
     id: 20,
     title: "Bakery Website",
     category: "front-end",
     liveLink: "https://lumina-bakery-website.netlify.app/",
-    image: "/projectImage/lumina-bakery.png"
+    image: "/projectImage/lumina-bakery.webp"
   },
     {
     id: 21,
     title: "School Website",
     category: "front-end",
     liveLink: "https://kids-green-school.netlify.app/",
-    image: "/projectImage/kids-green.png"
+    image: "/projectImage/kids-green.webp"
   },
     {
     id: 21,
     title: "Healthcare Website",
     category: "front-end",
     liveLink: "https://luxemed-healthcare.netlify.app/",
-    image: "/projectImage/luxemed-healthcare.png"
+    image: "/projectImage/luxemed-healthcare.webp"
   },
 
 ]);
@@ -161,7 +161,6 @@ const filteredProjects = computed(() => {
 const handleTabChange = (cat) => {
   activeTab.value = cat
 }
-
 
 </script>
 
