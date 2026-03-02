@@ -39,7 +39,7 @@ const route = useRoute()
   display: flex;
   justify-content: center;
   align-items: end;
-  background-image: linear-gradient(to bottom, rgb(from var(--secondary-color)r g b / 15%), rgb(from var(--secondary-color)r g b / 15%));
+  background-image: linear-gradient(to bottom, rgb(from var(--secondary-color)r g b / 15%), rgb(from var(--secondary-color)r g b / 25%));
 }
 .breadcrumb img {
   position: absolute;

@@ -39,7 +39,7 @@ const blogs = ref([
 
 <template>
   <div class="all-blogs">
-    <BreadCrumb title="Blogs" routeName="Blogs" url="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <BreadCrumb title="Blogs" routeName="Blogs" url="https://images.unsplash.com/photo-1561746254-01c437a23518?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
     <section class="blogs">
       <div class="container">
         <SectionTitle class="text-center mb-2" title="Explore Our Latest Blogs" sub-title="Fresh Ideas" />

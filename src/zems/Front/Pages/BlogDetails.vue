@@ -4,7 +4,7 @@ import BreadCrumb from '@zems/Front/Components/Section/BreadCrumb.vue';
 </script>
 
 <template>
-  <BreadCrumb title="Blog Details" routeName="Blog Details" url="https://images.unsplash.com/photo-1706264337427-fbd7405c3483?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+  <BreadCrumb title="Blog Details" routeName="Blog Details" url="https://images.unsplash.com/photo-1561746254-01c437a23518?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
   <section class="blog-details">
     <div class="container">
       <div class="large-3 gap-2">
