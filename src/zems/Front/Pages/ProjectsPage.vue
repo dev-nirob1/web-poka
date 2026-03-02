@@ -6,14 +6,14 @@ import ProjectCard from '@zems/Front/Components/Widget/ProjectCard.vue';
 
 const projects = ref([
   // LANDING PAGES
-    {
+  {
     id: 11,
     title: "Real Estate Landing Page",
     category: "landing-page",
     liveLink: "https://cityview-landing-page.netlify.app/",
     image: "/projectImage/cityview.png"
   },
-    {
+  {
     id: 9,
     title: "Bag Selling Landing Page",
     category: "landing-page",
@@ -87,63 +87,154 @@ const projects = ref([
     liveLink: "https://scionassetbd.com/",
     image: "/projectImage/scion-asset.png"
   },
-    {
+  {
     id: 15,
     title: "Mirchi Restaurant Website",
     category: "front-end",
     liveLink: "https://mirchi-restaurant.netlify.app/",
     image: "/projectImage/mirchi-restaurant.webp"
   },
-    {
+  {
     id: 16,
     title: "Real Estate Website",
     category: "front-end",
     liveLink: "https://velvet-gold-real-estage.netlify.app/",
     image: "/projectImage/velvet-gold.webp"
   },
-    {
+  {
     id: 17,
     title: "Event Management Website",
     category: "front-end",
     liveLink: "https://the-venue-event-management.netlify.app/",
     image: "/projectImage/event-management.webp"
   },
-    {
+  {
     id: 18,
     title: "Gym Website",
     category: "front-end",
     liveLink: "https://fitlab-fitness-website.netlify.app/",
     image: "/projectImage/gym-website.webp"
   },
-    {
+  {
     id: 19,
     title: "E-commerce Website",
     category: "front-end",
     liveLink: "https://nebula-store-e-commerce.netlify.app/",
     image: "/projectImage/nebul-ecommerce.webp"
   },
-    {
+  {
     id: 20,
     title: "Bakery Website",
     category: "front-end",
     liveLink: "https://lumina-bakery-website.netlify.app/",
     image: "/projectImage/lumina-bakery.webp"
   },
-    {
+  {
     id: 21,
     title: "School Website",
     category: "front-end",
     liveLink: "https://kids-green-school.netlify.app/",
     image: "/projectImage/kids-green.webp"
   },
-    {
+  {
     id: 21,
     title: "Healthcare Website",
     category: "front-end",
     liveLink: "https://luxemed-healthcare.netlify.app/",
     image: "/projectImage/luxemed-healthcare.webp"
   },
-
+  {
+    id: 32,
+    title: "Accounting",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/accounting/",
+    image: 'https://portfolio.webpoka.com/projects/landing_page/accounting/accounting.avif'
+  },
+  {
+    id: 33,
+    title: "Clothing",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/clothing/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/clothing/clothing.avif"
+  },
+  {
+    id: 34,
+    title: "CPA",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/cpa/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/cpa/cpa.avif"
+  },
+  {
+    id: 35,
+    title: "E-Book",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/ebook/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/ebook/ebook.avif"
+  },
+  {
+    id: 36,
+    title: "Restaurant",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/restaurantf/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/restaurantf/restaurantf.avif"
+  },
+  {
+    id: 37,
+    title: "E-Book 4",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/ebook4/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/ebook4/ebook4.avif"
+  },
+  {
+    id: 38,
+    title: "Real Estate Zack",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/realestate_zack/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/realestate_zack/realestate_zack.avif"
+  },
+  {
+    id: 39,
+    title: "Real Estate CMS",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/realestate_cms/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/realestate_cms/realestate_cms.avif"
+  },
+  {
+    id: 40,
+    title: "Real Home",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/real_home/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/real_home/real_home.avif"
+  },
+  {
+    id: 41,
+    title: "Problems.Fyi",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/problems.fyi/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/problems.fyi/problems.fyi.avif"
+  },
+  {
+    id: 42,
+    title: "Limo Service",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/limo_service/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/limo_service/limo_service.avif"
+  },
+  {
+    id: 43,
+    title: "Forex Bonus",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/forex_bonus/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/forex_bonus/forex_bonus.avif"
+  },
+  {
+    id: 44,
+    title: "E-Book 2",
+    category: "landing-page",
+    liveLink: "https://portfolio.webpoka.com/projects/landing_page/ebook2/",
+    image: "https://portfolio.webpoka.com/projects/landing_page/ebook2/ebook2.avif"
+  },
+  
 ]);
 const tabs = [
   { label: "Front-End", value: "front-end" },
@@ -165,7 +256,8 @@ const handleTabChange = (cat) => {
 </script>
 
 <template>
-  <BreadCrumb title="Our Portfolio" routeName="Projects" url="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  <BreadCrumb title="Our Portfolio" routeName="Projects"
+    url="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 
   <div class="projects">
     <div class="container">
@@ -196,9 +288,10 @@ const handleTabChange = (cat) => {
   gap: .25rem;
   padding: .5rem;
   border-radius: 1rem;
-  align-items:center;
+  align-items: center;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
   .tab-panel {
     border-radius: 3rem;
     padding: .25rem;
